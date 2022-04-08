@@ -37,20 +37,19 @@ case class ResultOfClaimsApplied(
 object ResultOfClaimsApplied {
   implicit val writes: OWrites[ResultOfClaimsApplied] = Json.writes[ResultOfClaimsApplied]
 
+  implicit val incomeSourceTypeReads: Reads[IncomeSourceType] = IncomeSourceType.subsetReads(
+    IncomeSourceType.`self-employment`,
+    IncomeSourceType.`uk-property-non-fhl`,
+    IncomeSourceType.`foreign-property-fhl-eea`,
+    IncomeSourceType.`uk-property-fhl`,
+    IncomeSourceType.`foreign-property`
+  )
+
   implicit val reads: Reads[ResultOfClaimsApplied] = for {
-    claimId            <- (JsPath \ "claimId").readNullable[String]
-    originatingClaimId <- (JsPath \ "originatingClaimId").readNullable[String]
-    incomeSourceId     <- (JsPath \ "incomeSourceId").read[String]
-
-    validIncomeSourceTypes = Seq(
-      IncomeSourceType.`self-employment`,
-      IncomeSourceType.`uk-property-non-fhl`,
-      IncomeSourceType.`foreign-property-fhl-eea`,
-      IncomeSourceType.`uk-property-fhl`,
-      IncomeSourceType.`foreign-property`
-    )
-    incomeSourceType <- (JsPath \ "incomeSourceType").read[IncomeSourceType].filter(validIncomeSourceTypes.contains(_))
-
+    claimId             <- (JsPath \ "claimId").readNullable[String]
+    originatingClaimId  <- (JsPath \ "originatingClaimId").readNullable[String]
+    incomeSourceId      <- (JsPath \ "incomeSourceId").read[String]
+    incomeSourceType    <- (JsPath \ "incomeSourceType").read[IncomeSourceType]
     taxYearClaimMade    <- (JsPath \ "taxYearClaimMade").read[Int].map(DownstreamTaxYear.fromDownstreamIntToString)
     claimType           <- (JsPath \ "claimType").read[String]
     mtdLoss             <- (JsPath \ "mtdLoss").readNullable[Boolean]
