@@ -14,19 +14,8 @@
  * limitations under the License.
  */
 
-package v3.models.response.common
+package v3.models.response.retrieveCalculation.calculation.lossesAndClaims
 
-import cats.Show
-import play.api.libs.json._
-import utils.enums.Enums
-
-sealed trait LossType
-
-object LossType {
-
-  case object income     extends LossType
-  case object class4nics extends LossType
-
-  implicit val show: Show[LossType]     = Show.show(_.toString.toLowerCase)
-  implicit val format: Format[LossType] = Enums.format[LossType]
-}
+case class LossesAndClaims (
+                             resultOfClaimsApplied: Option[Seq[ResultOfClaimsApplied]]
+                           )
