@@ -16,8 +16,8 @@
 
 package v3.models.response.retrieveCalculation.calculation.lossesAndClaims
 
-import play.api.libs.json.{JsPath, Json, OWrites, Reads}
-import v2.models.domain.DownstreamTaxYear
+import play.api.libs.json.{Format, Json, OFormat, Reads}
+import v3.models.domain.TaxYear
 import v3.models.response.common.{IncomeSourceType, LossType}
 
 case class ResultOfClaimsApplied(
@@ -25,17 +25,17 @@ case class ResultOfClaimsApplied(
     originatingClaimId: Option[String],
     incomeSourceId: String,
     incomeSourceType: IncomeSourceType,
-    taxYearClaimMade: String,
+    taxYearClaimMade: TaxYear,
     claimType: String,
     mtdLoss: Option[Boolean],
-    taxYearLossIncurred: String,
+    taxYearLossIncurred: TaxYear,
     lossAmountUsed: BigInt,
     remainingLossValue: BigInt,
     lossType: Option[LossType]
 )
 
 object ResultOfClaimsApplied {
-  implicit val writes: OWrites[ResultOfClaimsApplied] = Json.writes[ResultOfClaimsApplied]
+  implicit val taxYearFormat: Format[TaxYear] = TaxYear.downstreamToMtdFormat
 
   implicit val incomeSourceTypeReads: Reads[IncomeSourceType] = IncomeSourceType.subsetReads(
     IncomeSourceType.`self-employment`,
@@ -45,33 +45,5 @@ object ResultOfClaimsApplied {
     IncomeSourceType.`foreign-property`
   )
 
-  implicit val reads: Reads[ResultOfClaimsApplied] = for {
-    claimId             <- (JsPath \ "claimId").readNullable[String]
-    originatingClaimId  <- (JsPath \ "originatingClaimId").readNullable[String]
-    incomeSourceId      <- (JsPath \ "incomeSourceId").read[String]
-    incomeSourceType    <- (JsPath \ "incomeSourceType").read[IncomeSourceType]
-    taxYearClaimMade    <- (JsPath \ "taxYearClaimMade").read[Int].map(DownstreamTaxYear.fromDownstreamIntToString)
-    claimType           <- (JsPath \ "claimType").read[String]
-    mtdLoss             <- (JsPath \ "mtdLoss").readNullable[Boolean]
-    taxYearLossIncurred <- (JsPath \ "taxYearLossIncurred").read[Int].map(DownstreamTaxYear.fromDownstreamIntToString)
-    lossAmountUsed      <- (JsPath \ "lossAmountUsed").read[BigInt]
-    remainingLossValue  <- (JsPath \ "remainingLossValue").read[BigInt]
-    lossType            <- (JsPath \ "lossType").readNullable[LossType]
-
-  } yield {
-    ResultOfClaimsApplied(
-      claimId = claimId,
-      originatingClaimId = originatingClaimId,
-      incomeSourceId = incomeSourceId,
-      incomeSourceType = incomeSourceType,
-      taxYearClaimMade = taxYearClaimMade,
-      claimType = claimType,
-      mtdLoss = mtdLoss,
-      taxYearLossIncurred = taxYearLossIncurred,
-      lossAmountUsed = lossAmountUsed,
-      remainingLossValue = remainingLossValue,
-      lossType = lossType
-    )
-  }
-
+  implicit val format: OFormat[ResultOfClaimsApplied] = Json.format
 }
