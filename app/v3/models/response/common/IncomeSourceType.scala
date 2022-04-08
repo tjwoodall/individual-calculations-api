@@ -70,6 +70,6 @@ object IncomeSourceType {
     case "98" => `charitable-giving`
   }
 
-  def subsetReads(types: IncomeSourceType*): Reads[IncomeSourceType] = reads.filter(types.contains(_))
+  def subsetReads(types: IncomeSourceType*): Reads[IncomeSourceType] = Enums.readsRestricted(types: _*)
 
 }
