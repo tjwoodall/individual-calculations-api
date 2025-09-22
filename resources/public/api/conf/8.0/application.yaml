@@ -2,7 +2,7 @@ openapi: "3.0.3"
 
 info:
   version: "8.0"
-  title: "Individual Calculations (MTD) [test only]"
+  title: Individual Calculations (MTD)
   description: |
     Resources relating to generating, retrieving, and completing a final declaration for Self Assessment tax calculations.
     
