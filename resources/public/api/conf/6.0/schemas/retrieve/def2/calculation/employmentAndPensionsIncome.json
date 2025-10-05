@@ -534,7 +534,7 @@
   "additionalProperties": false,
   "definitions": {
     "date": {
-      "id": "full-date",
+      "format": "full-date",
       "type": "string",
       "example": "2020-01-01"
     }
