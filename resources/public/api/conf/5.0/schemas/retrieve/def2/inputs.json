@@ -844,7 +844,7 @@
       ]
     },
     "date": {
-      "id": "full-date",
+      "format": "full-date",
       "type": "string",
       "example": "2020-01-01"
     },
@@ -853,7 +853,7 @@
       "example": "2019-02-15T09:35:15.094Z"
     },
     "taxYear": {
-      "id": "tax-year",
+      "format": "tax-year",
       "type": "string",
       "example": "2020-21"
     },
