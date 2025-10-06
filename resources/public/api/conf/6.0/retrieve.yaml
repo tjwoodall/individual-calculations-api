@@ -61,12 +61,10 @@ get:
           examples:
             example-response-TY-2023-24-or-before:
               description: Example Response
-              value:
-                $ref: ./examples/retrieve/def1/retrieve_response.json
+              externalValue: ./examples/retrieve/def1/retrieve_response.json
             example-response-TY-2024-25:
               description: Example Response
-              value:
-                $ref: ./examples/retrieve/def2/retrieve_response.json
+              externalValue: ./examples/retrieve/def2/retrieve_response.json
 
     400:
       description: Bad request
