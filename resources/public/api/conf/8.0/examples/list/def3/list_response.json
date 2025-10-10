@@ -13,7 +13,7 @@
       "calculationType": "in-year",
       "calculationTrigger": "unattended",
       "calculationOutcome": "REJECTED",
-      "liabilityAmount": "236.89",
+      "liabilityAmount": 236.89,
       "fromDate": "2025-05-15",
       "toDate": "2025-06-15"
     }
