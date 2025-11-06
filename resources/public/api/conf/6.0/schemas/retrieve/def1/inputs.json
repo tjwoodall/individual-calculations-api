@@ -95,11 +95,10 @@
           "description": "The Unique Taxpayer Reference for the customer.",
           "type": "string",
           "example": "AGvHTfRUPO"
-        }
-        
-        ,"itsaStatus": {
-          "description": "The ITSA status for the tax year.",
+        },
+        "itsaStatus": {
           "type": "string",
+          "description": "The ITSA Status for the Tax Year.",
           "enum": [
             "No Status",
             "MTD Mandated",
@@ -110,7 +109,6 @@
             "MTD Exempt"
           ]
         }
-        
       },
       "additionalProperties": false,
       "required": [
@@ -624,7 +622,6 @@
               }
             ]
           },
-          
           "commencementDate": {
             "description": "The date the income source commenced.",
             "allOf": [
@@ -641,7 +638,6 @@
               }
             ]
           },
-          
           "latestPeriodEndDate": {
             "description": "The end date of the period for which income has been submitted for the income source.",
             "allOf": [
