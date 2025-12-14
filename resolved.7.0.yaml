@@ -12997,6 +12997,24 @@ paths:
                                     places.
                                   example:
                                   - 5000.99
+                                incomeTaxChargedOnTransitionProfits:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: Income tax charged on transition profits.
+                                    This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
+                                  example:
+                                  - 5000.99
+                                incomeTaxChargedAfterTransitionProfits:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: Income tax charged after transition
+                                    profits. This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
+                                  example:
+                                  - 5000.99
                                 totalReliefs:
                                   maximum: 99999999999.99
                                   minimum: 0
@@ -19424,6 +19442,24 @@ paths:
                                   description: Total income tax charged. This value
                                     must be between 0 and 99999999999.99 up to 2 decimal
                                     places.
+                                  example:
+                                  - 5000.99
+                                incomeTaxChargedOnTransitionProfits:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: Income tax charged on transition profits.
+                                    This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
+                                  example:
+                                  - 5000.99
+                                incomeTaxChargedAfterTransitionProfits:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: Income tax charged after transition
+                                    profits. This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
                                   example:
                                   - 5000.99
                                 totalReliefs:
@@ -32693,6 +32729,24 @@ components:
                         0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
+                    incomeTaxChargedOnTransitionProfits:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: Income tax charged on transition profits. This
+                        value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
+                      example:
+                      - 5000.99
+                    incomeTaxChargedAfterTransitionProfits:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: Income tax charged after transition profits. This
+                        value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
+                      example:
+                      - 5000.99
                     totalReliefs:
                       maximum: 99999999999.99
                       minimum: 0
@@ -38728,6 +38782,24 @@ components:
                       type: number
                       description: Total income tax charged. This value must be between
                         0 and 99999999999.99 up to 2 decimal places.
+                      example:
+                      - 5000.99
+                    incomeTaxChargedOnTransitionProfits:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: Income tax charged on transition profits. This
+                        value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
+                      example:
+                      - 5000.99
+                    incomeTaxChargedAfterTransitionProfits:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: Income tax charged after transition profits. This
+                        value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
                       example:
                       - 5000.99
                     totalReliefs:
@@ -52226,6 +52298,22 @@ components:
                     0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
+                incomeTaxChargedOnTransitionProfits:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: Income tax charged on transition profits. This value
+                    must be between 0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
+                incomeTaxChargedAfterTransitionProfits:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: Income tax charged after transition profits. This value
+                    must be between 0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
                 totalReliefs:
                   maximum: 99999999999.99
                   minimum: 0
@@ -58856,6 +58944,22 @@ components:
                   type: number
                   description: Total income tax charged. This value must be between
                     0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
+                incomeTaxChargedOnTransitionProfits:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: Income tax charged on transition profits. This value
+                    must be between 0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
+                incomeTaxChargedAfterTransitionProfits:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: Income tax charged after transition profits. This value
+                    must be between 0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
                 totalReliefs:
@@ -71858,6 +71962,22 @@ components:
                 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
+            incomeTaxChargedOnTransitionProfits:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: Income tax charged on transition profits. This value must
+                be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
+            incomeTaxChargedAfterTransitionProfits:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: Income tax charged after transition profits. This value
+                must be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
             totalReliefs:
               maximum: 99999999999.99
               minimum: 0
@@ -73125,6 +73245,22 @@ components:
           type: number
           description: Total income tax charged. This value must be between 0 and
             99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
+        incomeTaxChargedOnTransitionProfits:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: Income tax charged on transition profits. This value must be
+            between 0 and 99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
+        incomeTaxChargedAfterTransitionProfits:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: Income tax charged after transition profits. This value must
+            be between 0 and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
         totalReliefs:
@@ -78574,6 +78710,22 @@ components:
                 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
+            incomeTaxChargedOnTransitionProfits:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: Income tax charged on transition profits. This value must
+                be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
+            incomeTaxChargedAfterTransitionProfits:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: Income tax charged after transition profits. This value
+                must be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
             totalReliefs:
               maximum: 99999999999.99
               minimum: 0
@@ -79849,6 +80001,22 @@ components:
           type: number
           description: Total income tax charged. This value must be between 0 and
             99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
+        incomeTaxChargedOnTransitionProfits:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: Income tax charged on transition profits. This value must be
+            between 0 and 99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
+        incomeTaxChargedAfterTransitionProfits:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: Income tax charged after transition profits. This value must
+            be between 0 and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
         totalReliefs:
