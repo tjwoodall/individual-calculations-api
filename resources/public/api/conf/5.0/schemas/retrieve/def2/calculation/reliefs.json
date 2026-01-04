@@ -268,7 +268,7 @@
         "customerCalculatedRelief": {
           "description": "When this field is true, it means the customer has calculated their own relief. When it is false it means HMRC determined the relief.",
           "type": "boolean",
-          "example": "true"
+          "example": true
         },
         "totalForeignTaxCreditRelief": {
           "description": "The total value of foreign tax credit relief. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
@@ -356,7 +356,7 @@
               "employmentLumpSum": {
                 "description": "A boolean to identify whether or not the income type was an employment lump sum. This value must be true or false.",
                 "type": "boolean",
-                "example": "true"
+                "example": true
               }
             },
             "required": [
