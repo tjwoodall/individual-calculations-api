@@ -115,7 +115,7 @@
           "foreignTaxCreditRelief": {
             "description": "A boolean indicating whether Foreign Tax Credit Relief (FTCR) has been claimed. This value must be true or false.",
             "type": "boolean",
-            "example": "false"
+            "example": false
           }
         },
         "required": [
@@ -160,7 +160,7 @@
           "foreignTaxCreditRelief": {
             "description": "A boolean indicating whether Foreign Tax Credit Relief (FTCR) has been claimed. This value must be true or false.",
             "type": "boolean",
-            "example": "false"
+            "example": false
           }
         },
         "required": [
