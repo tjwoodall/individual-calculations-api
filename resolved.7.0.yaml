@@ -14745,6 +14745,7 @@ paths:
                               - MTD Voluntary
                               - Annual
                               - Non Digital
+                              - Digitally Exempt
                               - Dormant
                               - MTD Exempt
                           description: Object containing personal information about
@@ -15621,15 +15622,11 @@ paths:
                                 properties:
                                   type:
                                     type: string
-                                    description: The type of relief claimed. `social-enterprise-investment`
-                                      is deprecated and will be removed in a future
-                                      release.
                                     enum:
                                     - vct-subscriptions
                                     - eis-subscriptions
                                     - community-investment
                                     - seed-enterprise-investment
-                                    - social-enterprise-investment
                                     - maintenance-payments
                                     - deficiency-relief
                                     - non-deductible-loan-interest
@@ -15684,14 +15681,6 @@ paths:
                                             \ (VCT), Enterprise Investment Scheme\
                                             \ (EIS) and Community Investments."
                                           example: EIS fund
-                                        socialEnterpriseName:
-                                          type: string
-                                          description: The name of the Social Enterprise
-                                            Investment invested in. This field is
-                                            deprecated and will be removed in a future
-                                            release.
-                                          example: SE Inc
-                                          deprecated: true
                                         companyName:
                                           type: string
                                           description: The name of the Seed Enterprise
@@ -34350,6 +34339,7 @@ components:
                   - MTD Voluntary
                   - Annual
                   - Non Digital
+                  - Digitally Exempt
                   - Dormant
                   - MTD Exempt
               description: Object containing personal information about the taxpayer
@@ -35181,14 +35171,11 @@ components:
                     properties:
                       type:
                         type: string
-                        description: The type of relief claimed. `social-enterprise-investment`
-                          is deprecated and will be removed in a future release.
                         enum:
                         - vct-subscriptions
                         - eis-subscriptions
                         - community-investment
                         - seed-enterprise-investment
-                        - social-enterprise-investment
                         - maintenance-payments
                         - deficiency-relief
                         - non-deductible-loan-interest
@@ -35237,13 +35224,6 @@ components:
                                 \ for Venture Capital Trust (VCT), Enterprise Investment\
                                 \ Scheme (EIS) and Community Investments."
                               example: EIS fund
-                            socialEnterpriseName:
-                              type: string
-                              description: The name of the Social Enterprise Investment
-                                invested in. This field is deprecated and will be
-                                removed in a future release.
-                              example: SE Inc
-                              deprecated: true
                             companyName:
                               type: string
                               description: The name of the Seed Enterprise Investment
@@ -53841,6 +53821,7 @@ components:
               - MTD Voluntary
               - Annual
               - Non Digital
+              - Digitally Exempt
               - Dormant
               - MTD Exempt
           description: Object containing personal information about the taxpayer for
@@ -54432,6 +54413,7 @@ components:
           - MTD Voluntary
           - Annual
           - Non Digital
+          - Digitally Exempt
           - Dormant
           - MTD Exempt
       additionalProperties: false
@@ -55425,14 +55407,11 @@ components:
                 properties:
                   type:
                     type: string
-                    description: The type of relief claimed. `social-enterprise-investment`
-                      is deprecated and will be removed in a future release.
                     enum:
                     - vct-subscriptions
                     - eis-subscriptions
                     - community-investment
                     - seed-enterprise-investment
-                    - social-enterprise-investment
                     - maintenance-payments
                     - deficiency-relief
                     - non-deductible-loan-interest
@@ -55480,13 +55459,6 @@ components:
                             \ for Venture Capital Trust (VCT), Enterprise Investment\
                             \ Scheme (EIS) and Community Investments."
                           example: EIS fund
-                        socialEnterpriseName:
-                          type: string
-                          description: The name of the Social Enterprise Investment
-                            invested in. This field is deprecated and will be removed
-                            in a future release.
-                          example: SE Inc
-                          deprecated: true
                         companyName:
                           type: string
                           description: The name of the Seed Enterprise Investment
@@ -75637,14 +75609,11 @@ components:
             properties:
               type:
                 type: string
-                description: The type of relief claimed. `social-enterprise-investment`
-                  is deprecated and will be removed in a future release.
                 enum:
                 - vct-subscriptions
                 - eis-subscriptions
                 - community-investment
                 - seed-enterprise-investment
-                - social-enterprise-investment
                 - maintenance-payments
                 - deficiency-relief
                 - non-deductible-loan-interest
@@ -75691,13 +75660,6 @@ components:
                         \ for Venture Capital Trust (VCT), Enterprise Investment Scheme\
                         \ (EIS) and Community Investments."
                       example: EIS fund
-                    socialEnterpriseName:
-                      type: string
-                      description: The name of the Social Enterprise Investment invested
-                        in. This field is deprecated and will be removed in a future
-                        release.
-                      example: SE Inc
-                      deprecated: true
                     companyName:
                       type: string
                       description: The name of the Seed Enterprise Investment invested
