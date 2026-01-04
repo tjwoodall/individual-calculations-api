@@ -58,6 +58,8 @@ get:
               - $ref: ./schemas/retrieve/def2/retrieve_response.json
               - $ref: ./schemas/retrieve/def3/retrieve_response.json
               
+              - $ref: ./schemas/retrieve/def4/retrieve_response.json
+              
           examples:
             "Example response for TY 2023-24 and before":
               value:
@@ -66,10 +68,14 @@ get:
               value:
                 $ref: ./examples/retrieve/def2/retrieve_response.json
             
-            "Example response for TY 2025-26 onwards":
+            "Example response for TY 2025-26":
             
               value:
                 $ref: ./examples/retrieve/def3/retrieve_response.json
+            
+            "Example response for TY 2026-27 onwards":
+              value:
+                $ref: ./examples/retrieve/def4/retrieve_response.json
             
 
     400:
