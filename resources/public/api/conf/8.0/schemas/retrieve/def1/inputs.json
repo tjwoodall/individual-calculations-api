@@ -95,8 +95,8 @@
           "description": "The Unique Taxpayer Reference for the customer.",
           "type": "string",
           "example": "AGvHTfRUPO"
-        }
-        ,"itsaStatus": {
+        },
+        "itsaStatus": {
           "type": "string",
           "description": "The ITSA Status for the Tax Year.",
           "enum": [
