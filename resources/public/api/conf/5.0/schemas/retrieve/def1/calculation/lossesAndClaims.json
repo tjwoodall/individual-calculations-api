@@ -49,7 +49,7 @@
           "mtdLoss": {
             "description": "A boolean to identify whether the loss was registered by the taxpayer on joining MTD. Only returned when false.",
             "type": "boolean",
-            "example": "false"
+            "example": false
           },
           "taxYearLossIncurred": {
             "description": "The tax year in which the loss was incurred.",
