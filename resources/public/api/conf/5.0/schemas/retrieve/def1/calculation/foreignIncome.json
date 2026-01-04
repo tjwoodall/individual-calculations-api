@@ -37,7 +37,7 @@
           "foreignTaxCreditRelief": {
             "description": "A boolean indicating whether it's a Foreign Tax Credit Relief. This value must be true or false.",
             "type": "boolean",
-            "example": "true"
+            "example": true
           }
         },
         "required": [
@@ -80,7 +80,7 @@
           "foreignTaxCreditRelief": {
             "description": "A boolean indicating whether it's a Foreign Tax Credit Relief. This value must be true or false.",
             "type": "boolean",
-            "example": "true"
+            "example": true
           }
         },
         "required": [
