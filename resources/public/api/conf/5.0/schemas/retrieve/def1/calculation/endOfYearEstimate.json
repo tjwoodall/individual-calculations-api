@@ -55,7 +55,7 @@
           "finalised": {
             "description": "A boolean indicating whether income source has been finalised for the tax year (only applies to self-employment and UK property income types). This value must be true or false.",
             "type": "boolean",
-            "example": "false"
+            "example": false
           },
           "totalAllowancesAndDeductions": {
             "type": "integer",
