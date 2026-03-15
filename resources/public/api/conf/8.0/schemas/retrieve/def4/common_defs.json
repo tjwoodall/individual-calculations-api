@@ -40,12 +40,14 @@
     "studentLoanPlanType": {
       "description": "Student Loan plan type.",
       "type": "string",
+      
       "enum": [
         "plan1",
         "plan2",
         "postgraduate",
         "plan4"
       ]
+      
     }
   }
 }

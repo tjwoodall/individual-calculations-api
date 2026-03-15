@@ -169,14 +169,13 @@
         "type": "object",
         "properties": {
           "type": {
-            
+            "description": "The type of relief claimed.",
             "type": "string",
             "enum": [
               "vct-subscriptions",
               "eis-subscriptions",
               "community-investment",
               "seed-enterprise-investment",
-            
               "maintenance-payments",
               "deficiency-relief",
               "non-deductible-loan-interest",
@@ -225,7 +224,6 @@
                   "type": "string",
                   "example": "EIS fund"
                 },
-                
                 "companyName": {
                   "description": "The name of the Seed Enterprise Investment invested in.",
                   "type": "string",
