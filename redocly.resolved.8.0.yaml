@@ -1135,36 +1135,39 @@ paths:
                             type: string
                             example: '2019-02-15T09:35:15.094Z'
                           calculationReason:
-                            description: The reason why the calculation was triggered.
+                            description: |-
+                              The reason why the calculation was triggered. 
+
+                              Possible values are: 
+
+                              * **customer-request** - The calculation was triggered by the customer via software.
+
+                              * **class2-nic-event** - The calculation was triggered internally by HMRC once the actual Class 2 NIC amount became available. This event is only applicable for an in-year "final-declaration" calculation type.
+
+                              * **new-loss-event** - The calculation was triggered by HMRC on receipt of a new pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **new-claim-event** - The calculation was triggered by HMRC on receipt of a new loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **updated-claim-event** - The calculation was triggered internally by HMRC on receipt of an updated loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **updated-loss-event** - The calculation was triggered internally by HMRC on receipt of an updated pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **new-annual-adjustment-event** - The calculation was triggered internally by HMRC on receipt of a request for a new adjustable summary calculation by the customer. This event is not currently supported.
+
+                              * **updated-annual-adjustment-event** - The calculation was triggered internally by HMRC on receipt of an adjustment to an adjustable summary calculation made by the customer. This event is not currently supported.
+
+                              * **unattended-calculation** - HMRC has updated the calculation for you. You can see more details in your record-keeping software.
                             type: string
-                            oneOf:
-                              - enum:
-                                  - customer-request
-                                description: The calculation was triggered by the customer via software.
-                              - enum:
-                                  - class2-nic-event
-                                description: The calculation was triggered internally by HMRC once the actual Class 2 NIC amount became available. This event is only applicable for an in-year "final-declaration" calculation type.
-                              - enum:
-                                  - new-loss-event
-                                description: The calculation was triggered by HMRC on receipt of a new pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - new-claim-event
-                                description: The calculation was triggered by HMRC on receipt of a new loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - updated-claim-event
-                                description: The calculation was triggered internally by HMRC on receipt of an updated loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - updated-loss-event
-                                description: The calculation was triggered internally by HMRC on receipt of an updated pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - new-annual-adjustment-event
-                                description: The calculation was triggered internally by HMRC on receipt of a request for a new adjustable summary calculation by the customer. This event is not currently supported.
-                              - enum:
-                                  - updated-annual-adjustment-event
-                                description: The calculation was triggered internally by HMRC on receipt of an adjustment to an adjustable summary calculation made by the customer. This event is not currently supported.
-                              - enum:
-                                  - unattended-calculation
-                                description: HMRC has updated the calculation for you. You can see more details in your record-keeping software.
+                            enum:
+                              - customer-request
+                              - class2-nic-event
+                              - new-loss-event
+                              - new-claim-event
+                              - updated-claim-event
+                              - updated-loss-event
+                              - new-annual-adjustment-event
+                              - updated-annual-adjustment-event
+                              - unattended-calculation
                           calculationTimestamp:
                             description: 'The timestamp of when the calculation was performed in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ.'
                             type: string
@@ -6450,36 +6453,39 @@ paths:
                             type: string
                             example: '2019-02-15T09:35:15.094Z'
                           calculationReason:
-                            description: The reason why the calculation was triggered.
+                            description: |-
+                              The reason why the calculation was triggered. 
+
+                              Possible values are: 
+
+                              * **customer-request** - The calculation was triggered by the customer via software.
+
+                              * **class2-nic-event** - The calculation was triggered internally by HMRC once the actual Class 2 NIC amount became available. This event is only applicable for an in-year "final-declaration" calculation type.
+
+                              * **new-loss-event** - The calculation was triggered by HMRC on receipt of a new pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **new-claim-event** - The calculation was triggered by HMRC on receipt of a new loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **updated-claim-event** - The calculation was triggered internally by HMRC on receipt of an updated loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **updated-loss-event** - The calculation was triggered internally by HMRC on receipt of an updated pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **new-annual-adjustment-event** - The calculation was triggered internally by HMRC on receipt of a request for a new adjustable summary calculation by the customer. This event is not currently supported.
+
+                              * **updated-annual-adjustment-event** - The calculation was triggered internally by HMRC on receipt of an adjustment to an adjustable summary calculation made by the customer. This event is not currently supported.
+
+                              * **unattended-calculation** - HMRC has updated the calculation for you. You can see more details in your record-keeping software.
                             type: string
-                            oneOf:
-                              - enum:
-                                  - customer-request
-                                description: The calculation was triggered by the customer via software.
-                              - enum:
-                                  - class2-nic-event
-                                description: The calculation was triggered internally by HMRC once the actual Class 2 NIC amount became available. This event is only applicable for an in-year "final-declaration" calculation type.
-                              - enum:
-                                  - new-loss-event
-                                description: The calculation was triggered by HMRC on receipt of a new pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - new-claim-event
-                                description: The calculation was triggered by HMRC on receipt of a new loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - updated-claim-event
-                                description: The calculation was triggered internally by HMRC on receipt of an updated loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - updated-loss-event
-                                description: The calculation was triggered internally by HMRC on receipt of an updated pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - new-annual-adjustment-event
-                                description: The calculation was triggered internally by HMRC on receipt of a request for a new adjustable summary calculation by the customer. This event is not currently supported.
-                              - enum:
-                                  - updated-annual-adjustment-event
-                                description: The calculation was triggered internally by HMRC on receipt of an adjustment to an adjustable summary calculation made by the customer. This event is not currently supported.
-                              - enum:
-                                  - unattended-calculation
-                                description: HMRC has updated the calculation for you. You can see more details in your record-keeping software.
+                            enum:
+                              - customer-request
+                              - class2-nic-event
+                              - new-loss-event
+                              - new-claim-event
+                              - updated-claim-event
+                              - updated-loss-event
+                              - new-annual-adjustment-event
+                              - updated-annual-adjustment-event
+                              - unattended-calculation
                           calculationTimestamp:
                             description: 'The timestamp of when the calculation was performed in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ.'
                             type: string
@@ -11805,36 +11811,39 @@ paths:
                             type: string
                             example: '2019-02-15T09:35:15.094Z'
                           calculationReason:
-                            description: The reason why the calculation was triggered.
+                            description: |-
+                              The reason why the calculation was triggered. 
+
+                              Possible values are: 
+
+                              * **customer-request** - The calculation was triggered by the customer via software.
+
+                              * **class2-nic-event** - The calculation was triggered internally by HMRC once the actual Class 2 NIC amount became available. This event is only applicable for an in-year "final-declaration" calculation type.
+
+                              * **new-loss-event** - The calculation was triggered by HMRC on receipt of a new pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **new-claim-event** - The calculation was triggered by HMRC on receipt of a new loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **updated-claim-event** - The calculation was triggered internally by HMRC on receipt of an updated loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **updated-loss-event** - The calculation was triggered internally by HMRC on receipt of an updated pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **new-annual-adjustment-event** - The calculation was triggered internally by HMRC on receipt of a request for a new adjustable summary calculation by the customer. This event is not currently supported.
+
+                              * **updated-annual-adjustment-event** - The calculation was triggered internally by HMRC on receipt of an adjustment to an adjustable summary calculation made by the customer. This event is not currently supported.
+
+                              * **unattended-calculation** - HMRC has updated the calculation for you. You can see more details in your record-keeping software.
                             type: string
-                            oneOf:
-                              - enum:
-                                  - customer-request
-                                description: The calculation was triggered by the customer via software.
-                              - enum:
-                                  - class2-nic-event
-                                description: The calculation was triggered internally by HMRC once the actual Class 2 NIC amount became available. This event is only applicable for an in-year "final-declaration" calculation type.
-                              - enum:
-                                  - new-loss-event
-                                description: The calculation was triggered by HMRC on receipt of a new pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - new-claim-event
-                                description: The calculation was triggered by HMRC on receipt of a new loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - updated-claim-event
-                                description: The calculation was triggered internally by HMRC on receipt of an updated loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - updated-loss-event
-                                description: The calculation was triggered internally by HMRC on receipt of an updated pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - new-annual-adjustment-event
-                                description: The calculation was triggered internally by HMRC on receipt of a request for a new adjustable summary calculation by the customer. This event is not currently supported.
-                              - enum:
-                                  - updated-annual-adjustment-event
-                                description: The calculation was triggered internally by HMRC on receipt of an adjustment to an adjustable summary calculation made by the customer. This event is not currently supported.
-                              - enum:
-                                  - unattended-calculation
-                                description: HMRC has updated the calculation for you. You can see more details in your record-keeping software.
+                            enum:
+                              - customer-request
+                              - class2-nic-event
+                              - new-loss-event
+                              - new-claim-event
+                              - updated-claim-event
+                              - updated-loss-event
+                              - new-annual-adjustment-event
+                              - updated-annual-adjustment-event
+                              - unattended-calculation
                           calculationTimestamp:
                             description: 'The timestamp of when the calculation was performed in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ.'
                             type: string
@@ -12785,6 +12794,7 @@ paths:
                                   type: object
                                   properties:
                                     type:
+                                      description: The type of relief claimed.
                                       type: string
                                       enum:
                                         - vct-subscriptions
@@ -17203,36 +17213,39 @@ paths:
                             type: string
                             example: '2019-02-15T09:35:15.094Z'
                           calculationReason:
-                            description: The reason why the calculation was triggered.
+                            description: |-
+                              The reason why the calculation was triggered. 
+
+                              Possible values are: 
+
+                              * **customer-request** - The calculation was triggered by the customer via software.
+
+                              * **class2-nic-event** - The calculation was triggered internally by HMRC once the actual Class 2 NIC amount became available. This event is only applicable for an in-year "final-declaration" calculation type.
+
+                              * **new-loss-event** - The calculation was triggered by HMRC on receipt of a new pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **new-claim-event** - The calculation was triggered by HMRC on receipt of a new loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **updated-claim-event** - The calculation was triggered internally by HMRC on receipt of an updated loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **updated-loss-event** - The calculation was triggered internally by HMRC on receipt of an updated pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
+
+                              * **new-annual-adjustment-event** - The calculation was triggered internally by HMRC on receipt of a request for a new adjustable summary calculation by the customer. This event is not currently supported.
+
+                              * **updated-annual-adjustment-event** - The calculation was triggered internally by HMRC on receipt of an adjustment to an adjustable summary calculation made by the customer. This event is not currently supported.
+
+                              * **unattended-calculation** - HMRC has updated the calculation for you. You can see more details in your record-keeping software.
                             type: string
-                            oneOf:
-                              - enum:
-                                  - customer-request
-                                description: The calculation was triggered by the customer via software.
-                              - enum:
-                                  - class2-nic-event
-                                description: The calculation was triggered internally by HMRC once the actual Class 2 NIC amount became available. This event is only applicable for an in-year "final-declaration" calculation type.
-                              - enum:
-                                  - new-loss-event
-                                description: The calculation was triggered by HMRC on receipt of a new pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - new-claim-event
-                                description: The calculation was triggered by HMRC on receipt of a new loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - updated-claim-event
-                                description: The calculation was triggered internally by HMRC on receipt of an updated loss claim made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - updated-loss-event
-                                description: The calculation was triggered internally by HMRC on receipt of an updated pre-MTD brought forward loss made by the customer. This event is only applicable for a "final-declaration" calculation type. This event is not currently supported and will be supported in the future.
-                              - enum:
-                                  - new-annual-adjustment-event
-                                description: The calculation was triggered internally by HMRC on receipt of a request for a new adjustable summary calculation by the customer. This event is not currently supported.
-                              - enum:
-                                  - updated-annual-adjustment-event
-                                description: The calculation was triggered internally by HMRC on receipt of an adjustment to an adjustable summary calculation made by the customer. This event is not currently supported.
-                              - enum:
-                                  - unattended-calculation
-                                description: HMRC has updated the calculation for you. You can see more details in your record-keeping software.
+                            enum:
+                              - customer-request
+                              - class2-nic-event
+                              - new-loss-event
+                              - new-claim-event
+                              - updated-claim-event
+                              - updated-loss-event
+                              - new-annual-adjustment-event
+                              - updated-annual-adjustment-event
+                              - unattended-calculation
                           calculationTimestamp:
                             description: 'The timestamp of when the calculation was performed in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ.'
                             type: string
@@ -17326,7 +17339,7 @@ paths:
                                   class2VoluntaryContributions:
                                     description: A boolean to identify the Class 2 Voluntary Contributions. This value must be true.
                                     type: boolean
-                                    example: 'true'
+                                    example: true
                                   marriageAllowance:
                                     description: Indicates whether the customer has transferred out their allowance or received an allowance.
                                     type: string
@@ -17559,7 +17572,7 @@ paths:
                                 applied:
                                   description: A boolean to identify whether the adjustment has been applied to this calculation. This value must be true or false.
                                   type: boolean
-                                  example: 'true'
+                                  example: true
                               additionalProperties: false
                               required:
                                 - incomeSourceId
@@ -17616,11 +17629,11 @@ paths:
                                     - type: integer
                                       minimum: 0
                                       maximum: 99999999999
-                                      example: '5000'
+                                      example: 5000
                                 mtdLoss:
                                   description: A boolean to identify whether the loss was registered by the taxpayer on joining MTD. Only returned when false.
                                   type: boolean
-                                  example: 'false'
+                                  example: false
                               additionalProperties: false
                               required:
                                 - incomeSourceId
@@ -17684,7 +17697,7 @@ paths:
                                   type: integer
                                   minimum: 1
                                   maximum: 99
-                                  example: '1'
+                                  example: 1
                               additionalProperties: false
                               required:
                                 - incomeSourceId
@@ -17743,7 +17756,7 @@ paths:
                                           - type: number
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                     additionalProperties: false
                                     required:
                                       - deductionFromDate
@@ -17942,12 +17955,12 @@ paths:
                             type: integer
                             minimum: 0
                             maximum: 99999999999
-                            example: '5000'
+                            example: 5000
                           monetaryPos:
                             type: number
                             minimum: 0
                             maximum: 99999999999.99
-                            example: '5000.99'
+                            example: 5000.99
                       calculation:
                         $schema: http://json-schema.org/draft-04/schema#
                         description: Object containing the tax calculation result.
@@ -17961,7 +17974,10 @@ paths:
                               personalAllowance:
                                 description: The personal allowance available for the tax year. This value must be between 0 and 99999999999. No decimals.
                                 type: integer
-                                example: '5000'
+                                multipleOf: 1
+                                minimum: 0
+                                maximum: 99999999999
+                                example: 5000
                               marriageAllowanceTransferOut:
                                 description: Object containing details about marriage allowance transferred out.
                                 type: object
@@ -17969,11 +17985,17 @@ paths:
                                   personalAllowanceBeforeTransferOut:
                                     description: The amount of the personal allowance before transferring out. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '5000.12'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   transferredOutAmount:
                                     description: The amount of the personal allowance that has been transferred out. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '5000.13'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                 additionalProperties: false
                                 required:
                                   - personalAllowanceBeforeTransferOut
@@ -17981,39 +18003,66 @@ paths:
                               reducedPersonalAllowance:
                                 description: The amount that the personal allowance has been reduced to. This value must be between 0 and 99999999999. No decimals.
                                 type: integer
-                                example: '5001'
+                                multipleOf: 1
+                                minimum: 0
+                                maximum: 99999999999
+                                example: 5000
                               giftOfInvestmentsAndPropertyToCharity:
                                 description: Investments or property gifts made to charity. This value must be between 0 and 99999999999. No decimals.
                                 type: integer
-                                example: '5002'
+                                multipleOf: 1
+                                minimum: 0
+                                maximum: 99999999999
+                                example: 5000
                               blindPersonsAllowance:
                                 description: Blind Person's Allowance. This value must be between 0 and 99999999999. No decimals.
                                 type: integer
-                                example: '5003'
+                                multipleOf: 1
+                                minimum: 0
+                                maximum: 99999999999
+                                example: 5000
                               lossesAppliedToGeneralIncome:
                                 description: Losses that have been applied to general income. This value must be between 0 and 99999999999. No decimals.
                                 type: integer
-                                example: '5004'
+                                multipleOf: 1
+                                minimum: 0
+                                maximum: 99999999999
+                                example: 5000
                               cgtLossSetAgainstInYearGeneralIncome:
                                 description: CGT losses that have been applied to general income. This value must be between 0 and 99999999999. No decimals.
                                 type: integer
-                                example: '5005'
+                                multipleOf: 1
+                                minimum: 0
+                                maximum: 99999999999
+                                example: 5000
                               qualifyingLoanInterestFromInvestments:
                                 description: Qualifying loan interest payments made. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '5006.06'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               postCessationTradeReceipts:
                                 description: Trade reliefs and other losses post cessation of a business. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '5007.77'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               paymentsToTradeUnionsForDeathBenefits:
                                 description: Payments made to a trade union or friendly society for death benefits. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '5008.88'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               grossAnnuityPayments:
                                 description: The gross value of annuity payments made. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '5009.99'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               annuityPayments:
                                 description: Object containing details about annuity payments.
                                 type: object
@@ -18021,16 +18070,25 @@ paths:
                                   reliefClaimed:
                                     description: The value of annual payments made. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2000.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   rate:
                                     description: The tax rate used in the calculation. This value must be between 0 and 99.99 up to 2 decimal places.
                                     type: number
-                                    example: '10.25'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99.99
+                                    example: 10.25
                                 additionalProperties: false
                               pensionContributions:
                                 description: Total of 'Retirement Annuity Payments', 'Payment To Employers Scheme No Tax Relief' and 'Overseas Pension Scheme Contributions'. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2001.59'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               pensionContributionsDetail:
                                 description: Object containing details of any pension contributions made.
                                 type: object
@@ -18038,16 +18096,24 @@ paths:
                                   retirementAnnuityPayments:
                                     description: The value of retirement annuity payments. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2002.60'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   paymentToEmployersSchemeNoTaxRelief:
                                     description: Payments to employer's pension scheme with no tax relief. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2003.61'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   overseasPensionSchemeContributions:
                                     description: The value of contributions to an overseas pension scheme. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2004.62'
-                                additionalProperties: false
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                             additionalProperties: false
                           reliefs:
                             $schema: http://json-schema.org/draft-04/schema#
@@ -18061,23 +18127,38 @@ paths:
                                   adjustedTotalIncome:
                                     description: The income (after losses and reliefs, and excluding savings and dividends income) that exceeds your personal allowance. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2000.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   totalAllowableAmount:
                                     description: The total allowable amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2001.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   relievableAmount:
                                     description: The lower of either Adjusted Total Income or Total Allowable Amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2002.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   rate:
                                     description: The tax rate used in the calculation. This value must be between 0 and 99.99 up to 2 decimal places.
                                     type: number
-                                    example: '10.25'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99.99
+                                    example: 10.25
                                   totalResidentialFinanceCostsRelief:
                                     description: The total value of residential finance costs relief. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2004.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   ukProperty:
                                     description: Details the residential finance costs for UK property.
                                     type: object
@@ -18085,15 +18166,24 @@ paths:
                                       amountClaimed:
                                         description: The total amount claimed for residential finance costs. This value must be between 0 and 99999999999. No decimals.
                                         type: integer
-                                        example: '2000'
+                                        multipleOf: 1
+                                        minimum: 0
+                                        maximum: 99999999999
+                                        example: 2000
                                       allowableAmount:
                                         description: The total amount allowable for residential finance costs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         type: number
-                                        example: '2006.58'
+                                        multipleOf: 0.01
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        example: 2000.58
                                       carryForwardAmount:
                                         description: The amount of residential finance costs that can be carried forward to future tax years. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         type: number
-                                        example: '2007.58'
+                                        multipleOf: 0.01
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        example: 2000.58
                                     required:
                                       - amountClaimed
                                       - allowableAmount
@@ -18105,7 +18195,10 @@ paths:
                                       totalForeignPropertyAllowableAmount:
                                         description: The total amount allowable for all foreign property residential finance costs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         type: number
-                                        example: '2006.58'
+                                        multipleOf: 0.01
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        example: 2000.58
                                       foreignPropertyRfcDetail:
                                         description: Details residential finance costs for foreign property broken down by country.
                                         type: array
@@ -18119,15 +18212,24 @@ paths:
                                             amountClaimed:
                                               description: The total amount claimed for residential finance costs. This value must be between 0 and 99999999999. No decimals.
                                               type: integer
-                                              example: '2000'
+                                              multipleOf: 1
+                                              minimum: 0
+                                              maximum: 99999999999
+                                              example: 2000
                                             allowableAmount:
                                               description: The total amount allowable for residential finance costs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                               type: number
-                                              example: '2007.58'
+                                              multipleOf: 0.01
+                                              minimum: 0
+                                              maximum: 99999999999.99
+                                              example: 2000.58
                                             carryForwardAmount:
                                               description: The amount of residential finance costs that can be carried forward to future tax years. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                               type: number
-                                              example: '2008.58'
+                                              multipleOf: 0.01
+                                              minimum: 0
+                                              maximum: 99999999999.99
+                                              example: 2000.58
                                           required:
                                             - countryCode
                                             - amountClaimed
@@ -18144,7 +18246,10 @@ paths:
                                       totalOtherIncomeAllowableAmount:
                                         description: The total amount allowable for all other income received whilst abroad for residential finance costs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         type: number
-                                        example: '2009.58'
+                                        multipleOf: 0.01
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        example: 2000.58
                                       otherIncomeRfcDetail:
                                         description: Details residential finance costs for other income broken down by country.
                                         type: array
@@ -18158,11 +18263,17 @@ paths:
                                             residentialFinancialCostAmount:
                                               description: The total amount claimed for residential finance costs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                               type: number
-                                              example: '2010.58'
+                                              multipleOf: 0.01
+                                              minimum: 0
+                                              maximum: 99999999999.99
+                                              example: 2000.58
                                             broughtFwdResidentialFinancialCostAmount:
                                               description: The amount of residential financial costs brought forward from previous tax years. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                               type: number
-                                              example: '2010.58'
+                                              multipleOf: 0.01
+                                              minimum: 0
+                                              maximum: 99999999999.99
+                                              example: 2000.58
                                           required:
                                             - countryCode
                                           additionalProperties: false
@@ -18183,6 +18294,7 @@ paths:
                                   type: object
                                   properties:
                                     type:
+                                      description: The type of relief claimed.
                                       type: string
                                       enum:
                                         - vct-subscriptions
@@ -18196,19 +18308,31 @@ paths:
                                     amountClaimed:
                                       description: The amount of relief claimed. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                       type: number
-                                      example: '2011.58'
+                                      multipleOf: 0.01
+                                      minimum: 0
+                                      maximum: 99999999999.99
+                                      example: 2000.58
                                     allowableAmount:
                                       description: The amount of allowable relief. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                       type: number
-                                      example: '2012.58'
+                                      multipleOf: 0.01
+                                      minimum: 0
+                                      maximum: 99999999999.99
+                                      example: 2000.58
                                     amountUsed:
                                       description: The amount of relief used. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                       type: number
-                                      example: '2013.58'
+                                      multipleOf: 0.01
+                                      minimum: 0
+                                      maximum: 99999999999.99
+                                      example: 2000.58
                                     rate:
                                       description: The rate associated with the relief claimed. This value must be between 0 and 99.99 up to 2 decimal places.
                                       type: number
-                                      example: '20.99'
+                                      multipleOf: 0.01
+                                      minimum: 0
+                                      maximum: 99.99
+                                      example: 20.99
                                     reliefsClaimedDetail:
                                       description: An array containing details about reliefs claimed.
                                       type: array
@@ -18218,7 +18342,10 @@ paths:
                                           amountClaimed:
                                             description: The amount of relief claimed. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                             type: number
-                                            example: '2014.58'
+                                            multipleOf: 0.01
+                                            minimum: 0
+                                            maximum: 99999999999.99
+                                            example: 2000.58
                                           uniqueInvestmentRef:
                                             description: Unique identifier of the entity investment reference.
                                             type: string
@@ -18255,27 +18382,42 @@ paths:
                                   customerCalculatedRelief:
                                     description: When this field is true, it means the customer has calculated their own relief. When it is false it means HMRC determined the relief.
                                     type: boolean
-                                    example: 'true'
+                                    example: true
                                   totalForeignTaxCreditRelief:
                                     description: The total value of foreign tax credit relief. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2015.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   foreignTaxCreditReliefOnProperty:
                                     description: The value of foreign tax credit relief on property. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2016.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   foreignTaxCreditReliefOnDividends:
                                     description: The value of foreign tax credit relief on dividends. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2017.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   foreignTaxCreditReliefOnSavings:
                                     description: The value of foreign tax credit relief on savings. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2018.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   foreignTaxCreditReliefOnForeignIncome:
                                     description: The value of foreign tax credit relief on foreign income. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2019.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   foreignTaxCreditReliefDetail:
                                     description: An array containing details about foreign tax credit relief used in the retrieved tax calculation.
                                     type: array
@@ -18303,31 +18445,49 @@ paths:
                                         foreignIncome:
                                           description: The value of foreign income. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                           type: number
-                                          example: '2016.58'
+                                          multipleOf: 0.01
+                                          minimum: 0
+                                          maximum: 99999999999.99
+                                          example: 2000.58
                                         foreignTax:
                                           description: The amount of foreign tax. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                           type: number
-                                          example: '2017.58'
+                                          multipleOf: 0.01
+                                          minimum: 0
+                                          maximum: 99999999999.99
+                                          example: 2000.58
                                         dtaRate:
                                           description: Defines a percentage rate for Double Tax Agreement. This value must be between 0 and 100.00 up to 2 decimal places.
                                           type: number
-                                          example: '20.99'
+                                          multipleOf: 0.01
+                                          minimum: 0
+                                          maximum: 100
+                                          example: 20.99
                                         dtaAmount:
-                                          description: Amount for Double Tax Agreement. This value must be between 0 and 99999999999 up to 2 decimal places.
+                                          description: Amount for Double Tax Agreement. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                           type: number
-                                          example: '2000.77'
+                                          multipleOf: 0.01
+                                          minimum: 0
+                                          maximum: 99999999999.99
+                                          example: 2000.58
                                         ukLiabilityOnIncome:
                                           description: The amount of UK Liability on income. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                           type: number
-                                          example: '2001.77'
+                                          multipleOf: 0.01
+                                          minimum: 0
+                                          maximum: 99999999999.99
+                                          example: 2000.58
                                         foreignTaxCredit:
                                           description: The amount of foreign tax. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                           type: number
-                                          example: '2002.77'
+                                          multipleOf: 0.01
+                                          minimum: 0
+                                          maximum: 99999999999.99
+                                          example: 2000.58
                                         employmentLumpSum:
                                           description: A boolean to identify whether or not the income type was an employment lump sum. This value must be true or false.
                                           type: boolean
-                                          example: 'true'
+                                          example: true
                                       required:
                                         - countryCode
                                         - foreignIncome
@@ -18343,7 +18503,10 @@ paths:
                                   amount:
                                     description: The amount of top slicing relief. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     type: number
-                                    example: '2000.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                 additionalProperties: false
                               basicRateExtension:
                                 type: object
@@ -18354,19 +18517,28 @@ paths:
                                     description: |-
                                       The monetary value of the total basic rate extension. 
                                       This value must be between 0 and 99999999999.99 up to 2 decimal places.
-                                    example: '2010.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                                   giftAidRelief:
-                                    type: number
+                                    type: integer
                                     description: |-
                                       The amount of Gift Aid Relief received, 
                                       This value must be between 0 and 99999999999. No decimal places.
-                                    example: '3000'
+                                    multipleOf: 1
+                                    minimum: 0
+                                    maximum: 99999999999
+                                    example: 2000
                                   pensionContributionReliefs:
                                     type: number
                                     description: |-
                                       The monetary value of the pension contribution reliefs.
                                       This value must be between 0 and 99999999999.99 up to 2 decimal places.
-                                    example: '5000.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                               giftAidTaxReductionWhereBasicRateDiffers:
                                 type: object
                                 description: Gift Aid tax reduction because Scottish or Welsh Basic Rate is above the Basic Rate at which charities have obtained relief.
@@ -18374,7 +18546,10 @@ paths:
                                   amount:
                                     type: number
                                     descripton: The monetary value of the Gift Aid tax reduction. This value must be between 0 and 99999999999.99 up to 2 decimal places.
-                                    example: '2000.58'
+                                    multipleOf: 0.01
+                                    minimum: 0
+                                    maximum: 99999999999.99
+                                    example: 2000.58
                             additionalProperties: false
                           taxDeductedAtSource:
                             $schema: http://json-schema.org/draft-04/schema#
@@ -18384,47 +18559,80 @@ paths:
                               bbsi:
                                 description: Amount of Bank and Building Society Interest (BBSI). This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2000.58'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               ukLandAndProperty:
                                 description: Amount of UK Land & Property. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2001.59'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               cis:
                                 description: Amount of Construction Industry Scheme. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2002.60'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               securities:
                                 description: Amount of securities. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2003.61'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               voidedIsa:
                                 description: Amount of voided Individual Savings Account (ISA). This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2004.62'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               payeEmployments:
                                 description: Amount of Pay As You Earn (PAYE) employments. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2005.63'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               occupationalPensions:
                                 description: Amount of occupational pensions. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2006.64'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               stateBenefits:
                                 description: Amount of state benefits. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2007.65'
+                                multipleOf: 0.01
+                                minimum: -99999999999.99
+                                maximum: 99999999999.99
+                                example: 2000.58
                               specialWithholdingTaxOrUkTaxPaid:
                                 description: Amount of Special Withholding Tax or UK Tax Paid. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2008.66'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               inYearAdjustmentCodedInLaterTaxYear:
                                 description: Amount of in-year adjustment coded in later tax year. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2009.67'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                               taxTakenOffTradingIncome:
                                 description: Other tax taken off trading income apart from CIS deductions. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 type: number
-                                example: '2000.58'
+                                multipleOf: 0.01
+                                minimum: 0
+                                maximum: 99999999999.99
+                                example: 2000.58
                             additionalProperties: false
                           giftAid:
                             $schema: http://json-schema.org/draft-04/schema#
@@ -19302,7 +19510,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: 0
                                   maximum: 99999999999.99
-                                  example: '5000.99'
+                                  example: 5000.99
                                 totalExpenses:
                                   title: totalExpenses
                                   description: The total expenses used in the business calculation. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
@@ -19310,7 +19518,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: -99999999999.99
                                   maximum: 99999999999.99
-                                  example: '5000.99'
+                                  example: 5000.99
                                 netProfit:
                                   title: netProfit
                                   description: The net profit for the business. This value must be between 0 and 99999999999.99 up to 2 decimal places.
@@ -19318,7 +19526,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: 0
                                   maximum: 99999999999.99
-                                  example: '5000.99'
+                                  example: 5000.99
                                 netLoss:
                                   title: netLoss
                                   description: The net loss for the business. This value must be between 0 and 99999999999.99 up to 2 decimal places.
@@ -19326,7 +19534,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: 0
                                   maximum: 99999999999.99
-                                  example: '5000.99'
+                                  example: 5000.99
                                 totalAdditions:
                                   title: totalAdditions
                                   description: The total additions to the net profit (or deductions from the net loss) for the business. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
@@ -19334,7 +19542,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: -99999999999.99
                                   maximum: 99999999999.99
-                                  example: '5000.99'
+                                  example: 5000.99
                                 totalDeductions:
                                   title: totalDeductions
                                   description: The total deductions from the net loss (or additions to the net profit) for the business. This value must be between 0 and 99999999999.99 up to 2 decimal places.
@@ -19342,7 +19550,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: 0
                                   maximum: 99999999999.99
-                                  example: '5000.99'
+                                  example: 5000.99
                                 accountingAdjustments:
                                   title: accountingAdjustments
                                   description: Accounting adjustments applied to the profit or loss calculation for a self-employment business. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
@@ -19350,7 +19558,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: -99999999999.99
                                   maximum: 99999999999.99
-                                  example: '5000.99'
+                                  example: 5000.99
                                 taxableProfit:
                                   title: taxableProfit
                                   description: The taxable profit after all additions and deductions have been applied for the business. This value must be between 0 and 99999999999. No decimals.
@@ -19358,7 +19566,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 adjustedIncomeTaxLoss:
                                   title: adjustedIncomeTaxLoss
                                   description: The adjusted Income Tax loss after all additions and deductions have been applied for the business. This value must be between 0 and 99999999999. No decimals.
@@ -19366,7 +19574,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 totalBroughtForwardIncomeTaxLosses:
                                   title: totalBroughtForwardIncomeTaxLosses
                                   description: The total sum of Income Tax losses brought forward from earlier years for the business. This value must be between 0 and 99999999999. No decimals.
@@ -19374,7 +19582,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 broughtForwardIncomeTaxLossesUsed:
                                   title: broughtForwardIncomeTaxLossesUsed
                                   description: This is the total sum of losses brought forward from previous years used against the taxable profit for the business for the tax year of the calculation. This value must be between 0 and 99999999999. No decimals.
@@ -19382,7 +19590,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 taxableProfitAfterIncomeTaxLossesDeduction:
                                   title: taxableProfitAfterIncomeTaxLossesDeduction
                                   description: The taxable profit after income tax losses have been deducted for the business. This value must be between 0 and 99999999999. No decimals.
@@ -19390,7 +19598,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 carrySidewaysIncomeTaxLossesUsed:
                                   title: carrySidewaysIncomeTaxLossesUsed
                                   description: The Income Tax losses for the business that have been carried sideways in this calculation. This value must be between 0 and 99999999999. No decimals.
@@ -19398,7 +19606,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 broughtForwardCarrySidewaysIncomeTaxLossesUsed:
                                   title: broughtForwardCarrySidewaysIncomeTaxLossesUsed
                                   description: The total sum of the carry sideways losses for the business brought forward from previous tax years. This value must be between 0 and 99999999999. No decimals.
@@ -19406,7 +19614,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 totalIncomeTaxLossesCarriedForward:
                                   title: totalIncomeTaxLossesCarriedForward
                                   description: The total sum of Income Tax losses to be carried forward that have not been utilised against the business profits for the tax year of the calculation. This value must be between 0 and 99999999999. No decimals.
@@ -19414,7 +19622,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 class4Loss:
                                   title: class4Loss
                                   description: The Class 4 National Insurance Contributions loss for the tax year of the calculation. This value must be between 0 and 99999999999. No decimals.
@@ -19422,7 +19630,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 totalBroughtForwardClass4Losses:
                                   title: totalBroughtForwardClass4Losses
                                   description: The total sum of Class 4 National Insurance Contributions losses brought forward from earlier years for the business. This value must be between 0 and 99999999999. No decimals.
@@ -19430,7 +19638,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 broughtForwardClass4LossesUsed:
                                   title: broughtForwardClass4LossesUsed
                                   description: The total sum of Class 4 National Insurance Contributions losses brought forward from earlier years that have been used against the Class 4 National Insurance Contributions for the business for the tax year of the calculation. This value must be between 0 and 99999999999. No decimals.
@@ -19438,7 +19646,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 carrySidewaysClass4LossesUsed:
                                   title: carrySidewaysClass4LossesUsed
                                   description: The Class 4 National Insurance Contributions losses for the business that have been carried sideways in this calculation. This value must be between 0 and 99999999999. No decimals.
@@ -19446,7 +19654,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 totalClass4LossesCarriedForward:
                                   title: totalClass4LossesCarriedForward
                                   description: The total sum of Class 4 National Insurance Contributions losses to be carried forward that have not been used against the business profits for the tax year of the calculation. This value must be between 0 and 99999999999. No decimals.
@@ -19454,7 +19662,7 @@ paths:
                                   multipleOf: 1
                                   minimum: 0
                                   maximum: 99999999999
-                                  example: '160'
+                                  example: 160
                                 adjustedProfit:
                                   title: adjustedProfit
                                   description: Profit including disallowable expenses and deducting non‑taxable income, before claiming capital allowances or making any further tax adjustments. This value must be between 0 and 99999999999.99 up to 2 decimal places.
@@ -19462,7 +19670,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: 0
                                   maximum: 99999999999.99
-                                  example: '160.99'
+                                  example: 160.99
                                 adjustedLoss:
                                   title: adjustedLoss
                                   description: The adjusted loss for the year for the foreign property business. The value must be between 0 and 99999999999.99 up to 2 decimal places.
@@ -19470,7 +19678,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: 0
                                   maximum: 99999999999.99
-                                  example: '160.99'
+                                  example: 160.99
                                 foreignTaxPaid:
                                   title: foreignTaxPaid
                                   description: The amount of foreign tax paid in pounds sterling for the foreign property business. The value must be between 0 and 99999999999.99 up to 2 decimal places.
@@ -19478,7 +19686,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: 0
                                   maximum: 99999999999.99
-                                  example: '160.99'
+                                  example: 160.99
                                 outstandingBusinessIncome:
                                   title: outstandingBusinessIncome
                                   description: Any other business income not included in other fields. This value must be between 0 and 99999999999.99 up to 2 decimal places.
@@ -19486,7 +19694,7 @@ paths:
                                   multipleOf: 0.01
                                   minimum: 0
                                   maximum: 99999999999.99
-                                  example: '160.99'
+                                  example: 160.99
                               additionalProperties: false
                               required:
                                 - incomeSourceId
@@ -20882,23 +21090,26 @@ paths:
                                     description: Total income received from all sources. This value must be between 0 and 99999999999. No decimals.
                                     allOf:
                                       - type: integer
+                                        multipleOf: 1
                                         minimum: 0
                                         maximum: 99999999999
-                                        example: '5000'
+                                        example: 5000
                                   totalAllowancesAndDeductions:
                                     description: Total allowances and deductions. This value must be between 0 and 99999999999. No decimals.
                                     allOf:
                                       - type: integer
+                                        multipleOf: 1
                                         minimum: 0
                                         maximum: 99999999999
-                                        example: '5000'
+                                        example: 5000
                                   totalTaxableIncome:
                                     description: Total taxable income. This value must be between 0 and 99999999999. No decimals.
                                     allOf:
                                       - type: integer
+                                        multipleOf: 1
                                         minimum: 0
                                         maximum: 99999999999
-                                        example: '5000'
+                                        example: 5000
                                   payPensionsProfit:
                                     description: Object detailing pay, pensions, and profit.
                                     type: object
@@ -20907,30 +21118,34 @@ paths:
                                         description: Income received. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       allowancesAllocated:
                                         description: Allowances allocated. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       taxableIncome:
                                         description: Taxable income. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       incomeTaxAmount:
                                         description: Income Tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       taxBands:
                                         description: Array containing applicable tax bands.
                                         type: array
@@ -20955,37 +21170,42 @@ paths:
                                               description: Tax band rate. This value must be between 0 and 99.99 up to 2 decimal places.
                                               allOf:
                                                 - type: number
+                                                  multipleOf: 0.01
                                                   minimum: 0
                                                   maximum: 99.99
-                                                  example: '2.99'
+                                                  example: 2.99
                                             bandLimit:
                                               description: Tax band limit. This value must be between 0 and 99999999999. No decimals.
                                               allOf:
                                                 - type: integer
+                                                  multipleOf: 1
                                                   minimum: 0
                                                   maximum: 99999999999
-                                                  example: '5000'
+                                                  example: 5000
                                             apportionedBandLimit:
                                               description: Apportioned tax band limit. This value must be between 0 and 99999999999. No decimals.
                                               allOf:
                                                 - type: integer
+                                                  multipleOf: 1
                                                   minimum: 0
                                                   maximum: 99999999999
-                                                  example: '5000'
+                                                  example: 5000
                                             income:
                                               description: Income amount. This value must be between 0 and 99999999999. No decimals.
                                               allOf:
                                                 - type: integer
+                                                  multipleOf: 1
                                                   minimum: 0
                                                   maximum: 99999999999
-                                                  example: '5000'
+                                                  example: 5000
                                             taxAmount:
                                               description: Tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                               allOf:
                                                 - type: number
+                                                  multipleOf: 0.01
                                                   minimum: 0
                                                   maximum: 99999999999.99
-                                                  example: '5000.99'
+                                                  example: 5000.99
                                           additionalProperties: false
                                           required:
                                             - name
@@ -21008,30 +21228,34 @@ paths:
                                         description: Income received from savings and gains. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       allowancesAllocated:
                                         description: Allowances allocated. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       taxableIncome:
                                         description: Taxable income from savings and gains. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       incomeTaxAmount:
                                         description: Income tax amount.  This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       taxBands:
                                         description: Array containing applicable tax bands.
                                         type: array
@@ -21055,37 +21279,42 @@ paths:
                                               description: Tax band rate. This value must be between 0 and 99.99 up to 2 decimal places.
                                               allOf:
                                                 - type: number
+                                                  multipleOf: 0.01
                                                   minimum: 0
                                                   maximum: 99.99
-                                                  example: '2.99'
+                                                  example: 2.99
                                             bandLimit:
                                               description: Tax band limit. This value must be between 0 and 99999999999. No decimals.
                                               allOf:
                                                 - type: integer
+                                                  multipleOf: 1
                                                   minimum: 0
                                                   maximum: 99999999999
-                                                  example: '5000'
+                                                  example: 5000
                                             apportionedBandLimit:
                                               description: Apportioned tax band limit. This value must be between 0 and 99999999999. No decimals.
                                               allOf:
                                                 - type: integer
+                                                  multipleOf: 1
                                                   minimum: 0
                                                   maximum: 99999999999
-                                                  example: '5000'
+                                                  example: 5000
                                             income:
                                               description: Income amount. This value must be between 0 and 99999999999. No decimals.
                                               allOf:
                                                 - type: integer
+                                                  multipleOf: 1
                                                   minimum: 0
                                                   maximum: 99999999999
-                                                  example: '5000'
+                                                  example: 5000
                                             taxAmount:
                                               description: Tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                               allOf:
                                                 - type: number
+                                                  multipleOf: 0.01
                                                   minimum: 0
                                                   maximum: 99999999999.99
-                                                  example: '5000.99'
+                                                  example: 5000.99
                                           additionalProperties: false
                                           required:
                                             - name
@@ -21108,30 +21337,34 @@ paths:
                                         description: Income received from dividends. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       allowancesAllocated:
                                         description: Allowances allocated. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       taxableIncome:
                                         description: Taxable income from dividends. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       incomeTaxAmount:
                                         description: Income tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       taxBands:
                                         description: Array containing applicable tax bands.
                                         type: array
@@ -21150,30 +21383,34 @@ paths:
                                         description: Income received from lump sums. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       allowancesAllocated:
                                         description: Allowances allocated. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       taxableIncome:
                                         description: Taxable income from lump sums. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       incomeTaxAmount:
                                         description: Income tax amount. This value must be between 0 and 99999999999.99.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       taxBands:
                                         description: Array containing applicable tax bands.
                                         type: array
@@ -21192,30 +21429,34 @@ paths:
                                         description: Income received from gains on life policies. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       allowancesAllocated:
                                         description: Allowances allocated. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       taxableIncome:
                                         description: Taxable income from gains on life policies. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       incomeTaxAmount:
                                         description: Income tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       taxBands:
                                         description: Array containing applicable tax bands.
                                         type: array
@@ -21230,107 +21471,122 @@ paths:
                                     description: Total income tax charged. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   incomeTaxChargedOnTransitionProfits:
                                     description: Income tax charged on transition profits. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   incomeTaxChargedAfterTransitionProfits:
                                     description: Income tax charged after transition profits. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   totalReliefs:
                                     description: Total reliefs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   incomeTaxDueAfterReliefs:
                                     description: Income tax due after reliefs. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: -99999999999.99
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   totalNotionalTax:
                                     description: Total notional tax. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   marriageAllowanceRelief:
                                     description: Marriage allowance relief. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   incomeTaxDueAfterTaxReductions:
                                     description: Income tax due after tax reductions. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   incomeTaxDueAfterGiftAid:
                                     description: Income tax due after gift aid. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   totalPensionSavingsTaxCharges:
                                     description: Total pension savings tax charges. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   statePensionLumpSumCharges:
                                     description: State pension lump sum charges. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   payeUnderpaymentsCodedOut:
                                     description: PAYE underpayments coded out. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   totalIncomeTaxDue:
                                     description: Total income tax due. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   giftAidTaxChargeWhereBasicRateDiffers:
                                     description: Gift Aid tax charge where Basic Rate differs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   highIncomeBenefitCharge:
                                     description: The tax charge for High income benefit earners. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                 additionalProperties: false
                                 required: &ref_238
                                   - totalIncomeReceivedFromAllSources
@@ -21349,46 +21605,50 @@ paths:
                                         description: Class 2 NICs amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       weeklyRate:
                                         description: Class 2 NICs weekly rate. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       weeks:
                                         description: Number of weeks.
                                         type: integer
-                                        example: '12'
+                                        example: 12
                                       limit:
                                         description: Class 2 NICs limit. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       apportionedLimit:
                                         description: Class 2 NICs apportioned limit. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       underSmallProfitThreshold:
                                         description: Indicates whether small profits threshold is exceeded. This value must be true or false.
                                         type: boolean
-                                        example: 'false'
+                                        example: false
                                       actualClass2Nic:
                                         description: Indicates whether the Class 2 NIC charge is an actual charge (true) or else an estimated charge (false).
                                         type: boolean
-                                        example: 'true'
+                                        example: true
                                       underLowerProfitThreshold:
                                         type: boolean
                                         description: Indicates whether the lower profits threshold is exceeded. This value must be true or false.
-                                        example: 'false'
+                                        example: false
                                     additionalProperties: false
                                     required: &ref_251
                                       - underSmallProfitThreshold
@@ -21400,44 +21660,50 @@ paths:
                                         description: Total income liable to class 4 charge. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       totalClass4LossesAvailable:
                                         description: Total class 4 losses available. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       totalClass4LossesUsed:
                                         description: Total class 4 losses used. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       totalClass4LossesCarriedForward:
                                         description: Total class 4 losses carried forward. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       totalIncomeChargeableToClass4:
                                         description: Total income chargeable to class 4. This value must be between 0 and 99999999999. No decimals.
                                         allOf:
                                           - type: integer
+                                            multipleOf: 1
                                             minimum: 0
                                             maximum: 99999999999
-                                            example: '5000'
+                                            example: 5000
                                       totalAmount:
                                         description: Total class 4 NICs amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       nic4Bands:
                                         description: Array detailing class 4 NIC bands.
                                         type: array
@@ -21455,37 +21721,42 @@ paths:
                                               description: NIC band rate. This value must be between 0 and 99.99 up to 2 decimal places.
                                               allOf:
                                                 - type: number
+                                                  multipleOf: 0.01
                                                   minimum: 0
                                                   maximum: 99.99
-                                                  example: '2.99'
+                                                  example: 2.99
                                             threshold:
                                               description: NIC band limit. This value must be between 0 and 99999999999. No decimals.
                                               allOf:
                                                 - type: integer
+                                                  multipleOf: 1
                                                   minimum: 0
                                                   maximum: 99999999999
-                                                  example: '5000'
+                                                  example: 5000
                                             apportionedThreshold:
                                               description: Apportioned NIC band limit. This value must be between 0 and 99999999999. No decimals.
                                               allOf:
                                                 - type: integer
+                                                  multipleOf: 1
                                                   minimum: 0
                                                   maximum: 99999999999
-                                                  example: '5000'
+                                                  example: 5000
                                             income:
                                               description: Income amount. This value must be between 0 and 99999999999. No decimals.
                                               allOf:
                                                 - type: integer
+                                                  multipleOf: 1
                                                   minimum: 0
                                                   maximum: 99999999999
-                                                  example: '5000'
+                                                  example: 5000
                                             amount:
                                               description: Tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                               allOf:
                                                 - type: number
+                                                  multipleOf: 0.01
                                                   minimum: 0
                                                   maximum: 99999999999.99
-                                                  example: '5000.99'
+                                                  example: 5000.99
                                           additionalProperties: false
                                           required:
                                             - name
@@ -21500,80 +21771,91 @@ paths:
                                     description: NIC2 net of deductions. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: -99999999999.99
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   nic4NetOfDeductions:
                                     description: NIC4 net of deductions. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: -99999999999.99
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   totalNic:
                                     description: Total NIC deductions. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: -99999999999.99
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                 additionalProperties: false
                               totalTaxDeductedBeforeCodingOut:
                                 description: Total tax deducted before coding out. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 allOf:
                                   - type: number
+                                    multipleOf: 0.01
                                     minimum: 0
                                     maximum: 99999999999.99
-                                    example: '5000.99'
+                                    example: 5000.99
                               saUnderpaymentsCodedOut:
                                 description: Self Assessment underpayments coded out. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 allOf:
                                   - type: number
+                                    multipleOf: 0.01
                                     minimum: 0
                                     maximum: 99999999999.99
-                                    example: '5000.99'
+                                    example: 5000.99
                               totalIncomeTaxNicsCharged:
                                 description: Total income tax and NICs charged. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                 allOf:
                                   - type: number
+                                    multipleOf: 0.01
                                     minimum: -99999999999.99
                                     maximum: 99999999999.99
-                                    example: '5000.99'
+                                    example: 5000.99
                               totalStudentLoansRepaymentAmount:
                                 description: Total student loans repayment amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 allOf:
                                   - type: number
+                                    multipleOf: 0.01
                                     minimum: 0
                                     maximum: 99999999999.99
-                                    example: '5000.99'
+                                    example: 5000.99
                               totalAnnuityPaymentsTaxCharged:
                                 description: Total annuity payments tax charged. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 allOf:
                                   - type: number
+                                    multipleOf: 0.01
                                     minimum: 0
                                     maximum: 99999999999.99
-                                    example: '5000.99'
+                                    example: 5000.99
                               totalRoyaltyPaymentsTaxCharged:
                                 description: Total Royalty Payments Tax Charged. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                 allOf:
                                   - type: number
+                                    multipleOf: 0.01
                                     minimum: 0
                                     maximum: 99999999999.99
-                                    example: '5000.99'
+                                    example: 5000.99
                               totalTaxDeducted:
                                 description: Total tax deducted. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                 allOf:
                                   - type: number
+                                    multipleOf: 0.01
                                     minimum: -99999999999.99
                                     maximum: 99999999999.99
-                                    example: '5000.99'
+                                    example: 5000.99
                               totalIncomeTaxAndNicsDue:
                                 description: Total income tax and NICs due. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                 allOf:
                                   - type: number
+                                    multipleOf: 0.01
                                     minimum: -99999999999.99
                                     maximum: 99999999999.99
-                                    example: '5000.99'
+                                    example: 5000.99
                               capitalGainsTax:
                                 description: Object detailing tax on capital gains.
                                 type: object
@@ -21582,23 +21864,26 @@ paths:
                                     description: Total capital gains income. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   annualExemptionAmount:
                                     description: Annual exemption amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   totalTaxableGains:
                                     description: Total taxable gains. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   businessAssetsDisposalsAndInvestorsRel:
                                     description: Object detailing the tax due on business assets disposals and investors reliefs.
                                     type: object
@@ -21607,58 +21892,66 @@ paths:
                                         description: Gains income from business assets disposals and investors reliefs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       lossesBroughtForward:
                                         description: Losses brought forward. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       lossesArisingThisYear:
                                         description: Losses arising this year. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       gainsAfterLosses:
                                         description: Gains after losses. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       annualExemptionAmount:
                                         description: Annual exemption amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       taxableGains:
                                         description: Taxable gains. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       rate:
                                         description: Rate for business assets disposals and investors. This value must be between 0 and 99.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99.99
-                                            example: '2.99'
+                                            example: 2.99
                                       taxAmount:
                                         description: Tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                     additionalProperties: false
                                   residentialPropertyAndCarriedInterest:
                                     description: Object detailing the tax due on residential property and carried interest.
@@ -21668,44 +21961,50 @@ paths:
                                         description: Gains income from residential property and carried interest. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       lossesBroughtForward:
                                         description: Losses brought forward. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       lossesArisingThisYear:
                                         description: Losses arising this year. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       gainsAfterLosses:
                                         description: Gains after losses. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       annualExemptionAmount:
                                         description: Annual exemption amount for gains income from residential property and carried interest. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       taxableGains:
                                         description: Taxable gains. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       cgtTaxBands:
                                         description: Array detailing tax bands for residential property and carried interest.
                                         allOf:
@@ -21723,23 +22022,26 @@ paths:
                                                   description: Tax band rate. This value must be between 0 and 99.99 up to 2 decimal places.
                                                   allOf:
                                                     - type: number
+                                                      multipleOf: 0.01
                                                       minimum: 0
                                                       maximum: 99.99
-                                                      example: '2.99'
+                                                      example: 2.99
                                                 income:
                                                   description: The amount from residential property and carried interest income. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                                   allOf:
                                                     - type: number
+                                                      multipleOf: 0.01
                                                       minimum: 0
                                                       maximum: 99999999999.99
-                                                      example: '5000.99'
+                                                      example: 5000.99
                                                 taxAmount:
                                                   description: Tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                                   allOf:
                                                     - type: number
+                                                      multipleOf: 0.01
                                                       minimum: 0
                                                       maximum: 99999999999.99
-                                                      example: '5000.99'
+                                                      example: 5000.99
                                               additionalProperties: false
                                               required:
                                                 - name
@@ -21750,9 +22052,10 @@ paths:
                                         description: Total tax amount. This value must be between 0 and 99999999999.99  up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                     additionalProperties: false
                                   otherGains:
                                     description: Object detailing the tax due on other gains.
@@ -21762,58 +22065,66 @@ paths:
                                         description: Other gains income. This value must be between 0 and 99999999999.99  up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       lossesBroughtForward:
                                         description: Losses brought forward. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       lossesArisingThisYear:
                                         description: Losses arising this year. This value must be between 0 and 99999999999.99  up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       gainsAfterLosses:
                                         description: Gains after losses. This value must be between 0 and 99999999999.99  up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       attributedGains:
                                         description: Attributed gains. This value must be between 0 and 99999999999.99  up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       netGains:
                                         description: Net gains. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       annualExemptionAmount:
                                         description: Annual exemption amount. This value must be between 0 and 99999999999.99  up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       taxableGains:
                                         description: Taxable gains. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                       cgtTaxBands:
                                         description: Array detailing tax bands for other gains.
                                         allOf:
@@ -21831,23 +22142,26 @@ paths:
                                                   description: Tax band rate. This value must be between 0 and 99.99 up to 2 decimal places.
                                                   allOf:
                                                     - type: number
+                                                      multipleOf: 0.01
                                                       minimum: 0
                                                       maximum: 99.99
-                                                      example: '2.99'
+                                                      example: 2.99
                                                 income:
                                                   description: The amount from other gains income. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                                   allOf:
                                                     - type: number
+                                                      multipleOf: 0.01
                                                       minimum: 0
                                                       maximum: 99999999999.99
-                                                      example: '5000.99'
+                                                      example: 5000.99
                                                 taxAmount:
                                                   description: Tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                                   allOf:
                                                     - type: number
+                                                      multipleOf: 0.01
                                                       minimum: 0
                                                       maximum: 99999999999.99
-                                                      example: '5000.99'
+                                                      example: 5000.99
                                               additionalProperties: false
                                               required:
                                                 - name
@@ -21858,66 +22172,75 @@ paths:
                                         description: Total tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                         allOf:
                                           - type: number
+                                            multipleOf: 0.01
                                             minimum: 0
                                             maximum: 99999999999.99
-                                            example: '5000.99'
+                                            example: 5000.99
                                     additionalProperties: false
                                   capitalGainsTaxAmount:
                                     description: Capital gains tax amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   adjustments:
                                     description: Capital gains adjustments. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: -99999999999.99
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   adjustedCapitalGainsTax:
                                     description: Adjusted capital gains tax. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   foreignTaxCreditRelief:
                                     description: Foreign Tax Credit Relief. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   capitalGainsTaxAfterFTCR:
                                     description: Capital gains tax after Foreign Tax Credit Relief. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   taxOnGainsAlreadyPaid:
                                     description: Tax on gains already paid. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   capitalGainsTaxDue:
                                     description: Capital gains tax due. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                   capitalGainsOverpaid:
                                     description: Capital gains overpaid. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
+                                        multipleOf: 0.01
                                         minimum: 0
                                         maximum: 99999999999.99
-                                        example: '5000.99'
+                                        example: 5000.99
                                 additionalProperties: false
                                 required: &ref_255
                                   - totalCapitalGainsIncome
@@ -21928,9 +22251,10 @@ paths:
                                 description: Total income tax, NICS and CGT. This value must be between -99999999999.99 and 99999999999.99 up to 2 decimal places.
                                 allOf:
                                   - type: number
+                                    multipleOf: 0.01
                                     minimum: -99999999999.99
                                     maximum: 99999999999.99
-                                    example: '5000.99'
+                                    example: 5000.99
                             additionalProperties: false
                             required:
                               - incomeTax
@@ -22030,24 +22354,28 @@ paths:
                                 items: *ref_261
                               intPos:
                                 type: integer
+                                multipleOf: 1
                                 minimum: 0
                                 maximum: 99999999999
-                                example: '5000'
+                                example: 5000
                               monetary:
                                 type: number
+                                multipleOf: 0.01
                                 minimum: -99999999999.99
                                 maximum: 99999999999.99
-                                example: '5000.99'
+                                example: 5000.99
                               monetaryPos:
                                 type: number
+                                multipleOf: 0.01
                                 minimum: 0
                                 maximum: 99999999999.99
-                                example: '5000.99'
+                                example: 5000.99
                               percent:
                                 type: number
+                                multipleOf: 0.01
                                 minimum: 0
                                 maximum: 99.99
-                                example: '2.99'
+                                example: 2.99
                           previousCalculation:
                             $schema: http://json-schema.org/draft-04/schema#
                             description: Object containing information about the previous calculation to the retrieved tax calculation.
