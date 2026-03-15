@@ -99,7 +99,6 @@
         "itsaStatus": {
           "type": "string",
           "description": "The ITSA Status for the Tax Year.",
-          
           "enum": [
             "No Status",
             "MTD Mandated",
@@ -110,7 +109,6 @@
             "Dormant",
             "MTD Exempt"
           ]
-          
         }
       },
       "additionalProperties": false,

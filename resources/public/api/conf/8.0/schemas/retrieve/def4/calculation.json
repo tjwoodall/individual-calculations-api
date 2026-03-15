@@ -72,6 +72,7 @@
     "otherIncome": {
       "$ref": "calculation/otherIncome.json"
     },
+    
     "dividendsIncome": {
       "$ref": "calculation/dividendsIncome.json"
     },
@@ -87,9 +88,11 @@
     "endOfYearEstimate": {
       "$ref": "calculation/endOfYearEstimate.json"
     },
-    "lossesAndClaims": {
-      "$ref": "calculation/lossesAndClaims.json"
-    },
+    
+      "lossesAndClaims": {
+        "$ref": "calculation/lossesAndClaims.json"
+      },
+    
     "transitionProfit": {
       "$ref": "calculation/transitionProfit.json"
     },
