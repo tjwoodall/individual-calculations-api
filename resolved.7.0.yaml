@@ -1576,72 +1576,53 @@ paths:
                           example: 2019-02-15T09:35:15.094Z
                         calculationReason:
                           type: string
-                          description: The reason why the calculation was triggered.
-                          oneOf:
-                          - type: object
-                            description: The calculation was triggered by the customer
-                              via software.
-                            enum:
-                            - customer-request
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC once the actual Class 2 NIC amount became available.
-                              This event is only applicable for an in-year "final-declaration"
-                              calculation type.
-                            enum:
-                            - class2-nic-event
-                          - type: object
-                            description: The calculation was triggered by HMRC on
-                              receipt of a new pre-MTD brought forward loss made by
-                              the customer. This event is only applicable for a "final-declaration"
-                              calculation type. This event is not currently supported
-                              and will be supported in the future.
-                            enum:
-                            - new-loss-event
-                          - type: object
-                            description: The calculation was triggered by HMRC on
-                              receipt of a new loss claim made by the customer. This
-                              event is only applicable for a "final-declaration" calculation
-                              type. This event is not currently supported and will
-                              be supported in the future.
-                            enum:
-                            - new-claim-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of an updated loss claim made by
-                              the customer. This event is only applicable for a "final-declaration"
-                              calculation type. This event is not currently supported
-                              and will be supported in the future.
-                            enum:
-                            - updated-claim-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of an updated pre-MTD brought forward
-                              loss made by the customer. This event is only applicable
-                              for a "final-declaration" calculation type. This event
-                              is not currently supported and will be supported in
-                              the future.
-                            enum:
-                            - updated-loss-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of a request for a new adjustable
-                              summary calculation by the customer. This event is not
-                              currently supported.
-                            enum:
-                            - new-annual-adjustment-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of an adjustment to an adjustable
-                              summary calculation made by the customer. This event
-                              is not currently supported.
-                            enum:
-                            - updated-annual-adjustment-event
-                          - type: object
-                            description: HMRC has updated the calculation for you.
-                              You can see more details in your record-keeping software.
-                            enum:
-                            - unattended-calculation
+                          description: "The reason why the calculation was triggered.\
+                            \ \n\nPossible values are: \n\n* **customer-request**\
+                            \ - The calculation was triggered by the customer via\
+                            \ software.\n\n* **class2-nic-event** - The calculation\
+                            \ was triggered internally by HMRC once the actual Class\
+                            \ 2 NIC amount became available. This event is only applicable\
+                            \ for an in-year \"final-declaration\" calculation type.\n\
+                            \n* **new-loss-event** - The calculation was triggered\
+                            \ by HMRC on receipt of a new pre-MTD brought forward\
+                            \ loss made by the customer. This event is only applicable\
+                            \ for a \"final-declaration\" calculation type. This event\
+                            \ is not currently supported and will be supported in\
+                            \ the future.\n\n* **new-claim-event** - The calculation\
+                            \ was triggered by HMRC on receipt of a new loss claim\
+                            \ made by the customer. This event is only applicable\
+                            \ for a \"final-declaration\" calculation type. This event\
+                            \ is not currently supported and will be supported in\
+                            \ the future.\n\n* **updated-claim-event** - The calculation\
+                            \ was triggered internally by HMRC on receipt of an updated\
+                            \ loss claim made by the customer. This event is only\
+                            \ applicable for a \"final-declaration\" calculation type.\
+                            \ This event is not currently supported and will be supported\
+                            \ in the future.\n\n* **updated-loss-event** - The calculation\
+                            \ was triggered internally by HMRC on receipt of an updated\
+                            \ pre-MTD brought forward loss made by the customer. This\
+                            \ event is only applicable for a \"final-declaration\"\
+                            \ calculation type. This event is not currently supported\
+                            \ and will be supported in the future.\n\n* **new-annual-adjustment-event**\
+                            \ - The calculation was triggered internally by HMRC on\
+                            \ receipt of a request for a new adjustable summary calculation\
+                            \ by the customer. This event is not currently supported.\n\
+                            \n* **updated-annual-adjustment-event** - The calculation\
+                            \ was triggered internally by HMRC on receipt of an adjustment\
+                            \ to an adjustable summary calculation made by the customer.\
+                            \ This event is not currently supported.\n\n* **unattended-calculation**\
+                            \ - HMRC has updated the calculation for you. You can\
+                            \ see more details in your record-keeping software."
+                          enum:
+                          - customer-request
+                          - class2-nic-event
+                          - new-loss-event
+                          - new-claim-event
+                          - updated-claim-event
+                          - updated-loss-event
+                          - new-annual-adjustment-event
+                          - updated-annual-adjustment-event
+                          - unattended-calculation
                         calculationTimestamp:
                           type: string
                           description: "The timestamp of when the calculation was\
@@ -8073,72 +8054,53 @@ paths:
                           example: 2019-02-15T09:35:15.094Z
                         calculationReason:
                           type: string
-                          description: The reason why the calculation was triggered.
-                          oneOf:
-                          - type: object
-                            description: The calculation was triggered by the customer
-                              via software.
-                            enum:
-                            - customer-request
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC once the actual Class 2 NIC amount became available.
-                              This event is only applicable for an in-year "final-declaration"
-                              calculation type.
-                            enum:
-                            - class2-nic-event
-                          - type: object
-                            description: The calculation was triggered by HMRC on
-                              receipt of a new pre-MTD brought forward loss made by
-                              the customer. This event is only applicable for a "final-declaration"
-                              calculation type. This event is not currently supported
-                              and will be supported in the future.
-                            enum:
-                            - new-loss-event
-                          - type: object
-                            description: The calculation was triggered by HMRC on
-                              receipt of a new loss claim made by the customer. This
-                              event is only applicable for a "final-declaration" calculation
-                              type. This event is not currently supported and will
-                              be supported in the future.
-                            enum:
-                            - new-claim-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of an updated loss claim made by
-                              the customer. This event is only applicable for a "final-declaration"
-                              calculation type. This event is not currently supported
-                              and will be supported in the future.
-                            enum:
-                            - updated-claim-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of an updated pre-MTD brought forward
-                              loss made by the customer. This event is only applicable
-                              for a "final-declaration" calculation type. This event
-                              is not currently supported and will be supported in
-                              the future.
-                            enum:
-                            - updated-loss-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of a request for a new adjustable
-                              summary calculation by the customer. This event is not
-                              currently supported.
-                            enum:
-                            - new-annual-adjustment-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of an adjustment to an adjustable
-                              summary calculation made by the customer. This event
-                              is not currently supported.
-                            enum:
-                            - updated-annual-adjustment-event
-                          - type: object
-                            description: HMRC has updated the calculation for you.
-                              You can see more details in your record-keeping software.
-                            enum:
-                            - unattended-calculation
+                          description: "The reason why the calculation was triggered.\
+                            \ \n\nPossible values are: \n\n* **customer-request**\
+                            \ - The calculation was triggered by the customer via\
+                            \ software.\n\n* **class2-nic-event** - The calculation\
+                            \ was triggered internally by HMRC once the actual Class\
+                            \ 2 NIC amount became available. This event is only applicable\
+                            \ for an in-year \"final-declaration\" calculation type.\n\
+                            \n* **new-loss-event** - The calculation was triggered\
+                            \ by HMRC on receipt of a new pre-MTD brought forward\
+                            \ loss made by the customer. This event is only applicable\
+                            \ for a \"final-declaration\" calculation type. This event\
+                            \ is not currently supported and will be supported in\
+                            \ the future.\n\n* **new-claim-event** - The calculation\
+                            \ was triggered by HMRC on receipt of a new loss claim\
+                            \ made by the customer. This event is only applicable\
+                            \ for a \"final-declaration\" calculation type. This event\
+                            \ is not currently supported and will be supported in\
+                            \ the future.\n\n* **updated-claim-event** - The calculation\
+                            \ was triggered internally by HMRC on receipt of an updated\
+                            \ loss claim made by the customer. This event is only\
+                            \ applicable for a \"final-declaration\" calculation type.\
+                            \ This event is not currently supported and will be supported\
+                            \ in the future.\n\n* **updated-loss-event** - The calculation\
+                            \ was triggered internally by HMRC on receipt of an updated\
+                            \ pre-MTD brought forward loss made by the customer. This\
+                            \ event is only applicable for a \"final-declaration\"\
+                            \ calculation type. This event is not currently supported\
+                            \ and will be supported in the future.\n\n* **new-annual-adjustment-event**\
+                            \ - The calculation was triggered internally by HMRC on\
+                            \ receipt of a request for a new adjustable summary calculation\
+                            \ by the customer. This event is not currently supported.\n\
+                            \n* **updated-annual-adjustment-event** - The calculation\
+                            \ was triggered internally by HMRC on receipt of an adjustment\
+                            \ to an adjustable summary calculation made by the customer.\
+                            \ This event is not currently supported.\n\n* **unattended-calculation**\
+                            \ - HMRC has updated the calculation for you. You can\
+                            \ see more details in your record-keeping software."
+                          enum:
+                          - customer-request
+                          - class2-nic-event
+                          - new-loss-event
+                          - new-claim-event
+                          - updated-claim-event
+                          - updated-loss-event
+                          - new-annual-adjustment-event
+                          - updated-annual-adjustment-event
+                          - unattended-calculation
                         calculationTimestamp:
                           type: string
                           description: "The timestamp of when the calculation was\
@@ -14559,72 +14521,53 @@ paths:
                           example: 2019-02-15T09:35:15.094Z
                         calculationReason:
                           type: string
-                          description: The reason why the calculation was triggered.
-                          oneOf:
-                          - type: object
-                            description: The calculation was triggered by the customer
-                              via software.
-                            enum:
-                            - customer-request
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC once the actual Class 2 NIC amount became available.
-                              This event is only applicable for an in-year "final-declaration"
-                              calculation type.
-                            enum:
-                            - class2-nic-event
-                          - type: object
-                            description: The calculation was triggered by HMRC on
-                              receipt of a new pre-MTD brought forward loss made by
-                              the customer. This event is only applicable for a "final-declaration"
-                              calculation type. This event is not currently supported
-                              and will be supported in the future.
-                            enum:
-                            - new-loss-event
-                          - type: object
-                            description: The calculation was triggered by HMRC on
-                              receipt of a new loss claim made by the customer. This
-                              event is only applicable for a "final-declaration" calculation
-                              type. This event is not currently supported and will
-                              be supported in the future.
-                            enum:
-                            - new-claim-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of an updated loss claim made by
-                              the customer. This event is only applicable for a "final-declaration"
-                              calculation type. This event is not currently supported
-                              and will be supported in the future.
-                            enum:
-                            - updated-claim-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of an updated pre-MTD brought forward
-                              loss made by the customer. This event is only applicable
-                              for a "final-declaration" calculation type. This event
-                              is not currently supported and will be supported in
-                              the future.
-                            enum:
-                            - updated-loss-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of a request for a new adjustable
-                              summary calculation by the customer. This event is not
-                              currently supported.
-                            enum:
-                            - new-annual-adjustment-event
-                          - type: object
-                            description: The calculation was triggered internally
-                              by HMRC on receipt of an adjustment to an adjustable
-                              summary calculation made by the customer. This event
-                              is not currently supported.
-                            enum:
-                            - updated-annual-adjustment-event
-                          - type: object
-                            description: HMRC has updated the calculation for you.
-                              You can see more details in your record-keeping software.
-                            enum:
-                            - unattended-calculation
+                          description: "The reason why the calculation was triggered.\
+                            \ \n\nPossible values are: \n\n* **customer-request**\
+                            \ - The calculation was triggered by the customer via\
+                            \ software.\n\n* **class2-nic-event** - The calculation\
+                            \ was triggered internally by HMRC once the actual Class\
+                            \ 2 NIC amount became available. This event is only applicable\
+                            \ for an in-year \"final-declaration\" calculation type.\n\
+                            \n* **new-loss-event** - The calculation was triggered\
+                            \ by HMRC on receipt of a new pre-MTD brought forward\
+                            \ loss made by the customer. This event is only applicable\
+                            \ for a \"final-declaration\" calculation type. This event\
+                            \ is not currently supported and will be supported in\
+                            \ the future.\n\n* **new-claim-event** - The calculation\
+                            \ was triggered by HMRC on receipt of a new loss claim\
+                            \ made by the customer. This event is only applicable\
+                            \ for a \"final-declaration\" calculation type. This event\
+                            \ is not currently supported and will be supported in\
+                            \ the future.\n\n* **updated-claim-event** - The calculation\
+                            \ was triggered internally by HMRC on receipt of an updated\
+                            \ loss claim made by the customer. This event is only\
+                            \ applicable for a \"final-declaration\" calculation type.\
+                            \ This event is not currently supported and will be supported\
+                            \ in the future.\n\n* **updated-loss-event** - The calculation\
+                            \ was triggered internally by HMRC on receipt of an updated\
+                            \ pre-MTD brought forward loss made by the customer. This\
+                            \ event is only applicable for a \"final-declaration\"\
+                            \ calculation type. This event is not currently supported\
+                            \ and will be supported in the future.\n\n* **new-annual-adjustment-event**\
+                            \ - The calculation was triggered internally by HMRC on\
+                            \ receipt of a request for a new adjustable summary calculation\
+                            \ by the customer. This event is not currently supported.\n\
+                            \n* **updated-annual-adjustment-event** - The calculation\
+                            \ was triggered internally by HMRC on receipt of an adjustment\
+                            \ to an adjustable summary calculation made by the customer.\
+                            \ This event is not currently supported.\n\n* **unattended-calculation**\
+                            \ - HMRC has updated the calculation for you. You can\
+                            \ see more details in your record-keeping software."
+                          enum:
+                          - customer-request
+                          - class2-nic-event
+                          - new-loss-event
+                          - new-claim-event
+                          - updated-claim-event
+                          - updated-loss-event
+                          - new-annual-adjustment-event
+                          - updated-annual-adjustment-event
+                          - unattended-calculation
                         calculationTimestamp:
                           type: string
                           description: "The timestamp of when the calculation was\
@@ -15622,6 +15565,7 @@ paths:
                                 properties:
                                   type:
                                     type: string
+                                    description: The type of relief claimed.
                                     enum:
                                     - vct-subscriptions
                                     - eis-subscriptions
@@ -21968,64 +21912,47 @@ components:
               example: 2019-02-15T09:35:15.094Z
             calculationReason:
               type: string
-              description: The reason why the calculation was triggered.
-              oneOf:
-              - type: object
-                description: The calculation was triggered by the customer via software.
-                enum:
-                - customer-request
-              - type: object
-                description: The calculation was triggered internally by HMRC once
-                  the actual Class 2 NIC amount became available. This event is only
-                  applicable for an in-year "final-declaration" calculation type.
-                enum:
-                - class2-nic-event
-              - type: object
-                description: The calculation was triggered by HMRC on receipt of a
-                  new pre-MTD brought forward loss made by the customer. This event
-                  is only applicable for a "final-declaration" calculation type. This
-                  event is not currently supported and will be supported in the future.
-                enum:
-                - new-loss-event
-              - type: object
-                description: The calculation was triggered by HMRC on receipt of a
-                  new loss claim made by the customer. This event is only applicable
-                  for a "final-declaration" calculation type. This event is not currently
-                  supported and will be supported in the future.
-                enum:
-                - new-claim-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of an updated loss claim made by the customer. This event is only
-                  applicable for a "final-declaration" calculation type. This event
-                  is not currently supported and will be supported in the future.
-                enum:
-                - updated-claim-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of an updated pre-MTD brought forward loss made by the customer.
-                  This event is only applicable for a "final-declaration" calculation
-                  type. This event is not currently supported and will be supported
-                  in the future.
-                enum:
-                - updated-loss-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of a request for a new adjustable summary calculation by the customer.
-                  This event is not currently supported.
-                enum:
-                - new-annual-adjustment-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of an adjustment to an adjustable summary calculation made by the
-                  customer. This event is not currently supported.
-                enum:
-                - updated-annual-adjustment-event
-              - type: object
-                description: HMRC has updated the calculation for you. You can see
-                  more details in your record-keeping software.
-                enum:
-                - unattended-calculation
+              description: "The reason why the calculation was triggered. \n\nPossible\
+                \ values are: \n\n* **customer-request** - The calculation was triggered\
+                \ by the customer via software.\n\n* **class2-nic-event** - The calculation\
+                \ was triggered internally by HMRC once the actual Class 2 NIC amount\
+                \ became available. This event is only applicable for an in-year \"\
+                final-declaration\" calculation type.\n\n* **new-loss-event** - The\
+                \ calculation was triggered by HMRC on receipt of a new pre-MTD brought\
+                \ forward loss made by the customer. This event is only applicable\
+                \ for a \"final-declaration\" calculation type. This event is not\
+                \ currently supported and will be supported in the future.\n\n* **new-claim-event**\
+                \ - The calculation was triggered by HMRC on receipt of a new loss\
+                \ claim made by the customer. This event is only applicable for a\
+                \ \"final-declaration\" calculation type. This event is not currently\
+                \ supported and will be supported in the future.\n\n* **updated-claim-event**\
+                \ - The calculation was triggered internally by HMRC on receipt of\
+                \ an updated loss claim made by the customer. This event is only applicable\
+                \ for a \"final-declaration\" calculation type. This event is not\
+                \ currently supported and will be supported in the future.\n\n* **updated-loss-event**\
+                \ - The calculation was triggered internally by HMRC on receipt of\
+                \ an updated pre-MTD brought forward loss made by the customer. This\
+                \ event is only applicable for a \"final-declaration\" calculation\
+                \ type. This event is not currently supported and will be supported\
+                \ in the future.\n\n* **new-annual-adjustment-event** - The calculation\
+                \ was triggered internally by HMRC on receipt of a request for a new\
+                \ adjustable summary calculation by the customer. This event is not\
+                \ currently supported.\n\n* **updated-annual-adjustment-event** -\
+                \ The calculation was triggered internally by HMRC on receipt of an\
+                \ adjustment to an adjustable summary calculation made by the customer.\
+                \ This event is not currently supported.\n\n* **unattended-calculation**\
+                \ - HMRC has updated the calculation for you. You can see more details\
+                \ in your record-keeping software."
+              enum:
+              - customer-request
+              - class2-nic-event
+              - new-loss-event
+              - new-claim-event
+              - updated-claim-event
+              - updated-loss-event
+              - new-annual-adjustment-event
+              - updated-annual-adjustment-event
+              - unattended-calculation
             calculationTimestamp:
               type: string
               description: "The timestamp of when the calculation was performed in\
@@ -28071,64 +27998,47 @@ components:
               example: 2019-02-15T09:35:15.094Z
             calculationReason:
               type: string
-              description: The reason why the calculation was triggered.
-              oneOf:
-              - type: object
-                description: The calculation was triggered by the customer via software.
-                enum:
-                - customer-request
-              - type: object
-                description: The calculation was triggered internally by HMRC once
-                  the actual Class 2 NIC amount became available. This event is only
-                  applicable for an in-year "final-declaration" calculation type.
-                enum:
-                - class2-nic-event
-              - type: object
-                description: The calculation was triggered by HMRC on receipt of a
-                  new pre-MTD brought forward loss made by the customer. This event
-                  is only applicable for a "final-declaration" calculation type. This
-                  event is not currently supported and will be supported in the future.
-                enum:
-                - new-loss-event
-              - type: object
-                description: The calculation was triggered by HMRC on receipt of a
-                  new loss claim made by the customer. This event is only applicable
-                  for a "final-declaration" calculation type. This event is not currently
-                  supported and will be supported in the future.
-                enum:
-                - new-claim-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of an updated loss claim made by the customer. This event is only
-                  applicable for a "final-declaration" calculation type. This event
-                  is not currently supported and will be supported in the future.
-                enum:
-                - updated-claim-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of an updated pre-MTD brought forward loss made by the customer.
-                  This event is only applicable for a "final-declaration" calculation
-                  type. This event is not currently supported and will be supported
-                  in the future.
-                enum:
-                - updated-loss-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of a request for a new adjustable summary calculation by the customer.
-                  This event is not currently supported.
-                enum:
-                - new-annual-adjustment-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of an adjustment to an adjustable summary calculation made by the
-                  customer. This event is not currently supported.
-                enum:
-                - updated-annual-adjustment-event
-              - type: object
-                description: HMRC has updated the calculation for you. You can see
-                  more details in your record-keeping software.
-                enum:
-                - unattended-calculation
+              description: "The reason why the calculation was triggered. \n\nPossible\
+                \ values are: \n\n* **customer-request** - The calculation was triggered\
+                \ by the customer via software.\n\n* **class2-nic-event** - The calculation\
+                \ was triggered internally by HMRC once the actual Class 2 NIC amount\
+                \ became available. This event is only applicable for an in-year \"\
+                final-declaration\" calculation type.\n\n* **new-loss-event** - The\
+                \ calculation was triggered by HMRC on receipt of a new pre-MTD brought\
+                \ forward loss made by the customer. This event is only applicable\
+                \ for a \"final-declaration\" calculation type. This event is not\
+                \ currently supported and will be supported in the future.\n\n* **new-claim-event**\
+                \ - The calculation was triggered by HMRC on receipt of a new loss\
+                \ claim made by the customer. This event is only applicable for a\
+                \ \"final-declaration\" calculation type. This event is not currently\
+                \ supported and will be supported in the future.\n\n* **updated-claim-event**\
+                \ - The calculation was triggered internally by HMRC on receipt of\
+                \ an updated loss claim made by the customer. This event is only applicable\
+                \ for a \"final-declaration\" calculation type. This event is not\
+                \ currently supported and will be supported in the future.\n\n* **updated-loss-event**\
+                \ - The calculation was triggered internally by HMRC on receipt of\
+                \ an updated pre-MTD brought forward loss made by the customer. This\
+                \ event is only applicable for a \"final-declaration\" calculation\
+                \ type. This event is not currently supported and will be supported\
+                \ in the future.\n\n* **new-annual-adjustment-event** - The calculation\
+                \ was triggered internally by HMRC on receipt of a request for a new\
+                \ adjustable summary calculation by the customer. This event is not\
+                \ currently supported.\n\n* **updated-annual-adjustment-event** -\
+                \ The calculation was triggered internally by HMRC on receipt of an\
+                \ adjustment to an adjustable summary calculation made by the customer.\
+                \ This event is not currently supported.\n\n* **unattended-calculation**\
+                \ - HMRC has updated the calculation for you. You can see more details\
+                \ in your record-keeping software."
+              enum:
+              - customer-request
+              - class2-nic-event
+              - new-loss-event
+              - new-claim-event
+              - updated-claim-event
+              - updated-loss-event
+              - new-annual-adjustment-event
+              - updated-annual-adjustment-event
+              - unattended-calculation
             calculationTimestamp:
               type: string
               description: "The timestamp of when the calculation was performed in\
@@ -34164,64 +34074,47 @@ components:
               example: 2019-02-15T09:35:15.094Z
             calculationReason:
               type: string
-              description: The reason why the calculation was triggered.
-              oneOf:
-              - type: object
-                description: The calculation was triggered by the customer via software.
-                enum:
-                - customer-request
-              - type: object
-                description: The calculation was triggered internally by HMRC once
-                  the actual Class 2 NIC amount became available. This event is only
-                  applicable for an in-year "final-declaration" calculation type.
-                enum:
-                - class2-nic-event
-              - type: object
-                description: The calculation was triggered by HMRC on receipt of a
-                  new pre-MTD brought forward loss made by the customer. This event
-                  is only applicable for a "final-declaration" calculation type. This
-                  event is not currently supported and will be supported in the future.
-                enum:
-                - new-loss-event
-              - type: object
-                description: The calculation was triggered by HMRC on receipt of a
-                  new loss claim made by the customer. This event is only applicable
-                  for a "final-declaration" calculation type. This event is not currently
-                  supported and will be supported in the future.
-                enum:
-                - new-claim-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of an updated loss claim made by the customer. This event is only
-                  applicable for a "final-declaration" calculation type. This event
-                  is not currently supported and will be supported in the future.
-                enum:
-                - updated-claim-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of an updated pre-MTD brought forward loss made by the customer.
-                  This event is only applicable for a "final-declaration" calculation
-                  type. This event is not currently supported and will be supported
-                  in the future.
-                enum:
-                - updated-loss-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of a request for a new adjustable summary calculation by the customer.
-                  This event is not currently supported.
-                enum:
-                - new-annual-adjustment-event
-              - type: object
-                description: The calculation was triggered internally by HMRC on receipt
-                  of an adjustment to an adjustable summary calculation made by the
-                  customer. This event is not currently supported.
-                enum:
-                - updated-annual-adjustment-event
-              - type: object
-                description: HMRC has updated the calculation for you. You can see
-                  more details in your record-keeping software.
-                enum:
-                - unattended-calculation
+              description: "The reason why the calculation was triggered. \n\nPossible\
+                \ values are: \n\n* **customer-request** - The calculation was triggered\
+                \ by the customer via software.\n\n* **class2-nic-event** - The calculation\
+                \ was triggered internally by HMRC once the actual Class 2 NIC amount\
+                \ became available. This event is only applicable for an in-year \"\
+                final-declaration\" calculation type.\n\n* **new-loss-event** - The\
+                \ calculation was triggered by HMRC on receipt of a new pre-MTD brought\
+                \ forward loss made by the customer. This event is only applicable\
+                \ for a \"final-declaration\" calculation type. This event is not\
+                \ currently supported and will be supported in the future.\n\n* **new-claim-event**\
+                \ - The calculation was triggered by HMRC on receipt of a new loss\
+                \ claim made by the customer. This event is only applicable for a\
+                \ \"final-declaration\" calculation type. This event is not currently\
+                \ supported and will be supported in the future.\n\n* **updated-claim-event**\
+                \ - The calculation was triggered internally by HMRC on receipt of\
+                \ an updated loss claim made by the customer. This event is only applicable\
+                \ for a \"final-declaration\" calculation type. This event is not\
+                \ currently supported and will be supported in the future.\n\n* **updated-loss-event**\
+                \ - The calculation was triggered internally by HMRC on receipt of\
+                \ an updated pre-MTD brought forward loss made by the customer. This\
+                \ event is only applicable for a \"final-declaration\" calculation\
+                \ type. This event is not currently supported and will be supported\
+                \ in the future.\n\n* **new-annual-adjustment-event** - The calculation\
+                \ was triggered internally by HMRC on receipt of a request for a new\
+                \ adjustable summary calculation by the customer. This event is not\
+                \ currently supported.\n\n* **updated-annual-adjustment-event** -\
+                \ The calculation was triggered internally by HMRC on receipt of an\
+                \ adjustment to an adjustable summary calculation made by the customer.\
+                \ This event is not currently supported.\n\n* **unattended-calculation**\
+                \ - HMRC has updated the calculation for you. You can see more details\
+                \ in your record-keeping software."
+              enum:
+              - customer-request
+              - class2-nic-event
+              - new-loss-event
+              - new-claim-event
+              - updated-claim-event
+              - updated-loss-event
+              - new-annual-adjustment-event
+              - updated-annual-adjustment-event
+              - unattended-calculation
             calculationTimestamp:
               type: string
               description: "The timestamp of when the calculation was performed in\
@@ -35171,6 +35064,7 @@ components:
                     properties:
                       type:
                         type: string
+                        description: The type of relief claimed.
                         enum:
                         - vct-subscriptions
                         - eis-subscriptions
@@ -40262,63 +40156,46 @@ components:
           example: 2019-02-15T09:35:15.094Z
         calculationReason:
           type: string
-          description: The reason why the calculation was triggered.
-          oneOf:
-          - type: object
-            description: The calculation was triggered by the customer via software.
-            enum:
-            - customer-request
-          - type: object
-            description: The calculation was triggered internally by HMRC once the
-              actual Class 2 NIC amount became available. This event is only applicable
-              for an in-year "final-declaration" calculation type.
-            enum:
-            - class2-nic-event
-          - type: object
-            description: The calculation was triggered by HMRC on receipt of a new
-              pre-MTD brought forward loss made by the customer. This event is only
-              applicable for a "final-declaration" calculation type. This event is
-              not currently supported and will be supported in the future.
-            enum:
-            - new-loss-event
-          - type: object
-            description: The calculation was triggered by HMRC on receipt of a new
-              loss claim made by the customer. This event is only applicable for a
-              "final-declaration" calculation type. This event is not currently supported
-              and will be supported in the future.
-            enum:
-            - new-claim-event
-          - type: object
-            description: The calculation was triggered internally by HMRC on receipt
-              of an updated loss claim made by the customer. This event is only applicable
-              for a "final-declaration" calculation type. This event is not currently
-              supported and will be supported in the future.
-            enum:
-            - updated-claim-event
-          - type: object
-            description: The calculation was triggered internally by HMRC on receipt
-              of an updated pre-MTD brought forward loss made by the customer. This
-              event is only applicable for a "final-declaration" calculation type.
-              This event is not currently supported and will be supported in the future.
-            enum:
-            - updated-loss-event
-          - type: object
-            description: The calculation was triggered internally by HMRC on receipt
-              of a request for a new adjustable summary calculation by the customer.
-              This event is not currently supported.
-            enum:
-            - new-annual-adjustment-event
-          - type: object
-            description: The calculation was triggered internally by HMRC on receipt
-              of an adjustment to an adjustable summary calculation made by the customer.
-              This event is not currently supported.
-            enum:
-            - updated-annual-adjustment-event
-          - type: object
-            description: HMRC has updated the calculation for you. You can see more
-              details in your record-keeping software.
-            enum:
-            - unattended-calculation
+          description: "The reason why the calculation was triggered. \n\nPossible\
+            \ values are: \n\n* **customer-request** - The calculation was triggered\
+            \ by the customer via software.\n\n* **class2-nic-event** - The calculation\
+            \ was triggered internally by HMRC once the actual Class 2 NIC amount\
+            \ became available. This event is only applicable for an in-year \"final-declaration\"\
+            \ calculation type.\n\n* **new-loss-event** - The calculation was triggered\
+            \ by HMRC on receipt of a new pre-MTD brought forward loss made by the\
+            \ customer. This event is only applicable for a \"final-declaration\"\
+            \ calculation type. This event is not currently supported and will be\
+            \ supported in the future.\n\n* **new-claim-event** - The calculation\
+            \ was triggered by HMRC on receipt of a new loss claim made by the customer.\
+            \ This event is only applicable for a \"final-declaration\" calculation\
+            \ type. This event is not currently supported and will be supported in\
+            \ the future.\n\n* **updated-claim-event** - The calculation was triggered\
+            \ internally by HMRC on receipt of an updated loss claim made by the customer.\
+            \ This event is only applicable for a \"final-declaration\" calculation\
+            \ type. This event is not currently supported and will be supported in\
+            \ the future.\n\n* **updated-loss-event** - The calculation was triggered\
+            \ internally by HMRC on receipt of an updated pre-MTD brought forward\
+            \ loss made by the customer. This event is only applicable for a \"final-declaration\"\
+            \ calculation type. This event is not currently supported and will be\
+            \ supported in the future.\n\n* **new-annual-adjustment-event** - The\
+            \ calculation was triggered internally by HMRC on receipt of a request\
+            \ for a new adjustable summary calculation by the customer. This event\
+            \ is not currently supported.\n\n* **updated-annual-adjustment-event**\
+            \ - The calculation was triggered internally by HMRC on receipt of an\
+            \ adjustment to an adjustable summary calculation made by the customer.\
+            \ This event is not currently supported.\n\n* **unattended-calculation**\
+            \ - HMRC has updated the calculation for you. You can see more details\
+            \ in your record-keeping software."
+          enum:
+          - customer-request
+          - class2-nic-event
+          - new-loss-event
+          - new-claim-event
+          - updated-claim-event
+          - updated-loss-event
+          - new-annual-adjustment-event
+          - updated-annual-adjustment-event
+          - unattended-calculation
         calculationTimestamp:
           type: string
           description: "The timestamp of when the calculation was performed in ISO\
@@ -53649,63 +53526,46 @@ components:
           example: 2019-02-15T09:35:15.094Z
         calculationReason:
           type: string
-          description: The reason why the calculation was triggered.
-          oneOf:
-          - type: object
-            description: The calculation was triggered by the customer via software.
-            enum:
-            - customer-request
-          - type: object
-            description: The calculation was triggered internally by HMRC once the
-              actual Class 2 NIC amount became available. This event is only applicable
-              for an in-year "final-declaration" calculation type.
-            enum:
-            - class2-nic-event
-          - type: object
-            description: The calculation was triggered by HMRC on receipt of a new
-              pre-MTD brought forward loss made by the customer. This event is only
-              applicable for a "final-declaration" calculation type. This event is
-              not currently supported and will be supported in the future.
-            enum:
-            - new-loss-event
-          - type: object
-            description: The calculation was triggered by HMRC on receipt of a new
-              loss claim made by the customer. This event is only applicable for a
-              "final-declaration" calculation type. This event is not currently supported
-              and will be supported in the future.
-            enum:
-            - new-claim-event
-          - type: object
-            description: The calculation was triggered internally by HMRC on receipt
-              of an updated loss claim made by the customer. This event is only applicable
-              for a "final-declaration" calculation type. This event is not currently
-              supported and will be supported in the future.
-            enum:
-            - updated-claim-event
-          - type: object
-            description: The calculation was triggered internally by HMRC on receipt
-              of an updated pre-MTD brought forward loss made by the customer. This
-              event is only applicable for a "final-declaration" calculation type.
-              This event is not currently supported and will be supported in the future.
-            enum:
-            - updated-loss-event
-          - type: object
-            description: The calculation was triggered internally by HMRC on receipt
-              of a request for a new adjustable summary calculation by the customer.
-              This event is not currently supported.
-            enum:
-            - new-annual-adjustment-event
-          - type: object
-            description: The calculation was triggered internally by HMRC on receipt
-              of an adjustment to an adjustable summary calculation made by the customer.
-              This event is not currently supported.
-            enum:
-            - updated-annual-adjustment-event
-          - type: object
-            description: HMRC has updated the calculation for you. You can see more
-              details in your record-keeping software.
-            enum:
-            - unattended-calculation
+          description: "The reason why the calculation was triggered. \n\nPossible\
+            \ values are: \n\n* **customer-request** - The calculation was triggered\
+            \ by the customer via software.\n\n* **class2-nic-event** - The calculation\
+            \ was triggered internally by HMRC once the actual Class 2 NIC amount\
+            \ became available. This event is only applicable for an in-year \"final-declaration\"\
+            \ calculation type.\n\n* **new-loss-event** - The calculation was triggered\
+            \ by HMRC on receipt of a new pre-MTD brought forward loss made by the\
+            \ customer. This event is only applicable for a \"final-declaration\"\
+            \ calculation type. This event is not currently supported and will be\
+            \ supported in the future.\n\n* **new-claim-event** - The calculation\
+            \ was triggered by HMRC on receipt of a new loss claim made by the customer.\
+            \ This event is only applicable for a \"final-declaration\" calculation\
+            \ type. This event is not currently supported and will be supported in\
+            \ the future.\n\n* **updated-claim-event** - The calculation was triggered\
+            \ internally by HMRC on receipt of an updated loss claim made by the customer.\
+            \ This event is only applicable for a \"final-declaration\" calculation\
+            \ type. This event is not currently supported and will be supported in\
+            \ the future.\n\n* **updated-loss-event** - The calculation was triggered\
+            \ internally by HMRC on receipt of an updated pre-MTD brought forward\
+            \ loss made by the customer. This event is only applicable for a \"final-declaration\"\
+            \ calculation type. This event is not currently supported and will be\
+            \ supported in the future.\n\n* **new-annual-adjustment-event** - The\
+            \ calculation was triggered internally by HMRC on receipt of a request\
+            \ for a new adjustable summary calculation by the customer. This event\
+            \ is not currently supported.\n\n* **updated-annual-adjustment-event**\
+            \ - The calculation was triggered internally by HMRC on receipt of an\
+            \ adjustment to an adjustable summary calculation made by the customer.\
+            \ This event is not currently supported.\n\n* **unattended-calculation**\
+            \ - HMRC has updated the calculation for you. You can see more details\
+            \ in your record-keeping software."
+          enum:
+          - customer-request
+          - class2-nic-event
+          - new-loss-event
+          - new-claim-event
+          - updated-claim-event
+          - updated-loss-event
+          - new-annual-adjustment-event
+          - updated-annual-adjustment-event
+          - unattended-calculation
         calculationTimestamp:
           type: string
           description: "The timestamp of when the calculation was performed in ISO\
@@ -55407,6 +55267,7 @@ components:
                 properties:
                   type:
                     type: string
+                    description: The type of relief claimed.
                     enum:
                     - vct-subscriptions
                     - eis-subscriptions
@@ -75609,6 +75470,7 @@ components:
             properties:
               type:
                 type: string
+                description: The type of relief claimed.
                 enum:
                 - vct-subscriptions
                 - eis-subscriptions
