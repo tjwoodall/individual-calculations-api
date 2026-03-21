@@ -71,8 +71,7 @@ get:
               externalValue: ./examples/retrieve/def3/retrieve_response.json
             
             "Example response for TY 2026-27 onwards":
-              value:
-                $ref: ./examples/retrieve/def4/retrieve_response.json
+              externalValue: ./examples/retrieve/def4/retrieve_response.json
             
 
     400:
