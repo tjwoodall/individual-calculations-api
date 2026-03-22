@@ -372,8 +372,8 @@
           "contractorName": {
             "description": "The name of the contractor the subcontractor worked for.",
             "type": "string",
-            "minimum": 1,
-            "maximum": 105,
+            "minLength": 1,
+            "maxLength": 105,
             "example": "Company-123 Ltd."
           },
           "periodData": {
