@@ -172,6 +172,7 @@
             "description": "The unique identifier of the annual adjustment.",
             "type": "string",
             "pattern": "^[0-9]{8}|[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
+            "format": "uuid",
             "example": "123a456b-789c-1d23-845e-678b9d1bd2ab"
           },
           "receivedDateTime": {
@@ -829,7 +830,6 @@
       ]
     },
     "date": {
-      "format": "full-date",
       "type": "string",
       "format": "date",
       "example": "2020-01-01"
