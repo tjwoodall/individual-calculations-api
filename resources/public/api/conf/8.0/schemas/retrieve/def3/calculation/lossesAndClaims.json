@@ -310,7 +310,7 @@
   "additionalProperties": false,
   "definitions": {
     "taxYear": {
-      "id": "tax-year",
+      "format": "tax-year",
       "type": "string",
       "example": "2020-21"
     }
