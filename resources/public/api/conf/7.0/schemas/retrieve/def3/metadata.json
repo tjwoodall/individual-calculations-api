@@ -80,7 +80,6 @@
         "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
         "description": "This defines the earliest date from which the calculation was performed. This will be the accounting period start date (for self-employments) or the tax year start date, whichever occurs first for the income sources supplied.",
         "type": "string",
-        "format": "date",
         "example": "2020-01-01"
       },
       "periodTo": {
@@ -88,7 +87,6 @@
         "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
         "description": "This defines the latest date to which the calculation was performed and will be the point in the year to which income has been submitted.",
         "type": "string",
-        "format": "date",
         "example": "2020-01-01"
       }
     },
