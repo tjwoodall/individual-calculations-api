@@ -66,11 +66,13 @@
       "finalisationTimestamp": {
         "description": "The timestamp when the finalisation was performed in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ.",
         "type": "string",
+        "format": "date-time",
         "example": "2025-04-15T09:35:15.094Z"
       },
       "confirmationTimestamp": {
         "description": "The timestamp when the confirmation was performed in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ.",
         "type": "string",
+        "format": "date-time",
         "example": "2025-05-15T09:35:15.094Z"
       },
       "periodFrom": {
