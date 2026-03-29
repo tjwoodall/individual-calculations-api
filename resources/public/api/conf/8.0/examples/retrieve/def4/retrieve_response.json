@@ -4,7 +4,7 @@
     "taxYear": "2026-27",
     "requestedBy": "customer",
     "requestedTimestamp": "2025-04-15T09:35:15.094Z",
-    "calculationReason": "customerRequest",
+    "calculationReason": "customer-request",
     "calculationTimestamp": "2025-04-15T09:35:15.094Z",
     "calculationType": "in-year",
     "finalisationTimestamp": "2025-04-15T09:35:15.094Z",
@@ -16,7 +16,7 @@
     "personalInformation": {
       "identifier": "VO123456A",
       "dateOfBirth": "2025-04-06",
-      "taxRegime": "UK",
+      "taxRegime": "uk",
       "statePensionAgeDate": "2050-04-06",
       "studentLoanPlan": [
         {
@@ -114,7 +114,7 @@
     ],
     "allowancesReliefsAndDeductions": [
       {
-        "type": "investmentReliefs",
+        "type": "investment-reliefs",
         "submittedTimestamp": "2025-04-06T09:35:15.094Z",
         "startDate": "2025-04-06",
         "endDate": "2026-04-05",
@@ -123,7 +123,7 @@
     ],
     "pensionContributionAndCharges": [
       {
-        "type": "pensionReliefs",
+        "type": "pension-reliefs",
         "submissionTimestamp": "2025-04-06T09:35:15.094Z",
         "startDate": "2025-04-06",
         "endDate": "2026-04-05",
@@ -132,7 +132,7 @@
     ],
     "other": [
       {
-        "type": "codingOut",
+        "type": "coding-out",
         "submittedOn": "2025-04-06T09:35:15.094Z"
       }
     ]
@@ -234,7 +234,7 @@
               "uniqueInvestmentRef": "string",
               "name": "string",
               "companyName": "string",
-              "deficiencyReliefType": "lifeInsurance",
+              "deficiencyReliefType": "life-insurance",
               "customerReference": "string"
             }
           ]
@@ -322,22 +322,6 @@
       "totalTaxPaid": 5000.99,
       "totalPensionChargesDue": 5000.99,
       "pensionSavingsTaxChargesDetail": {
-        "excessOfLifeTimeAllowance": {
-          "totalChargeableAmount": 5000.99,
-          "totalTaxPaid": 5000.99,
-          "lumpSumBenefitTakenInExcessOfLifetimeAllowance": {
-            "amount": 5000.99,
-            "taxPaid": 5000.99,
-            "rate": 20,
-            "chargeableAmount": 5000.99
-          },
-          "benefitInExcessOfLifetimeAllowance": {
-            "amount": 5000.99,
-            "taxPaid": 5000.99,
-            "rate": 20,
-            "chargeableAmount": 5000.99
-          }
-        },
         "pensionSchemeUnauthorisedPayments": {
           "totalChargeableAmount": 5000.99,
           "totalTaxPaid": 5000.99,
@@ -383,7 +367,7 @@
           "totalShortServiceRefundChargeDue": 5000.99,
           "shortServiceRefundBands": [
             {
-              "name": "lowerBand",
+              "name": "lower-band",
               "rate": 20,
               "bandLimit": 12500,
               "apportionedBandLimit": 12500,
@@ -505,7 +489,7 @@
       "tipsIncome": 5000.99,
       "employmentAndPensionsIncomeDetail": [
         {
-          "incomeSourceId": "XAIS12345678910",
+          "incomeSourceId": "bb74c290-cae6-11ec-9b64-0242ac120002",
           "source": "customer",
           "occupationalPension": true,
           "employerRef": "123/AA12345",
@@ -614,7 +598,7 @@
       "stateBenefitsDetail": {
         "incapacityBenefit": [
           {
-            "incomeSourceId": "string",
+            "incomeSourceId": "bb74c290-cae6-11ec-9b64-0242ac120002",
             "amount": 5000.99,
             "taxPaid": 5000.99,
             "source": "customer"
@@ -622,14 +606,14 @@
         ],
         "statePension": [
           {
-            "incomeSourceId": "string",
+            "incomeSourceId": "bb74c290-cae6-11ec-9b64-0242ac120002",
             "amount": 5000.99,
             "source": "customer"
           }
         ],
         "statePensionLumpSum": [
           {
-            "incomeSourceId": "string",
+            "incomeSourceId": "bb74c290-cae6-11ec-9b64-0242ac120002",
             "amount": 5000.99,
             "taxPaid": 5000.99,
             "rate": 20,
@@ -638,7 +622,7 @@
         ],
         "employmentSupportAllowance": [
           {
-            "incomeSourceId": "string",
+            "incomeSourceId": "bb74c290-cae6-11ec-9b64-0242ac120002",
             "amount": 5000.99,
             "taxPaid": -99999999999.99,
             "source": "customer"
@@ -646,7 +630,7 @@
         ],
         "jobSeekersAllowance": [
           {
-            "incomeSourceId": "string",
+            "incomeSourceId": "bb74c290-cae6-11ec-9b64-0242ac120002",
             "amount": 5000.99,
             "taxPaid": -99999999.99,
             "source": "customer"
@@ -654,14 +638,14 @@
         ],
         "bereavementAllowance": [
           {
-            "incomeSourceId": "string",
+            "incomeSourceId": "bb74c290-cae6-11ec-9b64-0242ac120002",
             "amount": 5000.99,
             "source": "customer"
           }
         ],
         "otherStateBenefits": [
           {
-            "incomeSourceId": "string",
+            "incomeSourceId": "bb74c290-cae6-11ec-9b64-0242ac120002",
             "amount": 5000.99,
             "source": "customer"
           }
@@ -672,7 +656,7 @@
       "totalIncome": 5000.99,
       "shareSchemeDetail": [
         {
-          "type": "shareOption",
+          "type": "share-option",
           "employerName": "string",
           "employerRef": "123/AA12345",
           "taxableAmount": 5000.99
@@ -717,7 +701,7 @@
       "totalGainsWithTaxPaid": 12500,
       "gainsWithTaxPaidDetail": [
         {
-          "type": "lifeInsurance",
+          "type": "life-insurance",
           "customerReference": "string",
           "gainAmount": 5000.99,
           "yearsHeld": 99,
@@ -727,7 +711,7 @@
       "totalGainsWithNoTaxPaidAndVoidedIsa": 12500,
       "gainsWithNoTaxPaidAndVoidedIsaDetail": [
         {
-          "type": "lifeInsurance",
+          "type": "life-insurance",
           "customerReference": "string",
           "gainAmount": 5000.99,
           "yearsHeld": 99,
@@ -783,13 +767,13 @@
       "totalUkDividends": 12500,
       "ukDividends": {
         "incomeSourceId": "000000000000210",
-        "incomeSourceType": "10",
+        "incomeSourceType": "uk-dividends",
         "dividends": 12500,
         "otherUkDividends": 12500
       },
       "otherDividends": [
         {
-          "typeOfDividend": "stockDividend",
+          "typeOfDividend": "stock-dividend",
           "customerReference": "string",
           "grossAmount": 5000.99
         }
@@ -864,7 +848,6 @@
     {{/if}}
     "incomeSummaryTotals": {
       "totalSelfEmploymentProfit": 12500,
-      "totalUKPropertyProfit": 12500,
       "totalForeignPropertyProfit": 12500,
       "totalEmploymentIncome": 12500
     },
@@ -1087,14 +1070,14 @@
       "cgtTaxDue": 5000.99,
       "totalIncomeTaxAndNicsAndCgtDue": 5000.99,
       "incomeTaxNicDueThisPeriod": -99999999999.99,
-      "cgtDueThisPeriod": -99999999999.99,
+      "cgtDueThisPeriod": 99999999999.99,
       "totalIncomeTaxAndNicsAndCgtDueThisPeriod": 5000.99
     },
     "endOfYearEstimate": {
       "incomeSource": [
         {
           "incomeSourceId": "000000000000210",
-          "incomeSourceType": "01",
+          "incomeSourceType": "share-schemes",
           "incomeSourceName": "string",
           "taxableIncome": 12500
         }
