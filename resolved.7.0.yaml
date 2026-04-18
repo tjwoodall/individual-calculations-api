@@ -14518,6 +14518,7 @@ paths:
                           type: string
                           description: "The timestamp of when the calculation was\
                             \ requested in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+                          format: date-time
                           example: 2019-02-15T09:35:15.094Z
                         calculationReason:
                           type: string
@@ -14572,6 +14573,7 @@ paths:
                           type: string
                           description: "The timestamp of when the calculation was\
                             \ performed in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+                          format: date-time
                           example: 2019-02-15T09:35:15.094Z
                         calculationType:
                           type: string
@@ -14586,11 +14588,13 @@ paths:
                           type: string
                           description: "The timestamp when the finalisation was performed\
                             \ in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+                          format: date-time
                           example: 2025-04-15T09:35:15.094Z
                         confirmationTimestamp:
                           type: string
                           description: "The timestamp when the confirmation was performed\
                             \ in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+                          format: date-time
                           example: 2025-05-15T09:35:15.094Z
                         periodFrom:
                           type: string
@@ -14599,12 +14603,14 @@ paths:
                             \ period start date (for self-employments) or the tax\
                             \ year start date, whichever occurs first for the income\
                             \ sources supplied."
+                          format: date
                           example: 2020-01-01
                         periodTo:
                           type: string
                           description: This defines the latest date to which the calculation
                             was performed and will be the point in the year to which
                             income has been submitted.
+                          format: date
                           example: 2020-01-01
                       additionalProperties: false
                       description: Object containing top-level metadata information
@@ -21161,7 +21167,7 @@ paths:
               examples:
                 MATCHING_RESOURCE_NOT_FOUND:
                   description: |
-                    Either the calculation ID was not found or the calculation was in year.
+                    The calculation ID was not found.
                   value:
                     code: MATCHING_RESOURCE_NOT_FOUND
                     message: Matching resource not found
@@ -34071,6 +34077,7 @@ components:
               type: string
               description: "The timestamp of when the calculation was requested in\
                 \ ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+              format: date-time
               example: 2019-02-15T09:35:15.094Z
             calculationReason:
               type: string
@@ -34119,6 +34126,7 @@ components:
               type: string
               description: "The timestamp of when the calculation was performed in\
                 \ ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+              format: date-time
               example: 2019-02-15T09:35:15.094Z
             calculationType:
               type: string
@@ -34133,11 +34141,13 @@ components:
               type: string
               description: "The timestamp when the finalisation was performed in ISO\
                 \ 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+              format: date-time
               example: 2025-04-15T09:35:15.094Z
             confirmationTimestamp:
               type: string
               description: "The timestamp when the confirmation was performed in ISO\
                 \ 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+              format: date-time
               example: 2025-05-15T09:35:15.094Z
             periodFrom:
               type: string
@@ -34145,12 +34155,14 @@ components:
                 \ was performed. This will be the accounting period start date (for\
                 \ self-employments) or the tax year start date, whichever occurs first\
                 \ for the income sources supplied."
+              format: date
               example: 2020-01-01
             periodTo:
               type: string
               description: This defines the latest date to which the calculation was
                 performed and will be the point in the year to which income has been
                 submitted.
+              format: date
               example: 2020-01-01
           additionalProperties: false
           description: Object containing top-level metadata information about the
@@ -53523,6 +53535,7 @@ components:
           type: string
           description: "The timestamp of when the calculation was requested in ISO\
             \ 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+          format: date-time
           example: 2019-02-15T09:35:15.094Z
         calculationReason:
           type: string
@@ -53570,6 +53583,7 @@ components:
           type: string
           description: "The timestamp of when the calculation was performed in ISO\
             \ 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+          format: date-time
           example: 2019-02-15T09:35:15.094Z
         calculationType:
           type: string
@@ -53584,11 +53598,13 @@ components:
           type: string
           description: "The timestamp when the finalisation was performed in ISO 8601\
             \ UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+          format: date-time
           example: 2025-04-15T09:35:15.094Z
         confirmationTimestamp:
           type: string
           description: "The timestamp when the confirmation was performed in ISO 8601\
             \ UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
+          format: date-time
           example: 2025-05-15T09:35:15.094Z
         periodFrom:
           type: string
@@ -53596,11 +53612,13 @@ components:
             \ was performed. This will be the accounting period start date (for self-employments)\
             \ or the tax year start date, whichever occurs first for the income sources\
             \ supplied."
+          format: date
           example: 2020-01-01
         periodTo:
           type: string
           description: This defines the latest date to which the calculation was performed
             and will be the point in the year to which income has been submitted.
+          format: date
           example: 2020-01-01
       additionalProperties: false
       description: Object containing top-level metadata information about the retrieved
@@ -82498,9 +82516,9 @@ components:
       value:
         code: FORMAT_CALCULATION_ID
         message: The provided calculationId is invalid
-    notFound:
+    notFoundNoId:
       description: |
-        Either the calculation ID was not found or the calculation was in year.
+        The calculation ID was not found.
       value:
         code: MATCHING_RESOURCE_NOT_FOUND
         message: Matching resource not found
@@ -82541,6 +82559,12 @@ components:
       value:
         code: RULE_FINAL_DECLARATION_IN_PROGRESS
         message: There is a calculation in progress for the tax year
+    notFound:
+      description: |
+        Either the calculation ID was not found or the calculation was in year.
+      value:
+        code: MATCHING_RESOURCE_NOT_FOUND
+        message: Matching resource not found
   headers:
     correlationId:
       description: |
