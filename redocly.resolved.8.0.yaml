@@ -5692,6 +5692,14 @@ paths:
                                         maximum: 99999999999.99
                                         example: 5000.99
                                         multipleOf: 0.01
+                                  giftAidTaxChargeWhereBasicRateDiffers:
+                                    description: Gift Aid tax charge where Basic Rate differs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
+                                    allOf:
+                                      - type: number
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        example: 5000.99
+                                        multipleOf: 0.01
                                   totalPensionSavingsTaxCharges:
                                     description: Total pension savings tax charges. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
@@ -5718,14 +5726,6 @@ paths:
                                         multipleOf: 0.01
                                   totalIncomeTaxDue:
                                     description: Total income tax due. This value must be between 0 and 99999999999.99 up to 2 decimal places.
-                                    allOf:
-                                      - type: number
-                                        minimum: 0
-                                        maximum: 99999999999.99
-                                        example: 5000.99
-                                        multipleOf: 0.01
-                                  giftAidTaxChargeWhereBasicRateDiffers:
-                                    description: Gift Aid tax charge where Basic Rate differs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
                                         minimum: 0
@@ -11669,6 +11669,14 @@ paths:
                                         maximum: 99999999999.99
                                         example: 5000.99
                                         multipleOf: 0.01
+                                  giftAidTaxChargeWhereBasicRateDiffers:
+                                    description: Gift Aid tax charge where Basic Rate differs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
+                                    allOf:
+                                      - type: number
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        example: 5000.99
+                                        multipleOf: 0.01
                                   totalPensionSavingsTaxCharges:
                                     description: Total pension savings tax charges. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
@@ -11695,14 +11703,6 @@ paths:
                                         multipleOf: 0.01
                                   totalIncomeTaxDue:
                                     description: Total income tax due. This value must be between 0 and 99999999999.99 up to 2 decimal places.
-                                    allOf:
-                                      - type: number
-                                        minimum: 0
-                                        maximum: 99999999999.99
-                                        example: 5000.99
-                                        multipleOf: 0.01
-                                  giftAidTaxChargeWhereBasicRateDiffers:
-                                    description: Gift Aid tax charge where Basic Rate differs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
                                         minimum: 0
@@ -17696,6 +17696,14 @@ paths:
                                         maximum: 99999999999.99
                                         multipleOf: 0.01
                                         example: 5000.99
+                                  giftAidTaxChargeWhereBasicRateDiffers:
+                                    description: Gift Aid tax charge where Basic Rate differs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
+                                    allOf:
+                                      - type: number
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        multipleOf: 0.01
+                                        example: 5000.99
                                   totalPensionSavingsTaxCharges:
                                     description: Total pension savings tax charges. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
@@ -17712,6 +17720,14 @@ paths:
                                         maximum: 99999999999.99
                                         multipleOf: 0.01
                                         example: 5000.99
+                                  highIncomeBenefitCharge:
+                                    description: The tax charge for High income benefit earners. This value must be between 0 and 99999999999.99 up to 2 decimal places.
+                                    allOf:
+                                      - type: number
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        multipleOf: 0.01
+                                        example: 5000.99
                                   payeUnderpaymentsCodedOut:
                                     description: PAYE underpayments coded out. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
@@ -17722,22 +17738,6 @@ paths:
                                         example: 5000.99
                                   totalIncomeTaxDue:
                                     description: Total income tax due. This value must be between 0 and 99999999999.99 up to 2 decimal places.
-                                    allOf:
-                                      - type: number
-                                        minimum: 0
-                                        maximum: 99999999999.99
-                                        multipleOf: 0.01
-                                        example: 5000.99
-                                  giftAidTaxChargeWhereBasicRateDiffers:
-                                    description: Gift Aid tax charge where Basic Rate differs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
-                                    allOf:
-                                      - type: number
-                                        minimum: 0
-                                        maximum: 99999999999.99
-                                        multipleOf: 0.01
-                                        example: 5000.99
-                                  highIncomeBenefitCharge:
-                                    description: The tax charge for High income benefit earners. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
                                         minimum: 0
@@ -24057,6 +24057,14 @@ paths:
                                         minimum: 0
                                         maximum: 99999999999.99
                                         example: 5000.99
+                                  giftAidTaxChargeWhereBasicRateDiffers:
+                                    description: Gift Aid tax charge where Basic Rate differs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
+                                    allOf:
+                                      - type: number
+                                        multipleOf: 0.01
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        example: 5000.99
                                   totalPensionSavingsTaxCharges:
                                     description: Total pension savings tax charges. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
@@ -24073,6 +24081,14 @@ paths:
                                         minimum: 0
                                         maximum: 99999999999.99
                                         example: 5000.99
+                                  highIncomeBenefitCharge:
+                                    description: The tax charge for High income benefit earners. This value must be between 0 and 99999999999.99 up to 2 decimal places.
+                                    allOf:
+                                      - type: number
+                                        multipleOf: 0.01
+                                        minimum: 0
+                                        maximum: 99999999999.99
+                                        example: 5000.99
                                   payeUnderpaymentsCodedOut:
                                     description: PAYE underpayments coded out. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
@@ -24083,22 +24099,6 @@ paths:
                                         example: 5000.99
                                   totalIncomeTaxDue:
                                     description: Total income tax due. This value must be between 0 and 99999999999.99 up to 2 decimal places.
-                                    allOf:
-                                      - type: number
-                                        multipleOf: 0.01
-                                        minimum: 0
-                                        maximum: 99999999999.99
-                                        example: 5000.99
-                                  giftAidTaxChargeWhereBasicRateDiffers:
-                                    description: Gift Aid tax charge where Basic Rate differs. This value must be between 0 and 99999999999.99 up to 2 decimal places.
-                                    allOf:
-                                      - type: number
-                                        multipleOf: 0.01
-                                        minimum: 0
-                                        maximum: 99999999999.99
-                                        example: 5000.99
-                                  highIncomeBenefitCharge:
-                                    description: The tax charge for High income benefit earners. This value must be between 0 and 99999999999.99 up to 2 decimal places.
                                     allOf:
                                       - type: number
                                         multipleOf: 0.01
