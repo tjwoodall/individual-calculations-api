@@ -6832,6 +6832,15 @@ paths:
                                     to 2 decimal places.
                                   example:
                                   - 5000.99
+                                giftAidTaxChargeWhereBasicRateDiffers:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: Gift Aid tax charge where Basic Rate
+                                    differs. This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
+                                  example:
+                                  - 5000.99
                                 totalPensionSavingsTaxCharges:
                                   maximum: 99999999999.99
                                   minimum: 0
@@ -6866,15 +6875,6 @@ paths:
                                   description: Total income tax due. This value must
                                     be between 0 and 99999999999.99 up to 2 decimal
                                     places.
-                                  example:
-                                  - 5000.99
-                                giftAidTaxChargeWhereBasicRateDiffers:
-                                  maximum: 99999999999.99
-                                  minimum: 0
-                                  type: number
-                                  description: Gift Aid tax charge where Basic Rate
-                                    differs. This value must be between 0 and 99999999999.99
-                                    up to 2 decimal places.
                                   example:
                                   - 5000.99
                               additionalProperties: false
@@ -13771,6 +13771,15 @@ paths:
                                     to 2 decimal places.
                                   example:
                                   - 5000.99
+                                giftAidTaxChargeWhereBasicRateDiffers:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: Gift Aid tax charge where Basic Rate
+                                    differs. This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
+                                  example:
+                                  - 5000.99
                                 totalPensionSavingsTaxCharges:
                                   maximum: 99999999999.99
                                   minimum: 0
@@ -13805,15 +13814,6 @@ paths:
                                   description: Total income tax due. This value must
                                     be between 0 and 99999999999.99 up to 2 decimal
                                     places.
-                                  example:
-                                  - 5000.99
-                                giftAidTaxChargeWhereBasicRateDiffers:
-                                  maximum: 99999999999.99
-                                  minimum: 0
-                                  type: number
-                                  description: Gift Aid tax charge where Basic Rate
-                                    differs. This value must be between 0 and 99999999999.99
-                                    up to 2 decimal places.
                                   example:
                                   - 5000.99
                               additionalProperties: false
@@ -20771,6 +20771,15 @@ paths:
                                     to 2 decimal places.
                                   example:
                                   - 5000.99
+                                giftAidTaxChargeWhereBasicRateDiffers:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: Gift Aid tax charge where Basic Rate
+                                    differs. This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
+                                  example:
+                                  - 5000.99
                                 totalPensionSavingsTaxCharges:
                                   maximum: 99999999999.99
                                   minimum: 0
@@ -20789,6 +20798,15 @@ paths:
                                     to 2 decimal places.
                                   example:
                                   - 5000.99
+                                highIncomeBenefitCharge:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: The tax charge for High income benefit
+                                    earners. This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
+                                  example:
+                                  - 5000.99
                                 payeUnderpaymentsCodedOut:
                                   maximum: 99999999999.99
                                   minimum: 0
@@ -20805,24 +20823,6 @@ paths:
                                   description: Total income tax due. This value must
                                     be between 0 and 99999999999.99 up to 2 decimal
                                     places.
-                                  example:
-                                  - 5000.99
-                                giftAidTaxChargeWhereBasicRateDiffers:
-                                  maximum: 99999999999.99
-                                  minimum: 0
-                                  type: number
-                                  description: Gift Aid tax charge where Basic Rate
-                                    differs. This value must be between 0 and 99999999999.99
-                                    up to 2 decimal places.
-                                  example:
-                                  - 5000.99
-                                highIncomeBenefitCharge:
-                                  maximum: 99999999999.99
-                                  minimum: 0
-                                  type: number
-                                  description: The tax charge for High income benefit
-                                    earners. This value must be between 0 and 99999999999.99
-                                    up to 2 decimal places.
                                   example:
                                   - 5000.99
                               additionalProperties: false
@@ -28113,6 +28113,15 @@ paths:
                                     to 2 decimal places.
                                   example:
                                   - 5000.99
+                                giftAidTaxChargeWhereBasicRateDiffers:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: Gift Aid tax charge where Basic Rate
+                                    differs. This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
+                                  example:
+                                  - 5000.99
                                 totalPensionSavingsTaxCharges:
                                   maximum: 99999999999.99
                                   minimum: 0
@@ -28131,6 +28140,15 @@ paths:
                                     to 2 decimal places.
                                   example:
                                   - 5000.99
+                                highIncomeBenefitCharge:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: The tax charge for High income benefit
+                                    earners. This value must be between 0 and 99999999999.99
+                                    up to 2 decimal places.
+                                  example:
+                                  - 5000.99
                                 payeUnderpaymentsCodedOut:
                                   maximum: 99999999999.99
                                   minimum: 0
@@ -28147,24 +28165,6 @@ paths:
                                   description: Total income tax due. This value must
                                     be between 0 and 99999999999.99 up to 2 decimal
                                     places.
-                                  example:
-                                  - 5000.99
-                                giftAidTaxChargeWhereBasicRateDiffers:
-                                  maximum: 99999999999.99
-                                  minimum: 0
-                                  type: number
-                                  description: Gift Aid tax charge where Basic Rate
-                                    differs. This value must be between 0 and 99999999999.99
-                                    up to 2 decimal places.
-                                  example:
-                                  - 5000.99
-                                highIncomeBenefitCharge:
-                                  maximum: 99999999999.99
-                                  minimum: 0
-                                  type: number
-                                  description: The tax charge for High income benefit
-                                    earners. This value must be between 0 and 99999999999.99
-                                    up to 2 decimal places.
                                   example:
                                   - 5000.99
                               additionalProperties: false
@@ -35553,6 +35553,15 @@ components:
                         be between 0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
+                    giftAidTaxChargeWhereBasicRateDiffers:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: Gift Aid tax charge where Basic Rate differs. This
+                        value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
+                      example:
+                      - 5000.99
                     totalPensionSavingsTaxCharges:
                       maximum: 99999999999.99
                       minimum: 0
@@ -35583,15 +35592,6 @@ components:
                       type: number
                       description: Total income tax due. This value must be between
                         0 and 99999999999.99 up to 2 decimal places.
-                      example:
-                      - 5000.99
-                    giftAidTaxChargeWhereBasicRateDiffers:
-                      maximum: 99999999999.99
-                      minimum: 0
-                      type: number
-                      description: Gift Aid tax charge where Basic Rate differs. This
-                        value must be between 0 and 99999999999.99 up to 2 decimal
-                        places.
                       example:
                       - 5000.99
                   additionalProperties: false
@@ -42111,6 +42111,15 @@ components:
                         be between 0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
+                    giftAidTaxChargeWhereBasicRateDiffers:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: Gift Aid tax charge where Basic Rate differs. This
+                        value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
+                      example:
+                      - 5000.99
                     totalPensionSavingsTaxCharges:
                       maximum: 99999999999.99
                       minimum: 0
@@ -42141,15 +42150,6 @@ components:
                       type: number
                       description: Total income tax due. This value must be between
                         0 and 99999999999.99 up to 2 decimal places.
-                      example:
-                      - 5000.99
-                    giftAidTaxChargeWhereBasicRateDiffers:
-                      maximum: 99999999999.99
-                      minimum: 0
-                      type: number
-                      description: Gift Aid tax charge where Basic Rate differs. This
-                        value must be between 0 and 99999999999.99 up to 2 decimal
-                        places.
                       example:
                       - 5000.99
                   additionalProperties: false
@@ -48723,6 +48723,15 @@ components:
                         be between 0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
+                    giftAidTaxChargeWhereBasicRateDiffers:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: Gift Aid tax charge where Basic Rate differs. This
+                        value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
+                      example:
+                      - 5000.99
                     totalPensionSavingsTaxCharges:
                       maximum: 99999999999.99
                       minimum: 0
@@ -48739,6 +48748,15 @@ components:
                         be between 0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
+                    highIncomeBenefitCharge:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: The tax charge for High income benefit earners.
+                        This value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
+                      example:
+                      - 5000.99
                     payeUnderpaymentsCodedOut:
                       maximum: 99999999999.99
                       minimum: 0
@@ -48753,24 +48771,6 @@ components:
                       type: number
                       description: Total income tax due. This value must be between
                         0 and 99999999999.99 up to 2 decimal places.
-                      example:
-                      - 5000.99
-                    giftAidTaxChargeWhereBasicRateDiffers:
-                      maximum: 99999999999.99
-                      minimum: 0
-                      type: number
-                      description: Gift Aid tax charge where Basic Rate differs. This
-                        value must be between 0 and 99999999999.99 up to 2 decimal
-                        places.
-                      example:
-                      - 5000.99
-                    highIncomeBenefitCharge:
-                      maximum: 99999999999.99
-                      minimum: 0
-                      type: number
-                      description: The tax charge for High income benefit earners.
-                        This value must be between 0 and 99999999999.99 up to 2 decimal
-                        places.
                       example:
                       - 5000.99
                   additionalProperties: false
@@ -55650,6 +55650,15 @@ components:
                         be between 0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
+                    giftAidTaxChargeWhereBasicRateDiffers:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: Gift Aid tax charge where Basic Rate differs. This
+                        value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
+                      example:
+                      - 5000.99
                     totalPensionSavingsTaxCharges:
                       maximum: 99999999999.99
                       minimum: 0
@@ -55666,6 +55675,15 @@ components:
                         be between 0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
+                    highIncomeBenefitCharge:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: The tax charge for High income benefit earners.
+                        This value must be between 0 and 99999999999.99 up to 2 decimal
+                        places.
+                      example:
+                      - 5000.99
                     payeUnderpaymentsCodedOut:
                       maximum: 99999999999.99
                       minimum: 0
@@ -55680,24 +55698,6 @@ components:
                       type: number
                       description: Total income tax due. This value must be between
                         0 and 99999999999.99 up to 2 decimal places.
-                      example:
-                      - 5000.99
-                    giftAidTaxChargeWhereBasicRateDiffers:
-                      maximum: 99999999999.99
-                      minimum: 0
-                      type: number
-                      description: Gift Aid tax charge where Basic Rate differs. This
-                        value must be between 0 and 99999999999.99 up to 2 decimal
-                        places.
-                      example:
-                      - 5000.99
-                    highIncomeBenefitCharge:
-                      maximum: 99999999999.99
-                      minimum: 0
-                      type: number
-                      description: The tax charge for High income benefit earners.
-                        This value must be between 0 and 99999999999.99 up to 2 decimal
-                        places.
                       example:
                       - 5000.99
                   additionalProperties: false
@@ -62919,6 +62919,14 @@ components:
                     0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
+                giftAidTaxChargeWhereBasicRateDiffers:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: Gift Aid tax charge where Basic Rate differs. This
+                    value must be between 0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
                 totalPensionSavingsTaxCharges:
                   maximum: 99999999999.99
                   minimum: 0
@@ -62949,14 +62957,6 @@ components:
                   type: number
                   description: Total income tax due. This value must be between 0
                     and 99999999999.99 up to 2 decimal places.
-                  example:
-                  - 5000.99
-                giftAidTaxChargeWhereBasicRateDiffers:
-                  maximum: 99999999999.99
-                  minimum: 0
-                  type: number
-                  description: Gift Aid tax charge where Basic Rate differs. This
-                    value must be between 0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
               additionalProperties: false
@@ -70050,6 +70050,14 @@ components:
                     0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
+                giftAidTaxChargeWhereBasicRateDiffers:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: Gift Aid tax charge where Basic Rate differs. This
+                    value must be between 0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
                 totalPensionSavingsTaxCharges:
                   maximum: 99999999999.99
                   minimum: 0
@@ -70080,14 +70088,6 @@ components:
                   type: number
                   description: Total income tax due. This value must be between 0
                     and 99999999999.99 up to 2 decimal places.
-                  example:
-                  - 5000.99
-                giftAidTaxChargeWhereBasicRateDiffers:
-                  maximum: 99999999999.99
-                  minimum: 0
-                  type: number
-                  description: Gift Aid tax charge where Basic Rate differs. This
-                    value must be between 0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
               additionalProperties: false
@@ -77294,6 +77294,14 @@ components:
                     0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
+                giftAidTaxChargeWhereBasicRateDiffers:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: Gift Aid tax charge where Basic Rate differs. This
+                    value must be between 0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
                 totalPensionSavingsTaxCharges:
                   maximum: 99999999999.99
                   minimum: 0
@@ -77310,6 +77318,14 @@ components:
                     between 0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
+                highIncomeBenefitCharge:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: The tax charge for High income benefit earners. This
+                    value must be between 0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
                 payeUnderpaymentsCodedOut:
                   maximum: 99999999999.99
                   minimum: 0
@@ -77324,22 +77340,6 @@ components:
                   type: number
                   description: Total income tax due. This value must be between 0
                     and 99999999999.99 up to 2 decimal places.
-                  example:
-                  - 5000.99
-                giftAidTaxChargeWhereBasicRateDiffers:
-                  maximum: 99999999999.99
-                  minimum: 0
-                  type: number
-                  description: Gift Aid tax charge where Basic Rate differs. This
-                    value must be between 0 and 99999999999.99 up to 2 decimal places.
-                  example:
-                  - 5000.99
-                highIncomeBenefitCharge:
-                  maximum: 99999999999.99
-                  minimum: 0
-                  type: number
-                  description: The tax charge for High income benefit earners. This
-                    value must be between 0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
               additionalProperties: false
@@ -84731,6 +84731,14 @@ components:
                     0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
+                giftAidTaxChargeWhereBasicRateDiffers:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: Gift Aid tax charge where Basic Rate differs. This
+                    value must be between 0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
                 totalPensionSavingsTaxCharges:
                   maximum: 99999999999.99
                   minimum: 0
@@ -84747,6 +84755,14 @@ components:
                     between 0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
+                highIncomeBenefitCharge:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: The tax charge for High income benefit earners. This
+                    value must be between 0 and 99999999999.99 up to 2 decimal places.
+                  example:
+                  - 5000.99
                 payeUnderpaymentsCodedOut:
                   maximum: 99999999999.99
                   minimum: 0
@@ -84761,22 +84777,6 @@ components:
                   type: number
                   description: Total income tax due. This value must be between 0
                     and 99999999999.99 up to 2 decimal places.
-                  example:
-                  - 5000.99
-                giftAidTaxChargeWhereBasicRateDiffers:
-                  maximum: 99999999999.99
-                  minimum: 0
-                  type: number
-                  description: Gift Aid tax charge where Basic Rate differs. This
-                    value must be between 0 and 99999999999.99 up to 2 decimal places.
-                  example:
-                  - 5000.99
-                highIncomeBenefitCharge:
-                  maximum: 99999999999.99
-                  minimum: 0
-                  type: number
-                  description: The tax charge for High income benefit earners. This
-                    value must be between 0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
               additionalProperties: false
@@ -91524,6 +91524,14 @@ components:
                 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
+            giftAidTaxChargeWhereBasicRateDiffers:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: Gift Aid tax charge where Basic Rate differs. This value
+                must be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
             totalPensionSavingsTaxCharges:
               maximum: 99999999999.99
               minimum: 0
@@ -91554,14 +91562,6 @@ components:
               type: number
               description: Total income tax due. This value must be between 0 and
                 99999999999.99 up to 2 decimal places.
-              example:
-              - 5000.99
-            giftAidTaxChargeWhereBasicRateDiffers:
-              maximum: 99999999999.99
-              minimum: 0
-              type: number
-              description: Gift Aid tax charge where Basic Rate differs. This value
-                must be between 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
           additionalProperties: false
@@ -92792,6 +92792,14 @@ components:
             and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
+        giftAidTaxChargeWhereBasicRateDiffers:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: Gift Aid tax charge where Basic Rate differs. This value must
+            be between 0 and 99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
         totalPensionSavingsTaxCharges:
           maximum: 99999999999.99
           minimum: 0
@@ -92822,14 +92830,6 @@ components:
           type: number
           description: Total income tax due. This value must be between 0 and 99999999999.99
             up to 2 decimal places.
-          example:
-          - 5000.99
-        giftAidTaxChargeWhereBasicRateDiffers:
-          maximum: 99999999999.99
-          minimum: 0
-          type: number
-          description: Gift Aid tax charge where Basic Rate differs. This value must
-            be between 0 and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
       additionalProperties: false
@@ -98788,6 +98788,14 @@ components:
                 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
+            giftAidTaxChargeWhereBasicRateDiffers:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: Gift Aid tax charge where Basic Rate differs. This value
+                must be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
             totalPensionSavingsTaxCharges:
               maximum: 99999999999.99
               minimum: 0
@@ -98818,14 +98826,6 @@ components:
               type: number
               description: Total income tax due. This value must be between 0 and
                 99999999999.99 up to 2 decimal places.
-              example:
-              - 5000.99
-            giftAidTaxChargeWhereBasicRateDiffers:
-              maximum: 99999999999.99
-              minimum: 0
-              type: number
-              description: Gift Aid tax charge where Basic Rate differs. This value
-                must be between 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
           additionalProperties: false
@@ -100074,6 +100074,14 @@ components:
             and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
+        giftAidTaxChargeWhereBasicRateDiffers:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: Gift Aid tax charge where Basic Rate differs. This value must
+            be between 0 and 99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
         totalPensionSavingsTaxCharges:
           maximum: 99999999999.99
           minimum: 0
@@ -100104,14 +100112,6 @@ components:
           type: number
           description: Total income tax due. This value must be between 0 and 99999999999.99
             up to 2 decimal places.
-          example:
-          - 5000.99
-        giftAidTaxChargeWhereBasicRateDiffers:
-          maximum: 99999999999.99
-          minimum: 0
-          type: number
-          description: Gift Aid tax charge where Basic Rate differs. This value must
-            be between 0 and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
       additionalProperties: false
@@ -105855,6 +105855,14 @@ components:
                 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
+            giftAidTaxChargeWhereBasicRateDiffers:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: Gift Aid tax charge where Basic Rate differs. This value
+                must be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
             totalPensionSavingsTaxCharges:
               maximum: 99999999999.99
               minimum: 0
@@ -105871,6 +105879,14 @@ components:
                 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
+            highIncomeBenefitCharge:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: The tax charge for High income benefit earners. This value
+                must be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
             payeUnderpaymentsCodedOut:
               maximum: 99999999999.99
               minimum: 0
@@ -105885,22 +105901,6 @@ components:
               type: number
               description: Total income tax due. This value must be between 0 and
                 99999999999.99 up to 2 decimal places.
-              example:
-              - 5000.99
-            giftAidTaxChargeWhereBasicRateDiffers:
-              maximum: 99999999999.99
-              minimum: 0
-              type: number
-              description: Gift Aid tax charge where Basic Rate differs. This value
-                must be between 0 and 99999999999.99 up to 2 decimal places.
-              example:
-              - 5000.99
-            highIncomeBenefitCharge:
-              maximum: 99999999999.99
-              minimum: 0
-              type: number
-              description: The tax charge for High income benefit earners. This value
-                must be between 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
           additionalProperties: false
@@ -107149,6 +107149,14 @@ components:
             and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
+        giftAidTaxChargeWhereBasicRateDiffers:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: Gift Aid tax charge where Basic Rate differs. This value must
+            be between 0 and 99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
         totalPensionSavingsTaxCharges:
           maximum: 99999999999.99
           minimum: 0
@@ -107165,6 +107173,14 @@ components:
             0 and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
+        highIncomeBenefitCharge:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: The tax charge for High income benefit earners. This value
+            must be between 0 and 99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
         payeUnderpaymentsCodedOut:
           maximum: 99999999999.99
           minimum: 0
@@ -107179,22 +107195,6 @@ components:
           type: number
           description: Total income tax due. This value must be between 0 and 99999999999.99
             up to 2 decimal places.
-          example:
-          - 5000.99
-        giftAidTaxChargeWhereBasicRateDiffers:
-          maximum: 99999999999.99
-          minimum: 0
-          type: number
-          description: Gift Aid tax charge where Basic Rate differs. This value must
-            be between 0 and 99999999999.99 up to 2 decimal places.
-          example:
-          - 5000.99
-        highIncomeBenefitCharge:
-          maximum: 99999999999.99
-          minimum: 0
-          type: number
-          description: The tax charge for High income benefit earners. This value
-            must be between 0 and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
       additionalProperties: false
@@ -113947,6 +113947,14 @@ components:
                 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
+            giftAidTaxChargeWhereBasicRateDiffers:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: Gift Aid tax charge where Basic Rate differs. This value
+                must be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
             totalPensionSavingsTaxCharges:
               maximum: 99999999999.99
               minimum: 0
@@ -113963,6 +113971,14 @@ components:
                 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
+            highIncomeBenefitCharge:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: The tax charge for High income benefit earners. This value
+                must be between 0 and 99999999999.99 up to 2 decimal places.
+              example:
+              - 5000.99
             payeUnderpaymentsCodedOut:
               maximum: 99999999999.99
               minimum: 0
@@ -113977,22 +113993,6 @@ components:
               type: number
               description: Total income tax due. This value must be between 0 and
                 99999999999.99 up to 2 decimal places.
-              example:
-              - 5000.99
-            giftAidTaxChargeWhereBasicRateDiffers:
-              maximum: 99999999999.99
-              minimum: 0
-              type: number
-              description: Gift Aid tax charge where Basic Rate differs. This value
-                must be between 0 and 99999999999.99 up to 2 decimal places.
-              example:
-              - 5000.99
-            highIncomeBenefitCharge:
-              maximum: 99999999999.99
-              minimum: 0
-              type: number
-              description: The tax charge for High income benefit earners. This value
-                must be between 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
           additionalProperties: false
@@ -115226,6 +115226,14 @@ components:
             and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
+        giftAidTaxChargeWhereBasicRateDiffers:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: Gift Aid tax charge where Basic Rate differs. This value must
+            be between 0 and 99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
         totalPensionSavingsTaxCharges:
           maximum: 99999999999.99
           minimum: 0
@@ -115242,6 +115250,14 @@ components:
             0 and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
+        highIncomeBenefitCharge:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: The tax charge for High income benefit earners. This value
+            must be between 0 and 99999999999.99 up to 2 decimal places.
+          example:
+          - 5000.99
         payeUnderpaymentsCodedOut:
           maximum: 99999999999.99
           minimum: 0
@@ -115256,22 +115272,6 @@ components:
           type: number
           description: Total income tax due. This value must be between 0 and 99999999999.99
             up to 2 decimal places.
-          example:
-          - 5000.99
-        giftAidTaxChargeWhereBasicRateDiffers:
-          maximum: 99999999999.99
-          minimum: 0
-          type: number
-          description: Gift Aid tax charge where Basic Rate differs. This value must
-            be between 0 and 99999999999.99 up to 2 decimal places.
-          example:
-          - 5000.99
-        highIncomeBenefitCharge:
-          maximum: 99999999999.99
-          minimum: 0
-          type: number
-          description: The tax charge for High income benefit earners. This value
-            must be between 0 and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
       additionalProperties: false
