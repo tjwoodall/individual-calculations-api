@@ -2652,9 +2652,9 @@ paths:
                                         maximum: 99999999999.99
                                         minimum: 0
                                         type: number
-                                        description: The amount of foreign tax. This
-                                          value must be between 0 and 99999999999.99
-                                          up to 2 decimal places.
+                                        description: The amount of foreign tax credit
+                                          relief. This value must be between 0 and
+                                          99999999999.99 up to 2 decimal places.
                                         example: 2002.77
                                       employmentLumpSum:
                                         type: boolean
@@ -9690,9 +9690,9 @@ paths:
                                         maximum: 99999999999.99
                                         minimum: 0
                                         type: number
-                                        description: The amount of foreign tax. This
-                                          value must be between 0 and 99999999999.99
-                                          up to 2 decimal places.
+                                        description: The amount of foreign tax credit
+                                          relief. This value must be between 0 and
+                                          99999999999.99 up to 2 decimal places.
                                         example: 2002.77
                                       employmentLumpSum:
                                         type: boolean
@@ -15460,7 +15460,6 @@ paths:
                               - MTD Voluntary
                               - Annual
                               - Non Digital
-                              - Digitally Exempt
                               - Dormant
                               - MTD Exempt
                           description: Object containing personal information about
@@ -16697,9 +16696,9 @@ paths:
                                         maximum: 99999999999.99
                                         minimum: 0
                                         type: number
-                                        description: The amount of foreign tax. This
-                                          value must be between 0 and 99999999999.99
-                                          up to 2 decimal places.
+                                        description: The amount of foreign tax credit
+                                          relief. This value must be between 0 and
+                                          99999999999.99 up to 2 decimal places.
                                         example: 2002.77
                                       employmentLumpSum:
                                         type: boolean
@@ -22504,7 +22503,6 @@ paths:
                               - MTD Mandated
                               - MTD Voluntary
                               - Annual
-                              - Non Digital
                               - Digitally Exempt
                               - Dormant
                               - MTD Exempt
@@ -23133,10 +23131,10 @@ paths:
                               maximum: 99999999999.99
                               minimum: 0
                               type: number
-                              description: "[Test only] The total amount of partnership\
-                                \ losses brought forward from earlier tax years. This\
-                                \ value must be between 0 and 99999999999.99 up to\
-                                \ 2 decimal places."
+                              description: The total amount of partnership losses
+                                brought forward from earlier tax years. This value
+                                must be between 0 and 99999999999.99 up to 2 decimal
+                                places.
                               example: 2000.58
                           additionalProperties: false
                           description: Object detailing allowances and deductions
@@ -23481,8 +23479,8 @@ paths:
                                               income relating to untaxed foreign income.
                                         additionalProperties: false
                                   additionalProperties: false
-                                  description: "[Test only] An object containing details\
-                                    \ of residential finance costs from partner income."
+                                  description: An object containing details of residential
+                                    finance costs from partner income.
                               additionalProperties: false
                               description: Details the total residential finance cost
                                 reliefs used in the calculation.
@@ -23733,9 +23731,9 @@ paths:
                                         maximum: 99999999999.99
                                         minimum: 0
                                         type: number
-                                        description: The amount of foreign tax. This
-                                          value must be between 0 and 99999999999.99
-                                          up to 2 decimal places.
+                                        description: The amount of foreign tax credit
+                                          relief. This value must be between 0 and
+                                          99999999999.99 up to 2 decimal places.
                                         example: 2000.58
                                       employmentLumpSum:
                                         type: boolean
@@ -23913,10 +23911,10 @@ paths:
                               maximum: 99999999999.99
                               minimum: 0
                               type: number
-                              description: "[Test only] The total amount of tax deducted\
-                                \ from the individual's share of partnership income.\
-                                \ This value must be between 0 and 99999999999.99\
-                                \ up to 2 decimal places."
+                              description: The total amount of tax deducted from the
+                                individual's share of partnership income. This value
+                                must be between 0 and 99999999999.99 up to 2 decimal
+                                places.
                               example: 2000.58
                           additionalProperties: false
                           description: Object representing amounts that have been
@@ -27157,9 +27155,9 @@ paths:
                                     example: 5000.99
                                 additionalProperties: false
                           additionalProperties: false
-                          description: "[Test only] An object containing details of\
-                            \ the individual's share of income from partnerships in\
-                            \ the retrieved tax calculation."
+                          description: An object containing details of the individual's
+                            share of income from partnerships in the retrieved tax
+                            calculation.
                         dividendsIncome:
                           type: object
                           properties:
@@ -28149,6 +28147,17 @@ paths:
                                     up to 2 decimal places.
                                   example:
                                   - 5000.99
+                                winterFuelPaymentCharge:
+                                  maximum: 99999999999.99
+                                  minimum: 0
+                                  type: number
+                                  description: "[Test only] The income tax charge\
+                                    \ applied to recover the Winter Fuel Payment from\
+                                    \ individuals whose income exceeds the threshold.\
+                                    \ This value must be between 0 and 99999999999.99\
+                                    \ up to 2 decimal places."
+                                  example:
+                                  - 5000.99
                                 payeUnderpaymentsCodedOut:
                                   maximum: 99999999999.99
                                   minimum: 0
@@ -28274,11 +28283,10 @@ paths:
                                       maximum: 99999999999.99
                                       minimum: 0
                                       type: number
-                                      description: "[Test only] The adjustment to\
-                                        \ the individual's profits specifically used\
-                                        \ to calculate Class 4 NICs. This value must\
-                                        \ be between 0 and 99999999999.99 up to 2\
-                                        \ decimal places."
+                                      description: The adjustment to the individual's
+                                        profits specifically used to calculate Class
+                                        4 NICs. This value must be between 0 and 99999999999.99
+                                        up to 2 decimal places.
                                       example:
                                       - 5000.99
                                     nic4Bands:
@@ -28351,18 +28359,18 @@ paths:
                                   maximum: 99999999999.99
                                   minimum: 0
                                   type: number
-                                  description: "[Test only] Class 2 NICs amount. This\
-                                    \ value must be between 0 and 99999999999.99 up\
-                                    \ to 2 decimal places."
+                                  description: Class 2 NICs amount. This value must
+                                    be between 0 and 99999999999.99 up to 2 decimal
+                                    places.
                                   example:
                                   - 5000.99
                                 nic4Amount:
                                   maximum: 99999999999.99
                                   minimum: 0
                                   type: number
-                                  description: "[Test only] Class 4 NICs amount. This\
-                                    \ value must be between 0 and 99999999999.99 up\
-                                    \ to 2 decimal places."
+                                  description: Class 4 NICs amount. This value must
+                                    be between 0 and 99999999999.99 up to 2 decimal
+                                    places.
                                   example:
                                   - 5000.99
                                 totalNic:
@@ -31596,8 +31604,9 @@ components:
                             maximum: 99999999999.99
                             minimum: 0
                             type: number
-                            description: The amount of foreign tax. This value must
-                              be between 0 and 99999999999.99 up to 2 decimal places.
+                            description: The amount of foreign tax credit relief.
+                              This value must be between 0 and 99999999999.99 up to
+                              2 decimal places.
                             example: 2002.77
                           employmentLumpSum:
                             type: boolean
@@ -38242,8 +38251,9 @@ components:
                             maximum: 99999999999.99
                             minimum: 0
                             type: number
-                            description: The amount of foreign tax. This value must
-                              be between 0 and 99999999999.99 up to 2 decimal places.
+                            description: The amount of foreign tax credit relief.
+                              This value must be between 0 and 99999999999.99 up to
+                              2 decimal places.
                             example: 2002.77
                           employmentLumpSum:
                             type: boolean
@@ -43679,7 +43689,6 @@ components:
                   - MTD Voluntary
                   - Annual
                   - Non Digital
-                  - Digitally Exempt
                   - Dormant
                   - MTD Exempt
               description: Object containing personal information about the taxpayer
@@ -44860,8 +44869,9 @@ components:
                             maximum: 99999999999.99
                             minimum: 0
                             type: number
-                            description: The amount of foreign tax. This value must
-                              be between 0 and 99999999999.99 up to 2 decimal places.
+                            description: The amount of foreign tax credit relief.
+                              This value must be between 0 and 99999999999.99 up to
+                              2 decimal places.
                             example: 2002.77
                           employmentLumpSum:
                             type: boolean
@@ -50333,7 +50343,6 @@ components:
                   - MTD Mandated
                   - MTD Voluntary
                   - Annual
-                  - Non Digital
                   - Digitally Exempt
                   - Dormant
                   - MTD Exempt
@@ -50936,9 +50945,9 @@ components:
                   maximum: 99999999999.99
                   minimum: 0
                   type: number
-                  description: "[Test only] The total amount of partnership losses\
-                    \ brought forward from earlier tax years. This value must be between\
-                    \ 0 and 99999999999.99 up to 2 decimal places."
+                  description: The total amount of partnership losses brought forward
+                    from earlier tax years. This value must be between 0 and 99999999999.99
+                    up to 2 decimal places.
                   example: 2000.58
               additionalProperties: false
               description: Object detailing allowances and deductions used in the
@@ -51260,8 +51269,8 @@ components:
                                   foreign income.
                             additionalProperties: false
                       additionalProperties: false
-                      description: "[Test only] An object containing details of residential\
-                        \ finance costs from partner income."
+                      description: An object containing details of residential finance
+                        costs from partner income.
                   additionalProperties: false
                   description: Details the total residential finance cost reliefs
                     used in the calculation.
@@ -51502,8 +51511,9 @@ components:
                             maximum: 99999999999.99
                             minimum: 0
                             type: number
-                            description: The amount of foreign tax. This value must
-                              be between 0 and 99999999999.99 up to 2 decimal places.
+                            description: The amount of foreign tax credit relief.
+                              This value must be between 0 and 99999999999.99 up to
+                              2 decimal places.
                             example: 2000.58
                           employmentLumpSum:
                             type: boolean
@@ -51672,9 +51682,9 @@ components:
                   maximum: 99999999999.99
                   minimum: 0
                   type: number
-                  description: "[Test only] The total amount of tax deducted from\
-                    \ the individual's share of partnership income. This value must\
-                    \ be between 0 and 99999999999.99 up to 2 decimal places."
+                  description: The total amount of tax deducted from the individual's
+                    share of partnership income. This value must be between 0 and
+                    99999999999.99 up to 2 decimal places.
                   example: 2000.58
               additionalProperties: false
               description: Object representing amounts that have been deducted for
@@ -54751,8 +54761,8 @@ components:
                         example: 5000.99
                     additionalProperties: false
               additionalProperties: false
-              description: "[Test only] An object containing details of the individual's\
-                \ share of income from partnerships in the retrieved tax calculation."
+              description: An object containing details of the individual's share
+                of income from partnerships in the retrieved tax calculation.
             dividendsIncome:
               type: object
               properties:
@@ -55684,6 +55694,16 @@ components:
                         places.
                       example:
                       - 5000.99
+                    winterFuelPaymentCharge:
+                      maximum: 99999999999.99
+                      minimum: 0
+                      type: number
+                      description: "[Test only] The income tax charge applied to recover\
+                        \ the Winter Fuel Payment from individuals whose income exceeds\
+                        \ the threshold. This value must be between 0 and 99999999999.99\
+                        \ up to 2 decimal places."
+                      example:
+                      - 5000.99
                     payeUnderpaymentsCodedOut:
                       maximum: 99999999999.99
                       minimum: 0
@@ -55798,10 +55818,9 @@ components:
                           maximum: 99999999999.99
                           minimum: 0
                           type: number
-                          description: "[Test only] The adjustment to the individual's\
-                            \ profits specifically used to calculate Class 4 NICs.\
-                            \ This value must be between 0 and 99999999999.99 up to\
-                            \ 2 decimal places."
+                          description: The adjustment to the individual's profits
+                            specifically used to calculate Class 4 NICs. This value
+                            must be between 0 and 99999999999.99 up to 2 decimal places.
                           example:
                           - 5000.99
                         nic4Bands:
@@ -55869,16 +55888,16 @@ components:
                       maximum: 99999999999.99
                       minimum: 0
                       type: number
-                      description: "[Test only] Class 2 NICs amount. This value must\
-                        \ be between 0 and 99999999999.99 up to 2 decimal places."
+                      description: Class 2 NICs amount. This value must be between
+                        0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
                     nic4Amount:
                       maximum: 99999999999.99
                       minimum: 0
                       type: number
-                      description: "[Test only] Class 4 NICs amount. This value must\
-                        \ be between 0 and 99999999999.99 up to 2 decimal places."
+                      description: Class 4 NICs amount. This value must be between
+                        0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
                     totalNic:
@@ -59041,8 +59060,9 @@ components:
                         maximum: 99999999999.99
                         minimum: 0
                         type: number
-                        description: The amount of foreign tax. This value must be
-                          between 0 and 99999999999.99 up to 2 decimal places.
+                        description: The amount of foreign tax credit relief. This
+                          value must be between 0 and 99999999999.99 up to 2 decimal
+                          places.
                         example: 2002.77
                       employmentLumpSum:
                         type: boolean
@@ -66263,8 +66283,9 @@ components:
                         maximum: 99999999999.99
                         minimum: 0
                         type: number
-                        description: The amount of foreign tax. This value must be
-                          between 0 and 99999999999.99 up to 2 decimal places.
+                        description: The amount of foreign tax credit relief. This
+                          value must be between 0 and 99999999999.99 up to 2 decimal
+                          places.
                         example: 2002.77
                       employmentLumpSum:
                         type: boolean
@@ -71543,7 +71564,6 @@ components:
               - MTD Voluntary
               - Annual
               - Non Digital
-              - Digitally Exempt
               - Dormant
               - MTD Exempt
           description: Object containing personal information about the taxpayer for
@@ -72162,7 +72182,6 @@ components:
           - MTD Voluntary
           - Annual
           - Non Digital
-          - Digitally Exempt
           - Dormant
           - MTD Exempt
       additionalProperties: false
@@ -73514,8 +73533,9 @@ components:
                         maximum: 99999999999.99
                         minimum: 0
                         type: number
-                        description: The amount of foreign tax. This value must be
-                          between 0 and 99999999999.99 up to 2 decimal places.
+                        description: The amount of foreign tax credit relief. This
+                          value must be between 0 and 99999999999.99 up to 2 decimal
+                          places.
                         example: 2002.77
                       employmentLumpSum:
                         type: boolean
@@ -78828,7 +78848,6 @@ components:
               - MTD Mandated
               - MTD Voluntary
               - Annual
-              - Non Digital
               - Digitally Exempt
               - Dormant
               - MTD Exempt
@@ -79315,7 +79334,6 @@ components:
           - MTD Mandated
           - MTD Voluntary
           - Annual
-          - Non Digital
           - Digitally Exempt
           - Dormant
           - MTD Exempt
@@ -80117,9 +80135,9 @@ components:
               maximum: 99999999999.99
               minimum: 0
               type: number
-              description: "[Test only] The total amount of partnership losses brought\
-                \ forward from earlier tax years. This value must be between 0 and\
-                \ 99999999999.99 up to 2 decimal places."
+              description: The total amount of partnership losses brought forward
+                from earlier tax years. This value must be between 0 and 99999999999.99
+                up to 2 decimal places.
               example: 2000.58
           additionalProperties: false
           description: Object detailing allowances and deductions used in the retrieved
@@ -80436,8 +80454,8 @@ components:
                               foreign income.
                         additionalProperties: false
                   additionalProperties: false
-                  description: "[Test only] An object containing details of residential\
-                    \ finance costs from partner income."
+                  description: An object containing details of residential finance
+                    costs from partner income.
               additionalProperties: false
               description: Details the total residential finance cost reliefs used
                 in the calculation.
@@ -80673,8 +80691,9 @@ components:
                         maximum: 99999999999.99
                         minimum: 0
                         type: number
-                        description: The amount of foreign tax. This value must be
-                          between 0 and 99999999999.99 up to 2 decimal places.
+                        description: The amount of foreign tax credit relief. This
+                          value must be between 0 and 99999999999.99 up to 2 decimal
+                          places.
                         example: 2000.58
                       employmentLumpSum:
                         type: boolean
@@ -80838,9 +80857,9 @@ components:
               maximum: 99999999999.99
               minimum: 0
               type: number
-              description: "[Test only] The total amount of tax deducted from the\
-                \ individual's share of partnership income. This value must be between\
-                \ 0 and 99999999999.99 up to 2 decimal places."
+              description: The total amount of tax deducted from the individual's
+                share of partnership income. This value must be between 0 and 99999999999.99
+                up to 2 decimal places.
               example: 2000.58
           additionalProperties: false
           description: Object representing amounts that have been deducted for tax
@@ -83838,8 +83857,8 @@ components:
                     example: 5000.99
                 additionalProperties: false
           additionalProperties: false
-          description: "[Test only] An object containing details of the individual's\
-            \ share of income from partnerships in the retrieved tax calculation."
+          description: An object containing details of the individual's share of income
+            from partnerships in the retrieved tax calculation.
         dividendsIncome:
           type: object
           properties:
@@ -84763,6 +84782,16 @@ components:
                     value must be between 0 and 99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
+                winterFuelPaymentCharge:
+                  maximum: 99999999999.99
+                  minimum: 0
+                  type: number
+                  description: "[Test only] The income tax charge applied to recover\
+                    \ the Winter Fuel Payment from individuals whose income exceeds\
+                    \ the threshold. This value must be between 0 and 99999999999.99\
+                    \ up to 2 decimal places."
+                  example:
+                  - 5000.99
                 payeUnderpaymentsCodedOut:
                   maximum: 99999999999.99
                   minimum: 0
@@ -84877,10 +84906,9 @@ components:
                       maximum: 99999999999.99
                       minimum: 0
                       type: number
-                      description: "[Test only] The adjustment to the individual's\
-                        \ profits specifically used to calculate Class 4 NICs. This\
-                        \ value must be between 0 and 99999999999.99 up to 2 decimal\
-                        \ places."
+                      description: The adjustment to the individual's profits specifically
+                        used to calculate Class 4 NICs. This value must be between
+                        0 and 99999999999.99 up to 2 decimal places.
                       example:
                       - 5000.99
                     nic4Bands:
@@ -84948,16 +84976,16 @@ components:
                   maximum: 99999999999.99
                   minimum: 0
                   type: number
-                  description: "[Test only] Class 2 NICs amount. This value must be\
-                    \ between 0 and 99999999999.99 up to 2 decimal places."
+                  description: Class 2 NICs amount. This value must be between 0 and
+                    99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
                 nic4Amount:
                   maximum: 99999999999.99
                   minimum: 0
                   type: number
-                  description: "[Test only] Class 4 NICs amount. This value must be\
-                    \ between 0 and 99999999999.99 up to 2 decimal places."
+                  description: Class 4 NICs amount. This value must be between 0 and
+                    99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
                 totalNic:
@@ -86424,8 +86452,8 @@ components:
                     maximum: 99999999999.99
                     minimum: 0
                     type: number
-                    description: The amount of foreign tax. This value must be between
-                      0 and 99999999999.99 up to 2 decimal places.
+                    description: The amount of foreign tax credit relief. This value
+                      must be between 0 and 99999999999.99 up to 2 decimal places.
                     example: 2002.77
                   employmentLumpSum:
                     type: boolean
@@ -95506,8 +95534,8 @@ components:
                     maximum: 99999999999.99
                     minimum: 0
                     type: number
-                    description: The amount of foreign tax. This value must be between
-                      0 and 99999999999.99 up to 2 decimal places.
+                    description: The amount of foreign tax credit relief. This value
+                      must be between 0 and 99999999999.99 up to 2 decimal places.
                     example: 2002.77
                   employmentLumpSum:
                     type: boolean
@@ -102681,8 +102709,8 @@ components:
                     maximum: 99999999999.99
                     minimum: 0
                     type: number
-                    description: The amount of foreign tax. This value must be between
-                      0 and 99999999999.99 up to 2 decimal places.
+                    description: The amount of foreign tax credit relief. This value
+                      must be between 0 and 99999999999.99 up to 2 decimal places.
                     example: 2002.77
                   employmentLumpSum:
                     type: boolean
@@ -109659,9 +109687,9 @@ components:
           maximum: 99999999999.99
           minimum: 0
           type: number
-          description: "[Test only] The total amount of partnership losses brought\
-            \ forward from earlier tax years. This value must be between 0 and 99999999999.99\
-            \ up to 2 decimal places."
+          description: The total amount of partnership losses brought forward from
+            earlier tax years. This value must be between 0 and 99999999999.99 up
+            to 2 decimal places.
           example: 2000.58
       additionalProperties: false
       description: Object detailing allowances and deductions used in the retrieved
@@ -109972,8 +110000,8 @@ components:
                           costs from partner income relating to untaxed foreign income.
                     additionalProperties: false
               additionalProperties: false
-              description: "[Test only] An object containing details of residential\
-                \ finance costs from partner income."
+              description: An object containing details of residential finance costs
+                from partner income.
           additionalProperties: false
           description: Details the total residential finance cost reliefs used in
             the calculation.
@@ -110200,8 +110228,8 @@ components:
                     maximum: 99999999999.99
                     minimum: 0
                     type: number
-                    description: The amount of foreign tax. This value must be between
-                      0 and 99999999999.99 up to 2 decimal places.
+                    description: The amount of foreign tax credit relief. This value
+                      must be between 0 and 99999999999.99 up to 2 decimal places.
                     example: 2000.58
                   employmentLumpSum:
                     type: boolean
@@ -110363,9 +110391,9 @@ components:
           maximum: 99999999999.99
           minimum: 0
           type: number
-          description: "[Test only] The total amount of tax deducted from the individual's\
-            \ share of partnership income. This value must be between 0 and 99999999999.99\
-            \ up to 2 decimal places."
+          description: The total amount of tax deducted from the individual's share
+            of partnership income. This value must be between 0 and 99999999999.99
+            up to 2 decimal places.
           example: 2000.58
       additionalProperties: false
       description: Object representing amounts that have been deducted for tax at
@@ -113288,8 +113316,8 @@ components:
                 example: 5000.99
             additionalProperties: false
       additionalProperties: false
-      description: "[Test only] An object containing details of the individual's share\
-        \ of income from partnerships in the retrieved tax calculation."
+      description: An object containing details of the individual's share of income
+        from partnerships in the retrieved tax calculation.
     taxCalculation_3:
       required:
       - incomeTax
@@ -113979,6 +114007,16 @@ components:
                 must be between 0 and 99999999999.99 up to 2 decimal places.
               example:
               - 5000.99
+            winterFuelPaymentCharge:
+              maximum: 99999999999.99
+              minimum: 0
+              type: number
+              description: "[Test only] The income tax charge applied to recover the\
+                \ Winter Fuel Payment from individuals whose income exceeds the threshold.\
+                \ This value must be between 0 and 99999999999.99 up to 2 decimal\
+                \ places."
+              example:
+              - 5000.99
             payeUnderpaymentsCodedOut:
               maximum: 99999999999.99
               minimum: 0
@@ -114093,9 +114131,9 @@ components:
                   maximum: 99999999999.99
                   minimum: 0
                   type: number
-                  description: "[Test only] The adjustment to the individual's profits\
-                    \ specifically used to calculate Class 4 NICs. This value must\
-                    \ be between 0 and 99999999999.99 up to 2 decimal places."
+                  description: The adjustment to the individual's profits specifically
+                    used to calculate Class 4 NICs. This value must be between 0 and
+                    99999999999.99 up to 2 decimal places.
                   example:
                   - 5000.99
                 nic4Bands:
@@ -114163,16 +114201,16 @@ components:
               maximum: 99999999999.99
               minimum: 0
               type: number
-              description: "[Test only] Class 2 NICs amount. This value must be between\
-                \ 0 and 99999999999.99 up to 2 decimal places."
+              description: Class 2 NICs amount. This value must be between 0 and 99999999999.99
+                up to 2 decimal places.
               example:
               - 5000.99
             nic4Amount:
               maximum: 99999999999.99
               minimum: 0
               type: number
-              description: "[Test only] Class 4 NICs amount. This value must be between\
-                \ 0 and 99999999999.99 up to 2 decimal places."
+              description: Class 4 NICs amount. This value must be between 0 and 99999999999.99
+                up to 2 decimal places.
               example:
               - 5000.99
             totalNic:
@@ -115258,6 +115296,15 @@ components:
             must be between 0 and 99999999999.99 up to 2 decimal places.
           example:
           - 5000.99
+        winterFuelPaymentCharge:
+          maximum: 99999999999.99
+          minimum: 0
+          type: number
+          description: "[Test only] The income tax charge applied to recover the Winter\
+            \ Fuel Payment from individuals whose income exceeds the threshold. This\
+            \ value must be between 0 and 99999999999.99 up to 2 decimal places."
+          example:
+          - 5000.99
         payeUnderpaymentsCodedOut:
           maximum: 99999999999.99
           minimum: 0
@@ -116053,9 +116100,9 @@ components:
               maximum: 99999999999.99
               minimum: 0
               type: number
-              description: "[Test only] The adjustment to the individual's profits\
-                \ specifically used to calculate Class 4 NICs. This value must be\
-                \ between 0 and 99999999999.99 up to 2 decimal places."
+              description: The adjustment to the individual's profits specifically
+                used to calculate Class 4 NICs. This value must be between 0 and 99999999999.99
+                up to 2 decimal places.
               example:
               - 5000.99
             nic4Bands:
@@ -116123,16 +116170,16 @@ components:
           maximum: 99999999999.99
           minimum: 0
           type: number
-          description: "[Test only] Class 2 NICs amount. This value must be between\
-            \ 0 and 99999999999.99 up to 2 decimal places."
+          description: Class 2 NICs amount. This value must be between 0 and 99999999999.99
+            up to 2 decimal places.
           example:
           - 5000.99
         nic4Amount:
           maximum: 99999999999.99
           minimum: 0
           type: number
-          description: "[Test only] Class 4 NICs amount. This value must be between\
-            \ 0 and 99999999999.99 up to 2 decimal places."
+          description: Class 4 NICs amount. This value must be between 0 and 99999999999.99
+            up to 2 decimal places.
           example:
           - 5000.99
         totalNic:
@@ -116238,9 +116285,9 @@ components:
           maximum: 99999999999.99
           minimum: 0
           type: number
-          description: "[Test only] The adjustment to the individual's profits specifically\
-            \ used to calculate Class 4 NICs. This value must be between 0 and 99999999999.99\
-            \ up to 2 decimal places."
+          description: The adjustment to the individual's profits specifically used
+            to calculate Class 4 NICs. This value must be between 0 and 99999999999.99
+            up to 2 decimal places.
           example:
           - 5000.99
         nic4Bands:
