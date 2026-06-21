@@ -239,6 +239,15 @@
           ]
         },
         
+          "winterFuelPaymentCharge": {
+            "description": "[Test only] The income tax charge applied to recover the Winter Fuel Payment from individuals whose income exceeds the threshold. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
+            "allOf": [
+              {
+                "$ref": "#/definitions/monetaryPos"
+              }
+            ]
+          },
+        
         "payeUnderpaymentsCodedOut": {
           "description": "PAYE underpayments coded out. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
           "allOf": [
@@ -516,7 +525,7 @@
         },
         
           "nic2Amount": {
-            "description": "[Test only] Class 2 NICs amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
+            "description": "Class 2 NICs amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
             "allOf": [
               {
                 "$ref": "#/definitions/monetaryPos"
@@ -524,7 +533,7 @@
             ]
           },
           "nic4Amount": {
-            "description": "[Test only] Class 4 NICs amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
+            "description": "Class 4 NICs amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
             "allOf": [
               {
                 "$ref": "#/definitions/monetaryPos"
@@ -637,7 +646,7 @@
         },
         
           "adjustmentToProfitsForClass4": {
-            "description": "[Test only] The adjustment to the individual's profits specifically used to calculate Class 4 NICs. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
+            "description": "The adjustment to the individual's profits specifically used to calculate Class 4 NICs. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
             "allOf": [
               {
                 "$ref": "#/definitions/monetaryPos"
