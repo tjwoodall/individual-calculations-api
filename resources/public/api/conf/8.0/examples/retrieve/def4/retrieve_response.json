@@ -71,7 +71,6 @@
         "applied": true
       }
     ],
-    
     "constructionIndustryScheme": [
       {
         "employerRef": "123/AA12345",
@@ -137,10 +136,8 @@
         "retirementAnnuityPayments": 5000.99,
         "paymentToEmployersSchemeNoTaxRelief": 5000.99,
         "overseasPensionSchemeContributions": 5000.99
-      }
-      
-        ,"totalPartnershipLossesBroughtForward": 5000.99
-      
+      },
+      "totalPartnershipLossesBroughtForward": 5000.99
     },
     "reliefs": {
       "residentialFinanceCosts": {
@@ -174,27 +171,25 @@
               "broughtFwdResidentialFinancialCostAmount": 5000.99
             }
           ]
-        }
-        
-          ,"partnerIncome": {
-            "partnerIncomeRfcDetail": [
-              {
-                "partnershipUtr": "4564564564",
-                "totalAllowableAmount": 5000.99,
-                "ukProperty": {
-                  "amountClaimed": 5000.99,
-                  "allowableAmount": 5000.99,
-                  "carryForwardAmount": 5000.99
-                },
-                "untaxedForeignIncome": {
-                  "amountClaimed": 5000.99,
-                  "allowableAmount": 5000.99,
-                  "carryForwardAmount": 5000.99
-                }
+        },
+        "partnerIncome": {
+          "partnerIncomeRfcDetail": [
+            {
+              "partnershipUtr": "4564564564",
+              "totalAllowableAmount": 5000.99,
+              "ukProperty": {
+                "amountClaimed": 5000.99,
+                "allowableAmount": 5000.99,
+                "carryForwardAmount": 5000.99
+              },
+              "untaxedForeignIncome": {
+                "amountClaimed": 5000.99,
+                "allowableAmount": 5000.99,
+                "carryForwardAmount": 5000.99
               }
-            ]
-          }
-        
+            }
+          ]
+        }
       },
       "reliefsClaimed": [
         {
@@ -260,10 +255,8 @@
       "stateBenefits": -99999999999.99,
       "specialWithholdingTaxOrUkTaxPaid": 5000.99,
       "inYearAdjustmentCodedInLaterTaxYear": 5000.99,
-      "taxTakenOffTradingIncome": 5000.99
-      
-        ,"taxTakenOffPartnerIncome": 5000.99
-      
+      "taxTakenOffTradingIncome": 5000.99,
+      "taxTakenOffPartnerIncome": 5000.99
     },
     "giftAid": {
       "grossGiftAidPayments": 12500,
@@ -457,7 +450,6 @@
         "totalBroughtForwardIncomeTaxLosses": 12500,
         "broughtForwardIncomeTaxLossesUsed": 12500,
         "taxableProfitAfterIncomeTaxLossesDeduction": 12500,
-        
         "adjustedProfit": 2100.99,
         "adjustedLoss": 2100.99,
         "foreignTaxPaid": 2100.99,
@@ -794,40 +786,38 @@
         ]
       }
     },
-    
-      "partnerIncome": {
-        "totalPartnerIncome": 5000.99,
-        "listOfPartnerIncome": [
-          {
-            "partnershipUtr": "4564564564",
-            "partnershipTrades": [
-              {
-                "lossesBroughtForwardAdjustedProfit": 5000.99,
-                "shareOfTaxableProfit": 5000.99,
-                "adjustedLoss": 5000.99,
-                "currentYearLossAppliedToGeneralIncome": 5000.99,
-                "transitionProfitArisingThisYear": 5000.99,
-                "lossesBroughtForwardTransitionProfit": 5000.99
-              }
-            ],
-            "nationalInsuranceContributions": {
-              "voluntaryClass2Nics": true,
-              "class4Exemption": true,
-              "adjustmentToProfitsForClass4": 5000.99
-            },
-            "untaxedSavings": 5000.99,
-            "taxedSavings": 5000.99,
-            "dividendIncome": 5000.99,
-            "ukPropertyIncome": {
-              "shareOfProfitOrLoss": -99999999999.99,
-              "profitOrLossAdjustment": -99999999999.99,
-              "currentYearLossAppliedToGeneralIncome": 5000.99
-            },
-            "taxedAndUntaxedIncome": 5000.99
-          }
-        ]
-      },
-    
+    "partnerIncome": {
+      "totalPartnerIncome": 5000.99,
+      "listOfPartnerIncome": [
+        {
+          "partnershipUtr": "4564564564",
+          "partnershipTrades": [
+            {
+              "lossesBroughtForwardAdjustedProfit": 5000.99,
+              "shareOfTaxableProfit": 5000.99,
+              "adjustedLoss": 5000.99,
+              "currentYearLossAppliedToGeneralIncome": 5000.99,
+              "transitionProfitArisingThisYear": 5000.99,
+              "lossesBroughtForwardTransitionProfit": 5000.99
+            }
+          ],
+          "nationalInsuranceContributions": {
+            "voluntaryClass2Nics": true,
+            "class4Exemption": true,
+            "adjustmentToProfitsForClass4": 5000.99
+          },
+          "untaxedSavings": 5000.99,
+          "taxedSavings": 5000.99,
+          "dividendIncome": 5000.99,
+          "ukPropertyIncome": {
+            "shareOfProfitOrLoss": -99999999999.99,
+            "profitOrLossAdjustment": -99999999999.99,
+            "currentYearLossAppliedToGeneralIncome": 5000.99
+          },
+          "taxedAndUntaxedIncome": 5000.99
+        }
+      ]
+    },
     "incomeSummaryTotals": {
       "totalSelfEmploymentProfit": 12500,
       "totalUKPropertyProfit": 12500,
@@ -951,12 +941,9 @@
         },
         "class4Nics": {
           "totalIncomeLiableToClass4Charge": 12500,
-          
           "totalIncomeChargeableToClass4": 12500,
           "totalAmount": 5000.99,
-          
-            "adjustmentToProfitsForClass4": 5000.99,
-          
+          "adjustmentToProfitsForClass4": 5000.99,
           "nic4Bands": [
             {
               "name": "zero-rate",
@@ -968,10 +955,8 @@
             }
           ]
         },
-        
-          "nic2Amount": 5000.99,
-          "nic4Amount": 5000.99,
-        
+        "nic2Amount": 5000.99,
+        "nic4Amount": 5000.99,
         "totalNic": -99999999999.99
       },
       "totalTaxDeductedBeforeCodingOut": 99999999999.99,
@@ -1079,7 +1064,6 @@
       "cgtAmount": 5000.99,
       "incomeTaxNicAndCgtAmount": 5000.99
     },
-    
     "transitionProfit": {
       "totalTaxableTransitionProfit": 12500,
       "transitionProfitDetail": [
