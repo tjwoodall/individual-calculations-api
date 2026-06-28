@@ -17,7 +17,6 @@
     "annualAdjustments": {
       "$ref": "#/definitions/annualAdjustments"
     },
-    
     "constructionIndustryScheme": {
       "$ref": "#/definitions/constructionIndustryScheme"
     },
@@ -789,9 +788,7 @@
         "uk-dividends",
         "state-benefits",
         "gains-on-life-policies",
-        
-          "partner-income",
-        
+        "partner-income",
         "foreign-savings-and-gains",
         "other-dividends",
         "uk-securities",
