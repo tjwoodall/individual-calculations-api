@@ -72,7 +72,6 @@
               "incomeSourceId": {
                 "description": "The unique identifier of the income source.",
                 "type": "string",
-                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
                 "format": "uuid",
                 "example": "bb74c290-cae6-11ec-9b64-0242ac120002"
               },
@@ -104,7 +103,6 @@
               "incomeSourceId": {
                 "description": "The unique identifier of the income source.",
                 "type": "string",
-                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
                 "format": "uuid",
                 "example": "bb74c290-cae6-11ec-9b64-0242ac120002"
               },
@@ -153,7 +151,6 @@
               "incomeSourceId": {
                 "description": "The unique identifier of the income source.",
                 "type": "string",
-                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
                 "format": "uuid",
                 "example": "bb74c290-cae6-11ec-9b64-0242ac120002"
               },
@@ -193,7 +190,6 @@
               "incomeSourceId": {
                 "description": "The unique identifier of the income source.",
                 "type": "string",
-                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
                 "format": "uuid",
                 "example": "bb74c290-cae6-11ec-9b64-0242ac120002"
               },
@@ -233,7 +229,6 @@
               "incomeSourceId": {
                 "description": "The unique identifier of the income source.",
                 "type": "string",
-                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
                 "format": "uuid",
                 "example": "bb74c290-cae6-11ec-9b64-0242ac120002"
               },
@@ -265,7 +260,6 @@
               "incomeSourceId": {
                 "description": "The unique identifier of the income source.",
                 "type": "string",
-                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
                 "format": "uuid",
                 "example": "bb74c290-cae6-11ec-9b64-0242ac120002"
               },
