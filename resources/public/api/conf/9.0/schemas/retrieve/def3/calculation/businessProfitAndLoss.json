@@ -181,7 +181,7 @@
         "multipleOf": 1,
         "minimum": 0,
         "maximum": 99999999999,
-        "example": "160"
+        "example": 160
       },
       "carrySidewaysClass4LossesUsed": {
         "title": "carrySidewaysClass4LossesUsed",

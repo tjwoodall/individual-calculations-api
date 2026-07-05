@@ -45,6 +45,7 @@
             "description": "The unique identifier of the income source.",
             "type": "string",
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
+            "format": "uuid",
             "example": "bb74c290-cae6-11ec-9b64-0242ac120002"
           },
           "source": {
@@ -380,7 +381,7 @@
                     "multipleOf": 0.01,
                     "minimum": 0,
                     "maximum": 99999999999.99,
-                    "example": "2000.98"
+                    "example": 2000.98
                   },
                   "apportionedService": {
                     "description": "Apportioned benefit amount. This value must be between 0 and 99999999999.99 up to 2 decimal places.",
@@ -532,7 +533,8 @@
   "additionalProperties": false,
   "definitions": {
     "date": {
-      "id": "full-date",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
       "type": "string",
       "example": "2020-01-01"
     }

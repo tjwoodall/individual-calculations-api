@@ -60,7 +60,7 @@
           },
           "relatedTaxYear": {
             "description": "The tax year this underpayment relates to.",
-            "id": "tax-year",
+            "format": "tax-year",
             "type": "string",
             "example": "2020-21"
           },
@@ -91,7 +91,7 @@
           },
           "relatedTaxYear": {
             "description": "The tax year this underpayment relates to.",
-            "id": "tax-year",
+            "format": "tax-year",
             "type": "string",
             "example": "2020-21"
           },
