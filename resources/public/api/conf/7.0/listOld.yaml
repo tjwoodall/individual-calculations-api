@@ -49,8 +49,7 @@ get:
           examples:
             example-response:
               description: Example Response
-              value:
-                $ref: ./examples/list/list_response.json
+              externalValue: ./examples/list/list_response.json
 
     400:
       description: Bad request
