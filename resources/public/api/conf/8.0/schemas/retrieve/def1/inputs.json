@@ -831,7 +831,6 @@
       ]
     },
     "date": {
-      "format": "full-date",
       "type": "string",
       "format": "date",
       "example": "2020-01-01"
