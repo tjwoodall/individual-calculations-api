@@ -1085,7 +1085,7 @@
       "taxRefundedOrSetOffAmount": 5000.99,
       "totalTaxAndNicsDue": -99999999999.99,
       "incomeTaxNicDueThisPeriod": -99999999999.99,
-      "cgtDueThisPeriod": -99999999999.99,
+      "cgtDueThisPeriod": 99999999999.99,
       "taxNicsDueThisPeriod": -99999999999.99,
       "totalIncomeTaxAndNicsAndCgtDueThisPeriod": 5000.99,
       "totalTaxAndNicsDueThisPeriod": -99999999999.99
