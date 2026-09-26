@@ -594,7 +594,7 @@ paths:
           content:
             application/json:
               schema:
-                oneOf:
+                anyOf:
                 - title: TY 2022-23 and before
                   required:
                   - calculations
@@ -1170,7 +1170,7 @@ paths:
           content:
             application/json:
               schema:
-                oneOf:
+                anyOf:
                 - title: TY 2023-24 or before
                   required:
                   - inputs
