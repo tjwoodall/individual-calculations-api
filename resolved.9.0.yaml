@@ -22335,7 +22335,7 @@ paths:
                         taxYear:
                           type: string
                           description: The tax year in which the calculation was performed.
-                          example: 2022-23
+                          example: 2026-27
                         requestedBy:
                           type: string
                           description: The requester of the calculation. Currently
@@ -22350,7 +22350,7 @@ paths:
                           description: "The timestamp of when the calculation was\
                             \ requested in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
                           format: date-time
-                          example: 2019-02-15T09:35:15.094Z
+                          example: 2026-02-15T09:35:15.094Z
                         calculationReason:
                           type: string
                           description: "The reason why the calculation was triggered.\
@@ -22406,7 +22406,7 @@ paths:
                           description: "The timestamp of when the calculation was\
                             \ performed in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
                           format: date-time
-                          example: 2019-02-15T09:35:15.094Z
+                          example: 2026-02-15T09:35:15.094Z
                         calculationType:
                           type: string
                           description: The type of calculation performed.
@@ -22421,13 +22421,13 @@ paths:
                           description: "The timestamp when the finalisation was performed\
                             \ in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
                           format: date-time
-                          example: 2025-04-15T09:35:15.094Z
+                          example: 2026-04-15T09:35:15.094Z
                         confirmationTimestamp:
                           type: string
                           description: "The timestamp when the confirmation was performed\
                             \ in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
                           format: date-time
-                          example: 2025-05-15T09:35:15.094Z
+                          example: 2026-05-15T09:35:15.094Z
                         periodFrom:
                           type: string
                           description: "This defines the earliest date from which\
@@ -22436,14 +22436,14 @@ paths:
                             \ year start date, whichever occurs first for the income\
                             \ sources supplied."
                           format: date
-                          example: 2020-01-01
+                          example: 2026-01-01
                         periodTo:
                           type: string
                           description: This defines the latest date to which the calculation
                             was performed and will be the point in the year to which
                             income has been submitted.
                           format: date
-                          example: 2020-01-01
+                          example: 2026-01-01
                       additionalProperties: false
                       description: Object containing top-level metadata information
                         about the retrieved tax calculation.
@@ -50734,7 +50734,7 @@ components:
             taxYear:
               type: string
               description: The tax year in which the calculation was performed.
-              example: 2022-23
+              example: 2026-27
             requestedBy:
               type: string
               description: The requester of the calculation. Currently "customer"
@@ -50748,7 +50748,7 @@ components:
               description: "The timestamp of when the calculation was requested in\
                 \ ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
               format: date-time
-              example: 2019-02-15T09:35:15.094Z
+              example: 2026-02-15T09:35:15.094Z
             calculationReason:
               type: string
               description: "The reason why the calculation was triggered. \n\nPossible\
@@ -50798,7 +50798,7 @@ components:
               description: "The timestamp of when the calculation was performed in\
                 \ ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
               format: date-time
-              example: 2019-02-15T09:35:15.094Z
+              example: 2026-02-15T09:35:15.094Z
             calculationType:
               type: string
               description: The type of calculation performed.
@@ -50813,13 +50813,13 @@ components:
               description: "The timestamp when the finalisation was performed in ISO\
                 \ 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
               format: date-time
-              example: 2025-04-15T09:35:15.094Z
+              example: 2026-04-15T09:35:15.094Z
             confirmationTimestamp:
               type: string
               description: "The timestamp when the confirmation was performed in ISO\
                 \ 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
               format: date-time
-              example: 2025-05-15T09:35:15.094Z
+              example: 2026-05-15T09:35:15.094Z
             periodFrom:
               type: string
               description: "This defines the earliest date from which the calculation\
@@ -50827,14 +50827,14 @@ components:
                 \ self-employments) or the tax year start date, whichever occurs first\
                 \ for the income sources supplied."
               format: date
-              example: 2020-01-01
+              example: 2026-01-01
             periodTo:
               type: string
               description: This defines the latest date to which the calculation was
                 performed and will be the point in the year to which income has been
                 submitted.
               format: date
-              example: 2020-01-01
+              example: 2026-01-01
           additionalProperties: false
           description: Object containing top-level metadata information about the
             retrieved tax calculation.
@@ -79755,7 +79755,7 @@ components:
         taxYear:
           type: string
           description: The tax year in which the calculation was performed.
-          example: 2022-23
+          example: 2026-27
         requestedBy:
           type: string
           description: The requester of the calculation. Currently "customer" will
@@ -79769,7 +79769,7 @@ components:
           description: "The timestamp of when the calculation was requested in ISO\
             \ 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
           format: date-time
-          example: 2019-02-15T09:35:15.094Z
+          example: 2026-02-15T09:35:15.094Z
         calculationReason:
           type: string
           description: "The reason why the calculation was triggered. \n\nPossible\
@@ -79818,7 +79818,7 @@ components:
           description: "The timestamp of when the calculation was performed in ISO\
             \ 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
           format: date-time
-          example: 2019-02-15T09:35:15.094Z
+          example: 2026-02-15T09:35:15.094Z
         calculationType:
           type: string
           description: The type of calculation performed.
@@ -79833,13 +79833,13 @@ components:
           description: "The timestamp when the finalisation was performed in ISO 8601\
             \ UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
           format: date-time
-          example: 2025-04-15T09:35:15.094Z
+          example: 2026-04-15T09:35:15.094Z
         confirmationTimestamp:
           type: string
           description: "The timestamp when the confirmation was performed in ISO 8601\
             \ UTC format: YYYY-MM-DDThh:mm:ss.SSSZ."
           format: date-time
-          example: 2025-05-15T09:35:15.094Z
+          example: 2026-05-15T09:35:15.094Z
         periodFrom:
           type: string
           description: "This defines the earliest date from which the calculation\
@@ -79847,13 +79847,13 @@ components:
             \ or the tax year start date, whichever occurs first for the income sources\
             \ supplied."
           format: date
-          example: 2020-01-01
+          example: 2026-01-01
         periodTo:
           type: string
           description: This defines the latest date to which the calculation was performed
             and will be the point in the year to which income has been submitted.
           format: date
-          example: 2020-01-01
+          example: 2026-01-01
       additionalProperties: false
       description: Object containing top-level metadata information about the retrieved
         tax calculation.
