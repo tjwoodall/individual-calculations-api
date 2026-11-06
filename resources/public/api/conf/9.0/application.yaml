@@ -69,6 +69,7 @@ tags:
       
       Here, the developer can:      
         - submit final declaration for a tax year
+  
 
 paths:
 
@@ -80,3 +81,4 @@ paths:
     $ref: "./retrieve.yaml"
   /individuals/calculations/{nino}/self-assessment/{taxYear}/{calculationId}/{calculationType}:
     $ref: "./submit_final_declaration.yaml"
+  
