@@ -60,6 +60,13 @@ components:
         code: RULE_TAX_YEAR_RANGE_INVALID
         message: Tax year range invalid. A tax year range of one year is required
 
+    ruleTaxYearNotEnded:
+      description: |
+        The submission has been made before the taxYear it relates to has ended.
+      value:
+        code: RULE_TAX_YEAR_NOT_ENDED
+        message: The specified tax year has not yet ended
+    
     formatCalculationId:
       description: |
         Invalid Calculation ID.
