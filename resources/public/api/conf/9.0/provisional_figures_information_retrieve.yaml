@@ -43,8 +43,7 @@ responses:
           $ref: ./schemas/provisional_figures_information_retrieve/provisional_figures_information_retrieve_response.json
         examples:
           "Example response for TY 2026-27 onwards":
-            value:
-              $ref: ./examples/provisional_figures_information_retrieve/provisional_figures_information_retrieve_response.json
+            externalValue: ./examples/provisional_figures_information_retrieve/provisional_figures_information_retrieve_response.json
 
   400:
     description: Bad request

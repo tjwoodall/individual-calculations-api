@@ -61,8 +61,7 @@ post:
           examples:
             example-response:
               description: Example Response
-              value:
-                $ref: ./examples/trigger/trigger_response.json
+              externalValue: ./examples/trigger/trigger_response.json
 
     400:
       description: Bad request
