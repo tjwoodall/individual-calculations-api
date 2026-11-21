@@ -109,7 +109,7 @@
         "type": "coding-out",
         "submittedOn": "2025-04-06T09:35:15.094Z"
       }
-    {{#if (enabled 'r23_upload_docs')}},
+    {{#if (enabled 'r23_upload_docs')}}
     ],
     "attachments": [
       {
