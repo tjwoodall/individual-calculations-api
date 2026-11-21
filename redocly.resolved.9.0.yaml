@@ -263,13 +263,13 @@ paths:
                     The format of the supplied NINO field is not valid.
                   value: &ref_10
                     code: FORMAT_NINO
-                    message: The provided NINO is invalid
+                    message: The NINO format is invalid
                 FORMAT_TAX_YEAR:
                   description: |
                     The format of the supplied taxYear value is not valid.
                   value: &ref_11
                     code: FORMAT_TAX_YEAR
-                    message: The provided tax year is invalid
+                    message: The provided tax year format is invalid
                 FORMAT_CALCULATION_TYPE:
                   description: |
                     The format of the supplied calculationType value is not valid.
@@ -286,11 +286,10 @@ paths:
                   description: Tax year range invalid. A tax year range of one year is required.
                   value: &ref_14
                     code: RULE_TAX_YEAR_RANGE_INVALID
-                    message: Tax year range invalid. A tax year range of one year is required
+                    message: A tax year range of one year is required
                 RULE_TAX_YEAR_NOT_SUPPORTED:
                   description: |
-                    The specified tax year is not supported. 
-                    Either the tax year specified is before the minimum tax year value, or it is after the maximum tax year value.
+                    The specified tax year is not supported. The tax year specified is before the minimum tax year value.
                   value: &ref_13
                     code: RULE_TAX_YEAR_NOT_SUPPORTED
                     message: The tax year specified does not lie within the supported range
@@ -355,7 +354,7 @@ paths:
                     message: Business validation rule failures
                 RULE_OUTSIDE_AMENDMENT_WINDOW:
                   description: |
-                    The client and/or agent is outside the amendment window.
+                    The request cannot be completed as you are outside the amendment window.
                   value: &ref_264
                     code: RULE_OUTSIDE_AMENDMENT_WINDOW
                     message: You are outside the amendment window
@@ -427,12 +426,11 @@ paths:
               examples:
                 CLIENT_OR_AGENT_NOT_AUTHORISED:
                   description: |
-                    The client and/or agent is not authorised. 
-                    This is normally because: the client is not subscribed to MTD, the agent is not subscribed to Agent Services, 
-                    or the client has not authorised the agent to act on their behalf.
+                    The client or agent is not authorised. This is because: the client is not subscribed to MTD,
+                    the agent is not subscribed to Agent Services, or the client has not authorised the agent to act on their behalf.
                   value: &ref_16
                     code: CLIENT_OR_AGENT_NOT_AUTHORISED
-                    message: The client and/or agent is not authorised
+                    message: The client or agent is not authorised
         '422':
           description: Unprocessable entity
           headers:
@@ -856,8 +854,7 @@ paths:
                   value: *ref_12
                 RULE_TAX_YEAR_NOT_SUPPORTED:
                   description: |
-                    The specified tax year is not supported. 
-                    Either the tax year specified is before the minimum tax year value, or it is after the maximum tax year value.
+                    The specified tax year is not supported. The tax year specified is before the minimum tax year value.
                   value: *ref_13
                 RULE_TAX_YEAR_RANGE_INVALID:
                   description: Tax year range invalid. A tax year range of one year is required.
@@ -916,9 +913,8 @@ paths:
               examples:
                 CLIENT_OR_AGENT_NOT_AUTHORISED:
                   description: |
-                    The client and/or agent is not authorised. 
-                    This is normally because: the client is not subscribed to MTD, the agent is not subscribed to Agent Services, 
-                    or the client has not authorised the agent to act on their behalf.
+                    The client or agent is not authorised. This is because: the client is not subscribed to MTD,
+                    the agent is not subscribed to Agent Services, or the client has not authorised the agent to act on their behalf.
                   value: *ref_16
         '404':
           description: Not Found
@@ -19946,6 +19942,24 @@ paths:
                             description: An array other inputs used in the retrieved tax calculation.
                             type: array
                             items: *ref_213
+                          attachments:
+                            description: '[Test only] Array of attachments associated with the calculation submission.'
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                documentName:
+                                  description: The name of the uploaded document.
+                                  type: string
+                                  example: name.pdf
+                                uploadTimestamp:
+                                  description: 'The date and time when the information was received, in ISO 8601 UTC format: YYYY-MM-DDThh:mm:ss.SSSZ.'
+                                  allOf:
+                                    - $ref: '#/definitions/timestamp'
+                              additionalProperties: false
+                              required:
+                                - documentName
+                                - uploadTimestamp
                           businessIncomeSources:
                             description: Array containing business income sources used in the retrieved tax calculation.
                             type: array
@@ -25617,14 +25631,13 @@ paths:
                   value: *ref_11
                 FORMAT_CALCULATION_ID:
                   description: |
-                    Invalid Calculation ID.
+                    The format of the supplied calculation ID is not valid.
                   value: &ref_265
                     code: FORMAT_CALCULATION_ID
-                    message: The provided calculationId is invalid
+                    message: The provided calculation ID is invalid
                 RULE_TAX_YEAR_NOT_SUPPORTED:
                   description: |
-                    The specified tax year is not supported. 
-                    Either the tax year specified is before the minimum tax year value, or it is after the maximum tax year value.
+                    The specified tax year is not supported. The tax year specified is before the minimum tax year value.
                   value: *ref_13
                 RULE_TAX_YEAR_RANGE_INVALID:
                   description: Tax year range invalid. A tax year range of one year is required.
@@ -25677,9 +25690,8 @@ paths:
               examples:
                 CLIENT_OR_AGENT_NOT_AUTHORISED:
                   description: |
-                    The client and/or agent is not authorised. 
-                    This is normally because: the client is not subscribed to MTD, the agent is not subscribed to Agent Services, 
-                    or the client has not authorised the agent to act on their behalf.
+                    The client or agent is not authorised. This is because: the client is not subscribed to MTD,
+                    the agent is not subscribed to Agent Services, or the client has not authorised the agent to act on their behalf.
                   value: *ref_16
         '404':
           description: Not Found
@@ -25891,7 +25903,7 @@ paths:
                   value: *ref_12
                 RULE_OUTSIDE_AMENDMENT_WINDOW:
                   description: |
-                    The client and/or agent is outside the amendment window.
+                    The request cannot be completed as you are outside the amendment window.
                   value: *ref_264
                 FORMAT_TAX_YEAR:
                   description: |
@@ -25902,12 +25914,11 @@ paths:
                   value: *ref_14
                 RULE_TAX_YEAR_NOT_SUPPORTED:
                   description: |
-                    The specified tax year is not supported. 
-                    Either the tax year specified is before the minimum tax year value, or it is after the maximum tax year value.
+                    The specified tax year is not supported. The tax year specified is before the minimum tax year value.
                   value: *ref_13
                 FORMAT_CALCULATION_ID:
                   description: |
-                    Invalid Calculation ID.
+                    The format of the supplied calculation ID is not valid.
                   value: *ref_265
                 RULE_INCOME_SOURCES_CHANGED:
                   description: |
@@ -25998,9 +26009,8 @@ paths:
               examples:
                 CLIENT_OR_AGENT_NOT_AUTHORISED:
                   description: |
-                    The client and/or agent is not authorised. 
-                    This is normally because: the client is not subscribed to MTD, the agent is not subscribed to Agent Services, 
-                    or the client has not authorised the agent to act on their behalf.
+                    The client or agent is not authorised. This is because: the client is not subscribed to MTD,
+                    the agent is not subscribed to Agent Services, or the client has not authorised the agent to act on their behalf.
                   value: *ref_16
         '404':
           description: Not Found
